@@ -1,0 +1,35 @@
+{
+    "pool": {
+        "coinSymbol": "XEL",
+        "coinPriceUsd": "0.0234"
+    },
+    "miner": {
+        "totalBlocksFound": 118,
+        "sumrewards": [
+            { "reward": 125000000 },
+            { "reward": 1500000000 },
+            { "reward": 3000000000 },
+            { "reward": 2800000000 },
+            { "reward": 2600000000 },
+            { "reward": 18000000000 },
+            { "reward": 75000000000 }
+        ],
+        "payments": [
+            {
+                "timestamp": 1735689600,
+                "tx": "a1b2c3d4e5f6789012345678901234567890abcdef",
+                "amount": 500000000
+            },
+            {
+                "timestamp": 1735603200,
+                "tx": "b2c3d4e5f6789012345678901234567890abcdef01",
+                "amount": 750000000
+            },
+            {
+                "timestamp": 1735516800,
+                "tx": "c3d4e5f6789012345678901234567890abcdef0123",
+                "amount": 600000000
+            }
+        ]
+    }
+}

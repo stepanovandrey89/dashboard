@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoDash - Майнинг Дашборд</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+    <!-- Боковая панель -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i data-lucide="zap"></i>
+                </div>
+                <span class="logo-text">CryptoDash</span>
+            </div>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <a href="#" class="nav-item active" data-section="overview">
+                <i data-lucide="layout-dashboard"></i>
+                <span>Обзор</span>
+            </a>
+            <a href="#" class="nav-item" data-section="rates">
+                <i data-lucide="trending-up"></i>
+                <span>Курсы</span>
+            </a>
+            <a href="#" class="nav-item" data-section="earnings">
+                <i data-lucide="dollar-sign"></i>
+                <span>Доход</span>
+            </a>
+            <a href="#" class="nav-item" data-section="payments">
+                <i data-lucide="credit-card"></i>
+                <span>Выплаты</span>
+            </a>
+            <a href="#" class="nav-item" data-section="settings">
+                <i data-lucide="settings"></i>
+                <span>Настройки</span>
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Основной контент -->
+    <main class="main-content">
+        <!-- Заголовок -->
+        <header class="header">
+            <div class="header-left">
+                <h1 class="page-title">Обзор майнинга</h1>
+                <p class="page-subtitle">Мониторинг ваших майнинг ферм в реальном времени</p>
+            </div>
+            <div class="header-right">
+                <div class="theme-controls">
+                    <div class="offline-timeout-control">
+                        <label>Оффлайн через:</label>
+                        <div class="timeout-selector">
+                            <button class="timeout-btn timeout-decrease" id="timeout-decrease">
+                                <i data-lucide="chevron-left"></i>
+                            </button>
+                            <span class="timeout-value" id="timeout-value">15 мин</span>
+                            <button class="timeout-btn timeout-increase" id="timeout-increase">
+                                <i data-lucide="chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="theme-toggle">
+                        <button class="theme-btn" id="theme-toggle">
+                            <i data-lucide="sun"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Секция обзора -->
+        <section id="overview-section" class="content-section active">
+            <!-- Статистические карточки -->
+            <div class="stats-grid-compact">
+                <div class="stat-card-compact">
+                    <div class="stat-icon">
+                        <i data-lucide="server"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-value" id="farms-count">0</div>
+                        <div class="stat-label">Активных ферм</div>
+                        <div class="stat-change">
+                            <span id="offline-farms-count">0 неактивных</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stat-card-compact">
+                    <div class="stat-icon">
+                        <i data-lucide="cpu"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-value" id="gpu-count">0</div>
+                        <div class="stat-label">GPU устройств</div>
+                    </div>
+                </div>
+
+                <div class="stat-card-compact">
+                    <div class="stat-icon">
+                        <i data-lucide="activity"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-value" id="hashrate">0 <span class="unit">MH/s</span></div>
+                        <div class="stat-label">Общий хэшрейт</div>
+                    </div>
+                </div>
+
+                <div class="stat-card-compact">
+                    <div class="stat-icon">
+                        <i data-lucide="zap"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-value" id="power-consumption">0 kW</div>
+                        <div class="stat-label">Потребление</div>
+                    </div>
+                </div>
+
+                <div class="stat-card-compact">
+                    <div class="stat-icon">
+                        <i data-lucide="coins"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-value" id="coin-symbol">XEL</div>
+                        <div class="stat-label">Монета</div>
+                    </div>
+                </div>
+
+                <div class="stat-card-compact">
+                    <div class="stat-icon">
+                        <i data-lucide="dollar-sign"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-value" id="coin-price">$0.00</div>
+                        <div class="stat-label">Цена монеты</div>
+                    </div>
+                </div>
+
+                <div class="stat-card-compact">
+                    <div class="stat-icon">
+                        <i data-lucide="box"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-value" id="blocks-found">0</div>
+                        <div class="stat-label">Найдено блоков</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Таблица ферм на главной -->
+            <div class="section-header">
+                <h2>Майнинг фермы</h2>
+            </div>
+
+            <div class="table-container">
+                <table class="farms-table">
+                    <thead>
+                        <tr>
+                            <th>Статус</th>
+                            <th>Ферма</th>
+                            <th>Видеокарты</th>
+                            <th>Время работы</th>
+                            <th>Разгадано решений</th>
+                            <th>Хэшрейт</th>
+                            <th>Потребляемая мощность</th>
+                        </tr>
+                    </thead>
+                    <tbody id="farms-tbody-overview">
+                        <!-- Данные ферм добавляются динамически -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Детали выбранной фермы -->
+            <div id="farm-details" class="farm-details" style="display: none;">
+                <div class="details-header">
+                    <h3 id="details-title">Детали фермы</h3>
+                    <button class="details-close" id="details-close">
+                        <i data-lucide="x"></i>
+                    </button>
+                </div>
+                
+                <div class="details-content">
+                    <!-- GPU таблица -->
+                    <div class="gpu-table-container">
+                        <h4>GPU устройства</h4>
+                        <div class="table-container">
+                            <table class="gpu-table">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Наименование</th>
+                                        <th>Хэшрейт GPU</th>
+                                        <th>Температура (Ядро/Память)</th>
+                                        <th>FAN</th>
+                                        <th>Потребляемая мощность</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="gpu-details-tbody">
+                                    <!-- GPU данные добавляются динамически -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Системная информация -->
+                    <div class="system-info">
+                        <h4>
+                            <i data-lucide="info"></i>
+                            Системная информация
+                        </h4>
+                        <div class="info-grid" id="system-info-grid">
+                            <!-- Системная информация добавляется динамически -->
+                        </div>
+                    </div>
+
+                    <!-- Статус оффлайн -->
+                    <div class="offline-status" id="offline-status" style="display: none;">
+                        <h4>
+                            <i data-lucide="wifi-off"></i>
+                            Ферма не в сети
+                        </h4>
+                        <p id="offline-message">Последнее обновление: неизвестно</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция курсов -->
+        <section id="rates-section" class="content-section">
+            <div class="section-header">
+                <h2>Курсы криптовалют</h2>
+                <div class="section-controls">
+                    <button class="refresh-btn" id="refresh-rates">
+                        <i data-lucide="refresh-cw"></i>
+                        Обновить
+                    </button>
+                </div>
+            </div>
+
+            <div class="rates-grid" id="rates-grid">
+                <!-- Карточки курсов добавляются динамически -->
+            </div>
+        </section>
+
+        <!-- Секция доходов -->
+        <section id="earnings-section" class="content-section">
+            <div class="earnings-header">
+                <h2>Доходы</h2>
+                <div class="coin-info">
+                    <div class="coin-price">
+                        <span class="coin-symbol" id="coin-symbol-earnings">XEL</span>
+                        <span class="coin-price-value" id="coin-price-earnings">$0.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="earnings-card">
+                <h3>Последние вознаграждения</h3>
+                <div class="table-container">
+                    <table class="earnings-table">
+                        <thead>
+                            <tr>
+                                <th>Период</th>
+                                <th>Вознаграждение</th>
+                                <th>USD</th>
+                            </tr>
+                        </thead>
+                        <tbody id="rewards-tbody">
+                            <!-- Данные добавляются динамически -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция истории выплат -->
+        <section id="payments-section" class="content-section">
+            <div class="earnings-header">
+                <h2>История выплат</h2>
+                <div class="coin-info">
+                    <div class="coin-price">
+                        <span class="coin-symbol" id="coin-symbol-payments">XEL</span>
+                        <span class="coin-price-value" id="coin-price-payments">$0.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="earnings-card">
+                <h3>Все выплаты</h3>
+                <div class="table-container">
+                    <table class="earnings-table">
+                        <thead>
+                            <tr>
+                                <th>Время</th>
+                                <th>Транзакция</th>
+                                <th>Сумма</th>
+                            </tr>
+                        </thead>
+                        <tbody id="all-payments-tbody">
+                            <!-- Данные добавляются динамически -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="total-summary" id="payments-total">
+                    <!-- Итоговая сумма добавляется динамически -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция настроек -->
+        <section id="settings-section" class="content-section">
+            <div class="settings-grid">
+                <div class="settings-card">
+                    <h3>Общие настройки</h3>
+                    <div class="setting-item">
+                        <label>Интервал обновления</label>
+                        <select>
+                            <option value="5">5 секунд</option>
+                            <option value="10" selected>10 секунд</option>
+                            <option value="30">30 секунд</option>
+                        </select>
+                    </div>
+                    <div class="setting-item">
+                        <label>Уведомления</label>
+                        <div class="toggle-switch">
+                            <input type="checkbox" id="notifications" checked>
+                            <label for="notifications"></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="settings-card">
+                    <h3>Алерты</h3>
+                    <div class="setting-item">
+                        <label>Критическая температура ядра (°C)</label>
+                        <input type="number" value="85" min="70" max="100" id="core-temp-threshold">
+                    </div>
+                    <div class="setting-item">
+                        <label>Критическая температура памяти (°C)</label>
+                        <input type="number" value="95" min="80" max="110" id="memory-temp-threshold">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Уведомления -->
+    <div id="notifications-container" class="notifications-container"></div>
+
+    <!-- Скрипты -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="src/js/main.js"></script>
+</body>
+</html>

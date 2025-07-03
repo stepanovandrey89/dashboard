@@ -1,0 +1,4534 @@
+{
+    "miner": {
+        "workersTotal": 2,
+        "workersOnline": 2,
+        "workersOffline": 0,
+        "workers": {
+            "NVIDIA": {
+                "mineZil": false,
+                "lastBeat": 1751578474,
+                "startedAt": 1751498400,
+                "hr": 181703,
+                "hr2": 182073,
+                "hr24": 162729,
+                "offline": false
+            },
+            "RADEONVII": {
+                "mineZil": false,
+                "lastBeat": 1751578446,
+                "startedAt": 1751492400,
+                "hr": 171105,
+                "hr2": 190367,
+                "hr24": 210382,
+                "offline": false
+            }
+        },
+        "curHashrate": 352808,
+        "curHashrateStr": "352.81 KH/s",
+        "avgHashrate": 376710,
+        "avgHashrateStr": "376.71 KH/s",
+        "dayHashrate": 388595,
+        "dayHashrateStr": "388.6 KH/s",
+        "coinsPerDay": 1.61314,
+        "totalBlocksFound": 118,
+        "lastShare": 1751578474,
+        "lastShareDiff": 0,
+        "paymentsTotal": 111,
+        "payments": [
+            {
+                "timestamp": 1751463903,
+                "amount": 108578838,
+                "expected": 0,
+                "tx": "df8dd4652565899c6d42cc85c2fdadd9f32e845138762b99e407b26f7fc0b23c"
+            },
+            {
+                "timestamp": 1751435103,
+                "amount": 108596594,
+                "expected": 0,
+                "tx": "03036b9418dc05be3490c063ef097888b46816b49acf8fa5614119d33e656e6e"
+            },
+            {
+                "timestamp": 1751413500,
+                "amount": 141189499,
+                "expected": 0,
+                "tx": "22ffa1b37978d4b045583ed66d793e4b9a73ea2be83a161a4b1470540c2fadc5"
+            },
+            {
+                "timestamp": 1751402703,
+                "amount": 108614702,
+                "expected": 0,
+                "tx": "b6100edbc58031a3529a0a2be927bdcb9bdc87a5b4d284171e6ff6d001c5b93c"
+            },
+            {
+                "timestamp": 1751323503,
+                "amount": 108657559,
+                "expected": 0,
+                "tx": "f552acdb746bc3fab88f6ca686b7fd4295858c7808c35a47ba75123e6ad125bf"
+            },
+            {
+                "timestamp": 1751309103,
+                "amount": 108664818,
+                "expected": 0,
+                "tx": "6165867cb79017db0ba01cc4dad2ee79a63a96f5a0279e6de6ae6793eeb3da5b"
+            },
+            {
+                "timestamp": 1751298303,
+                "amount": 108671721,
+                "expected": 0,
+                "tx": "c9d44c12c05f073662f8ca4c41c93588d3cd9cebaadada2890b28f86187b54c7"
+            },
+            {
+                "timestamp": 1751291100,
+                "amount": 108676819,
+                "expected": 0,
+                "tx": "b746cab97bec0f5fa83898cf33722c6646ee0fc6c18d2665dd7e1baaee5b262c"
+            },
+            {
+                "timestamp": 1751262303,
+                "amount": 108692779,
+                "expected": 0,
+                "tx": "4aaa640a9862077163e3a267b9838175784a308a4d27c34d81ffe657c1fa41ba"
+            },
+            {
+                "timestamp": 1751244303,
+                "amount": 108701666,
+                "expected": 0,
+                "tx": "215a24d2ba5ba5b91593c73f50800152d0757639a3a974e8cd06331023f98ed3"
+            },
+            {
+                "timestamp": 1751028300,
+                "amount": 108821548,
+                "expected": 0,
+                "tx": "5f09af6e2f8dcca39572572295ab29da9a19af93b24d8f7e69440a01ce207e9a"
+            },
+            {
+                "timestamp": 1751003103,
+                "amount": 108836899,
+                "expected": 0,
+                "tx": "34e45d6135f1dc679a477ba5c3e0ce12eaf22189216b1740e3395ef40be3d1a8"
+            },
+            {
+                "timestamp": 1750945500,
+                "amount": 108868222,
+                "expected": 0,
+                "tx": "d0e4d4892572b29824a548ff4a6e0111d29442795a5d427ad0a176ecdb4aa236"
+            },
+            {
+                "timestamp": 1750902301,
+                "amount": 108892836,
+                "expected": 0,
+                "tx": "0e2b9df19f24e64024d1ccdbde5b5281558dd005ea0f288a9616c084b210fd42"
+            },
+            {
+                "timestamp": 1750891503,
+                "amount": 32669560,
+                "expected": 0,
+                "tx": "8113019838387b490551c35394a3fa8b21d6a872107d93c0d23f1f6dadcde271"
+            },
+            {
+                "timestamp": 1750884303,
+                "amount": 108902151,
+                "expected": 0,
+                "tx": "83072385f79d8ab8221a0f4cfccf936018da157d0986fd7643ff932e43561ef3"
+            },
+            {
+                "timestamp": 1750826703,
+                "amount": 108935351,
+                "expected": 0,
+                "tx": "809f4beddc6518ab8b792a913cb1cb4e6eb74beab7aae6143e4fe1626a6eeb7f"
+            },
+            {
+                "timestamp": 1750819503,
+                "amount": 108939049,
+                "expected": 0,
+                "tx": "46853cca91b8a8ff398e5f96e2025a4a9fe157efa9ecf1222c0f96245066cef7"
+            },
+            {
+                "timestamp": 1750815903,
+                "amount": 108941419,
+                "expected": 0,
+                "tx": "bfd318ebe4a0a86ea78c1e514cbe040b18e2582b1684f9cca6e0e083f9d3b077"
+            },
+            {
+                "timestamp": 1750794303,
+                "amount": 108952216,
+                "expected": 0,
+                "tx": "3dce5b9dae728721be6ee5e4254e2fdea3e140cc43b7705a6f111de63960d2b3"
+            },
+            {
+                "timestamp": 1750787103,
+                "amount": 108955996,
+                "expected": 0,
+                "tx": "a070f5ecf7384f2642321fff5f6c4cae465200f22de667a9afb6c7c97fd4cddf"
+            },
+            {
+                "timestamp": 1750740300,
+                "amount": 108981819,
+                "expected": 0,
+                "tx": "aa26415b2bbb8f893ccfd99ebd4f46fe3a86ccbad9667b1cf7abbb252785ef6c"
+            },
+            {
+                "timestamp": 1750682700,
+                "amount": 32704505,
+                "expected": 0,
+                "tx": "8c2d0c738e84f72ec299a46dec3d45fbcf0ce9d987fd053e4ab9c13b16284ce7"
+            },
+            {
+                "timestamp": 1750668300,
+                "amount": 109022787,
+                "expected": 0,
+                "tx": "0f755c089d4bdada5e1af0c9addf1bc2abaabfdf71922d5957d250ed23f6a132"
+            },
+            {
+                "timestamp": 1750578303,
+                "amount": 109073992,
+                "expected": 0,
+                "tx": "7dcf9dae11587e144ba2e722488d9b586d2cdb4a34931bd319669a23dcc3b2f6"
+            },
+            {
+                "timestamp": 1750542303,
+                "amount": 109093031,
+                "expected": 0,
+                "tx": "2378aef546215f2dde91a4126a631d83964cf20609412232cd516ee2bd4ecdb1"
+            },
+            {
+                "timestamp": 1750383903,
+                "amount": 109181185,
+                "expected": 0,
+                "tx": "d492ebf3ed83c2097ce281283f6973aa4de09dbb4f06c1e2a3c1eb09c6c1779a"
+            },
+            {
+                "timestamp": 1750380303,
+                "amount": 109183909,
+                "expected": 0,
+                "tx": "eb4775e15046a18e53c9d40a5a2904e7ddd0fb80b607367afb11fe3d8c29afb3"
+            },
+            {
+                "timestamp": 1750337103,
+                "amount": 109208836,
+                "expected": 0,
+                "tx": "096975ebfbe0cd776c9cbe0673140cee45b7b2118d4dc3fa4d5d1e0b08a51873"
+            },
+            {
+                "timestamp": 1750196703,
+                "amount": 109287145,
+                "expected": 0,
+                "tx": "8e5d75a6c2470d0c36d117434fb3d67e3f11a06f329360f6841aea8c772f2cc0"
+            },
+            {
+                "timestamp": 1750164303,
+                "amount": 109305284,
+                "expected": 0,
+                "tx": "f1582e4379cb9c29e53f6db9e08a844c7cfc86e72707ef42b9c2643f0285875b"
+            },
+            {
+                "timestamp": 1750117503,
+                "amount": 109331919,
+                "expected": 0,
+                "tx": "74aea54c956319c5bb3727451311f776d6bc63a65895bc28a5dab729dd35ec12"
+            },
+            {
+                "timestamp": 1750106703,
+                "amount": 109337936,
+                "expected": 0,
+                "tx": "d2e647eaf691ed3399eed9405046502363a93c3df434eebe1af98a403c193783"
+            },
+            {
+                "timestamp": 1750099500,
+                "amount": 109341332,
+                "expected": 0,
+                "tx": "6bc21206184346f487e007ca4b0104fcfa726786e19d36c3d4486146b0ea34e4"
+            },
+            {
+                "timestamp": 1750049103,
+                "amount": 109369674,
+                "expected": 0,
+                "tx": "15b385e9beee4e18e5827efa996d6043107e0b4412ab4ab465ee19414f45b107"
+            },
+            {
+                "timestamp": 1750034703,
+                "amount": 109377136,
+                "expected": 0,
+                "tx": "faade71ba89b405bde140c7eb98a85399540f35b7d8a35aa3378b63314d7dd7b"
+            },
+            {
+                "timestamp": 1750031103,
+                "amount": 218760309,
+                "expected": 0,
+                "tx": "6413c7e98becc6d38e9e71890b389ab98add055624d49703348694278512c787"
+            },
+            {
+                "timestamp": 1750027503,
+                "amount": 109382104,
+                "expected": 0,
+                "tx": "51663cda0413676444a6856e4af5d53ccb69beb369638cb6e81b17a827004eab"
+            },
+            {
+                "timestamp": 1750023903,
+                "amount": 218767644,
+                "expected": 0,
+                "tx": "c46ac70a9f3128bcf6753358a1123ea9eb3a171fd74d1c692b6a604ea6a7469c"
+            },
+            {
+                "timestamp": 1749991503,
+                "amount": 109401579,
+                "expected": 0,
+                "tx": "68fbfc9c1d91d20a3c84419b37a0a8509bd7d690c0f73185d466c330936c810b"
+            },
+            {
+                "timestamp": 1749851103,
+                "amount": 109481513,
+                "expected": 0,
+                "tx": "c8f2eda8cf9e0e22bacc0be3b52fd584b9b6e6c2fccb96fe531d21453e88273f"
+            },
+            {
+                "timestamp": 1749667503,
+                "amount": 109584729,
+                "expected": 0,
+                "tx": "5e9eee342f96f5d067e87959bc3afe47e5a5b3b3616bce9625ae44f2f2453cc0"
+            },
+            {
+                "timestamp": 1749527100,
+                "amount": 109663323,
+                "expected": 0,
+                "tx": "f6101d8793b6b163e766db987db919be4c048b33c8c1da4b9fbd8d085237d6cf"
+            },
+            {
+                "timestamp": 1749509103,
+                "amount": 109673801,
+                "expected": 0,
+                "tx": "a9413856ad372321fcd98d6dfc783603a51b4051dd60b79028d06f9f8db1b601"
+            },
+            {
+                "timestamp": 1749491103,
+                "amount": 109683206,
+                "expected": 0,
+                "tx": "c02bdc93111ba305af643906ef122bb3d5c608d8e45965097ec1b24db84adf37"
+            },
+            {
+                "timestamp": 1749325503,
+                "amount": 109776392,
+                "expected": 0,
+                "tx": "df29b7800d015b225c97585a527a8c092b007968b7fb560a05e2db3b2a237511"
+            },
+            {
+                "timestamp": 1749318303,
+                "amount": 109780024,
+                "expected": 0,
+                "tx": "34990f45a733529a8df99c865ded211c570907b86be494ca576ee14adf94504c"
+            },
+            {
+                "timestamp": 1749307503,
+                "amount": 109787135,
+                "expected": 0,
+                "tx": "62ba08e4b090210c41ec99aa91cb6c8508babb7f6da05b48e8675f590e3d3561"
+            },
+            {
+                "timestamp": 1749285903,
+                "amount": 109798925,
+                "expected": 0,
+                "tx": "30c97c9edf693e0b823462adb0733f6fb6817daabae98e8ed011161f7f21ce27"
+            },
+            {
+                "timestamp": 1749267903,
+                "amount": 109807964,
+                "expected": 0,
+                "tx": "7ffe65574dca1e9147519e1c7b886645a4a36727fa75c78a7049833a4abd52b1"
+            },
+            {
+                "timestamp": 1749260703,
+                "amount": 109812998,
+                "expected": 0,
+                "tx": "a7962a8a2802b610e2e1e5b384d0c7d09f47fb0438705bd47c8a038c15ef3d7a"
+            },
+            {
+                "timestamp": 1749246303,
+                "amount": 109820801,
+                "expected": 0,
+                "tx": "0e68333e196ce00b6cf2aab21ec1c0c52c841ab7a93c87b2850bd4a5d938bb27"
+            },
+            {
+                "timestamp": 1749231903,
+                "amount": 109828177,
+                "expected": 0,
+                "tx": "96b83971661df6d897c500db36980a7f31e4a2a56fc17b673a8e4c41aa905c21"
+            },
+            {
+                "timestamp": 1749221103,
+                "amount": 109835181,
+                "expected": 0,
+                "tx": "53a23b7639026502d56b7e9d302a0288e9358e8a08bda7bb2edc9ee4c4a99864"
+            },
+            {
+                "timestamp": 1749116703,
+                "amount": 109892623,
+                "expected": 0,
+                "tx": "ee2172e80062c3c6fb1a46134d8cb35bad1c29ac1eb96ed579f1226815c1b9fe"
+            },
+            {
+                "timestamp": 1748857503,
+                "amount": 110040024,
+                "expected": 0,
+                "tx": "723363c7260a34f208d74500a9071c7f5da00a7eb969a4536bd321c05796f615"
+            },
+            {
+                "timestamp": 1748835903,
+                "amount": 110052531,
+                "expected": 0,
+                "tx": "d30e6867bad87e740dbbc070dbfd0374d3fa1a65346378e8ce7762b963613475"
+            },
+            {
+                "timestamp": 1748821503,
+                "amount": 110060916,
+                "expected": 0,
+                "tx": "c4ac618a0a42441411ab9c22637ea393b61624a6fef3f6543557943316560d41"
+            },
+            {
+                "timestamp": 1748753103,
+                "amount": 110097712,
+                "expected": 0,
+                "tx": "1b32f8737419c908370e25d438e2b6c7c1f977ed6330df23e06ade6726e63808"
+            },
+            {
+                "timestamp": 1748724303,
+                "amount": 110114335,
+                "expected": 0,
+                "tx": "938919849d76023a18dc60ad6bd4713a58714a53a71c5a9491156a36d21f3d7c"
+            },
+            {
+                "timestamp": 1748652303,
+                "amount": 110155657,
+                "expected": 0,
+                "tx": "0a4b1fdefddd4f57e41b5608e915c1adfa7367b11bfb0d8ab94e70c8ae8b8435"
+            },
+            {
+                "timestamp": 1748627103,
+                "amount": 110170511,
+                "expected": 0,
+                "tx": "7a82d25a246bb82571c956a463912b0fc35e544982586d19539aff4eab1123ab"
+            },
+            {
+                "timestamp": 1748616303,
+                "amount": 110174891,
+                "expected": 0,
+                "tx": "47ddbf2499bf502bc6e270558190fe5cd3f7aabdf1120e1cc42fb28a2dd1e1fc"
+            },
+            {
+                "timestamp": 1748598303,
+                "amount": 110186815,
+                "expected": 0,
+                "tx": "9b11e7cfe7980b40a0ea6e97221e7a6bea18e4236ad077843191d6601c14dc84"
+            },
+            {
+                "timestamp": 1748511900,
+                "amount": 110235590,
+                "expected": 0,
+                "tx": "2a2706b37d29bfaf439ff3056ae9cdcf8e02a62820735c3097cd819b8d5e93d4"
+            },
+            {
+                "timestamp": 1748497503,
+                "amount": 110243727,
+                "expected": 0,
+                "tx": "d481f12246610228b24e5ca5a45005ba8d577d8fdf6c65b3ef65a453d79a9045"
+            },
+            {
+                "timestamp": 1748486703,
+                "amount": 110248416,
+                "expected": 0,
+                "tx": "dd84b541b2cc02a8c48073530f224510b6ffd9c770ea040ef927452ea5cd9c63"
+            },
+            {
+                "timestamp": 1748472303,
+                "amount": 110257782,
+                "expected": 0,
+                "tx": "9b91554211e282cc05ada0020b67e008cc1c87fcdadfb253d8c4609e8ad5ff00"
+            },
+            {
+                "timestamp": 1748414703,
+                "amount": 110289796,
+                "expected": 0,
+                "tx": "cbd062033a2dc4086f839efa10304ee25c43f468ac2369070cad8bf864c01873"
+            },
+            {
+                "timestamp": 1748389503,
+                "amount": 110303656,
+                "expected": 0,
+                "tx": "607f91243d4855bf48a9e57f11e561b8400a54150bd977e0ad5803d66d347cbd"
+            },
+            {
+                "timestamp": 1748375101,
+                "amount": 110312191,
+                "expected": 0,
+                "tx": "16f3f674e59a3beb3a5d14815907599b4969c3c8f91f626debc5fe33d8025278"
+            },
+            {
+                "timestamp": 1748313903,
+                "amount": 110347147,
+                "expected": 0,
+                "tx": "ed85ad88f3c2b9f03b8ae25338635e11f902f8f4355d681bb8636d43880d8934"
+            },
+            {
+                "timestamp": 1748306703,
+                "amount": 220700314,
+                "expected": 0,
+                "tx": "cc038b01346bdeb8d109bba6bca5c613be8a24574438de8f469d3a42a7147df4"
+            },
+            {
+                "timestamp": 1748303103,
+                "amount": 110352227,
+                "expected": 0,
+                "tx": "09ebf50a3541d363b9e1873a8549a3870318f63a3726f943862217f78b826920"
+            },
+            {
+                "timestamp": 1748245503,
+                "amount": 220768922,
+                "expected": 0,
+                "tx": "e70c753a2fb97445d38a7e515de5611006ee481cd81b4853375f2162fd5641d7"
+            },
+            {
+                "timestamp": 1748216703,
+                "amount": 110401234,
+                "expected": 0,
+                "tx": "ecf5b2e2d03eeef576d9a6d0167557667b79589bac24105a6e0f7ae40a434b22"
+            },
+            {
+                "timestamp": 1748198703,
+                "amount": 110410379,
+                "expected": 0,
+                "tx": "0efd6e174a5d58c04b764971f6fa35f61b8dd047ded3bd375d5252f864c75b4b"
+            },
+            {
+                "timestamp": 1748166303,
+                "amount": 110428933,
+                "expected": 0,
+                "tx": "1c14a78bace64a4375632aa193e1d8b77bfe6b791dac901dfb3ba331e8c053af"
+            },
+            {
+                "timestamp": 1748108703,
+                "amount": 110462268,
+                "expected": 0,
+                "tx": "f8057727fdec5726b93b9853f41e58a059006709b5488eb28a74bd86195f3947"
+            },
+            {
+                "timestamp": 1748047503,
+                "amount": 110496609,
+                "expected": 0,
+                "tx": "336149227f2b58a8111f563099a92122dc285447f8287c84c96e3ac6d4e99a9a"
+            },
+            {
+                "timestamp": 1748029500,
+                "amount": 110506086,
+                "expected": 0,
+                "tx": "1449891ddcfea8ec2149bade3a7f5414e922eb7df56b44c15d44e436e89a1f7c"
+            },
+            {
+                "timestamp": 1748015103,
+                "amount": 110514060,
+                "expected": 0,
+                "tx": "7ed5d1bcc3399c7f854fa510b54e40f28d542c4fa089e54e327f6fc447ca9616"
+            },
+            {
+                "timestamp": 1748004303,
+                "amount": 110521368,
+                "expected": 0,
+                "tx": "ad9d018f8d72e3d8a27bb6733658e8585b98d8307903caa4d96c5c0ef9ad7ee8"
+            },
+            {
+                "timestamp": 1747993503,
+                "amount": 110527121,
+                "expected": 0,
+                "tx": "5d8a7367ec9e099d052ac7b3baa0193c6c2d12bb17dc1e1f6225d8bd22cb5881"
+            },
+            {
+                "timestamp": 1747982703,
+                "amount": 110532438,
+                "expected": 0,
+                "tx": "3203d608cce99f3145926ad359371b00204408e81bd0386260451c73c49800c4"
+            },
+            {
+                "timestamp": 1747968303,
+                "amount": 110541618,
+                "expected": 0,
+                "tx": "75cfeb4b1555ce4f98a00c2c701c52092b29fbf40791c20d0d404b731c8851d8"
+            },
+            {
+                "timestamp": 1747863903,
+                "amount": 110601090,
+                "expected": 0,
+                "tx": "2aef95c16843047231370a30328cfd4ff5608975705a206144397b0492e6d56e"
+            },
+            {
+                "timestamp": 1747741503,
+                "amount": 33200745,
+                "expected": 0,
+                "tx": "bd6531e526f56700d537f09de51b9314ac3bff6f9a1ab963257257ab91a19c28"
+            },
+            {
+                "timestamp": 1747737903,
+                "amount": 110671936,
+                "expected": 0,
+                "tx": "4d9bceeaa9b12582d7ac94bcb0b491e469aeb2a79848b9d9c67cdeedc5a88750"
+            },
+            {
+                "timestamp": 1747640703,
+                "amount": 110725933,
+                "expected": 0,
+                "tx": "504329c7253bef1e318f174336cf488faedc4bb3bbe6cd77542364394202fb3e"
+            },
+            {
+                "timestamp": 1747619104,
+                "amount": 110739489,
+                "expected": 0,
+                "tx": "c4da82ed97ee99496616a0ab3fee41da1d4e378e7b941af0bd678d914a2488c3"
+            },
+            {
+                "timestamp": 1747615503,
+                "amount": 110740765,
+                "expected": 0,
+                "tx": "fbd7c92230ea88f7aa67c63f7a227ccf3ad7a1fc413acf3b66a8cb3b741eb362"
+            },
+            {
+                "timestamp": 1747604703,
+                "amount": 110747883,
+                "expected": 0,
+                "tx": "f6b8c71e7ae9a1eb94842676ef13c46887de40a448e531320ed0e252d2ec5505"
+            },
+            {
+                "timestamp": 1747568704,
+                "amount": 110767374,
+                "expected": 0,
+                "tx": "c2bd846e89eead0b51eff5826f2635a2b1667009a3bf6c93d30e5fcc8dc32756"
+            },
+            {
+                "timestamp": 1747554303,
+                "amount": 110775793,
+                "expected": 0,
+                "tx": "29d1f63c461c5f03e885bd09ded5c9b4fa6265045fec1f9322d2518ab0a91990"
+            },
+            {
+                "timestamp": 1747543503,
+                "amount": 110782051,
+                "expected": 0,
+                "tx": "2786c61f270e0725e5e60b7d87eb96d4edf86071f96e8b5cffdedffca6dd1d4f"
+            },
+            {
+                "timestamp": 1747431903,
+                "amount": 110844206,
+                "expected": 0,
+                "tx": "e9484460144ee7d7316ea5361d7e52cf7fbd9445f1e8f8532a02e6ec7d5daf36"
+            },
+            {
+                "timestamp": 1747399503,
+                "amount": 110862890,
+                "expected": 0,
+                "tx": "9db7aac4b1c043089b3db930ab8de5a617935f481006dccd2640fb5e50e75e03"
+            },
+            {
+                "timestamp": 1747327503,
+                "amount": 110903225,
+                "expected": 0,
+                "tx": "3836abf86cd30acfe6983093f7bb16c14496e47be8a062cbd39633efc74943b0"
+            },
+            {
+                "timestamp": 1747323900,
+                "amount": 221811115,
+                "expected": 0,
+                "tx": "7ca33d3b3a7e191a0c67cc77c3ccfb23417cd039f19855368f84cb3d121fb595"
+            }
+        ],
+        "payoutThreshold": 0.2,
+        "immatureBalance": 0,
+        "pendingBalance": 0,
+        "pendingBalanceToken": 0,
+        "paidBalance": 125.70019,
+        "expectedBalance": 0,
+        "bonusBalance": 0,
+        "soloLuck": 204.86,
+        "roundShares": 123,
+        "yourShareRate": 18.36,
+        "24hReward": 0,
+        "24hMevReward": 0,
+        "rewards": [
+            {
+                "timestamp": 1751460749,
+                "blockheight": 2517378,
+                "blockhash": "0x0",
+                "reward": 108578838,
+                "immature": false,
+                "uncle": false,
+                "currentLuck": 7989,
+                "mevreward": 0,
+                "btcPrice": 1.017e-05
+            },
+            {
+                "timestamp": 1751428720,
+                "blockheight": 2515236,
+                "blockhash": "0x0",
+                "reward": 108596594,
+                "immature": false,
+                "uncle": false,
+                "currentLuck": 2689,
+                "mevreward": 0,
+                "btcPrice": 1.01e-05
+            },
+            {
+                "timestamp": 1751410110,
+                "blockheight": 2513981,
+                "blockhash": "0x0",
+                "reward": 32582062,
+                "immature": false,
+                "uncle": true,
+                "currentLuck": 69,
+                "mevreward": 0,
+                "btcPrice": 1.018e-05
+            },
+            {
+                "timestamp": 1751409285,
+                "blockheight": 2513911,
+                "blockhash": "0x0",
+                "reward": 108607437,
+                "immature": false,
+                "uncle": false,
+                "currentLuck": 3364,
+                "mevreward": 0,
+                "btcPrice": 1.018e-05
+            },
+            {
+                "timestamp": 1751396212,
+                "blockheight": 2513023,
+                "blockhash": "0x0",
+                "reward": 108614702,
+                "immature": false,
+                "uncle": false,
+                "currentLuck": 11515,
+                "mevreward": 0,
+                "btcPrice": 1.039e-05
+            },
+            {
+                "timestamp": 1751319085,
+                "blockheight": 2507862,
+                "blockhash": "0x0",
+                "reward": 108657559,
+                "immature": false,
+                "uncle": false,
+                "currentLuck": 2401,
+                "mevreward": 0,
+                "btcPrice": 1.097e-05
+            },
+            {
+                "timestamp": 1751306039,
+                "blockheight": 2506987,
+                "blockhash": "0x0",
+                "reward": 108664818,
+                "immature": false,
+                "uncle": false,
+                "currentLuck": 2744,
+                "mevreward": 0,
+                "btcPrice": 1.108e-05
+            },
+            {
+                "timestamp": 1751293577,
+                "blockheight": 2506156,
+                "blockhash": "0x0",
+                "reward": 108671721,
+                "immature": false,
+                "uncle": false,
+                "currentLuck": 1712,
+                "mevreward": 0,
+                "btcPrice": 1.116e-05
+            },
+            {
+                "timestamp": 1751284327,
+                "blockheight": 2505545,
+                "blockhash": "0x0",
+                "reward": 108676819,
+                "immature": false,
+                "uncle": false,
+                "currentLuck": 2850,
+                "mevreward": 0,
+                "btcPrice": 1.11e-05
+            },
+            {
+                "timestamp": 1751255914,
+                "blockheight": 2503608,
+                "blockhash": "0x0",
+                "reward": 108692779,
+                "immature": false,
+                "uncle": false,
+                "currentLuck": 2988,
+                "mevreward": 0,
+                "btcPrice": 1.104e-05
+            },
+            {
+                "timestamp": 1751240015,
+                "blockheight": 2502528,
+                "blockhash": "0x0",
+                "reward": 108701666,
+                "immature": false,
+                "uncle": false,
+                "currentLuck": 37300,
+                "mevreward": 0,
+                "btcPrice": 1.107e-05
+            },
+            {
+                "timestamp": 1751025097,
+                "blockheight": 2488062,
+                "blockhash": "0x0",
+                "reward": 108821548,
+                "immature": false,
+                "uncle": false,
+                "currentLuck": 5870,
+                "mevreward": 0,
+                "btcPrice": 1.054e-05
+            },
+            {
+                "timestamp": 1750997314,
+                "blockheight": 2486216,
+                "blockhash": "0x0",
+                "reward": 108836899,
+                "immature": false,
+                "uncle": false,
+                "currentLuck": 8197,
+                "mevreward": 0,
+                "btcPrice": 1.06e-05
+            },
+            {
+                "timestamp": 1750941134,
+                "blockheight": 2482435,
+                "blockhash": "0x0",
+                "reward": 108868222,
+                "immature": false,
+                "uncle": false,
+                "currentLuck": 6037,
+                "mevreward": 0,
+                "btcPrice": 1.039e-05
+            },
+            {
+                "timestamp": 1750896727,
+                "blockheight": 2479480,
+                "blockhash": "0x0",
+                "reward": 108892836,
+                "immature": false,
+                "uncle": false,
+                "currentLuck": 1268,
+                "mevreward": 0,
+                "btcPrice": 1.013e-05
+            },
+            {
+                "timestamp": 1750886607,
+                "blockheight": 2478794,
+                "blockhash": "0x0",
+                "reward": 32669560,
+                "immature": false,
+                "uncle": true,
+                "currentLuck": 1864,
+                "mevreward": 0,
+                "btcPrice": 1.013e-05
+            },
+            {
+                "timestamp": 1750880040,
+                "blockheight": 2478356,
+                "blockhash": "0x0",
+                "reward": 108902151,
+                "immature": false,
+                "uncle": false,
+                "currentLuck": 9542,
+                "mevreward": 0,
+                "btcPrice": 1.001e-05
+            },
+            {
+                "timestamp": 1750820387,
+                "blockheight": 2474371,
+                "blockhash": "0x0",
+                "reward": 108935351,
+                "immature": false,
+                "uncle": false,
+                "currentLuck": 720,
+                "mevreward": 0,
+                "btcPrice": 1.052e-05
+            },
+            {
+                "timestamp": 1750813788,
+                "blockheight": 2473929,
+                "blockhash": "0x0",
+                "reward": 108939049,
+                "immature": false,
+                "uncle": false,
+                "currentLuck": 874,
+                "mevreward": 0,
+                "btcPrice": 1.052e-05
+            },
+            {
+                "timestamp": 1750809616,
+                "blockheight": 2473638,
+                "blockhash": "0x0",
+                "reward": 108941419,
+                "immature": false,
+                "uncle": false,
+                "currentLuck": 3355,
+                "mevreward": 0,
+                "btcPrice": 1.057e-05
+            },
+            {
+                "timestamp": 1750790130,
+                "blockheight": 2472339,
+                "blockhash": "0x0",
+                "reward": 108952216,
+                "immature": false,
+                "uncle": false,
+                "currentLuck": 595,
+                "mevreward": 0,
+                "btcPrice": 1.067e-05
+            },
+            {
+                "timestamp": 1750783408,
+                "blockheight": 2471885,
+                "blockhash": "0x0",
+                "reward": 108955996,
+                "immature": false,
+                "uncle": false,
+                "currentLuck": 5941,
+                "mevreward": 0,
+                "btcPrice": 1.069e-05
+            },
+            {
+                "timestamp": 1750736989,
+                "blockheight": 2468800,
+                "blockhash": "0x0",
+                "reward": 108981819,
+                "immature": false,
+                "uncle": false,
+                "currentLuck": 7218,
+                "mevreward": 0,
+                "btcPrice": 1.076e-05
+            },
+            {
+                "timestamp": 1750677452,
+                "blockheight": 2464804,
+                "blockhash": "0x0",
+                "reward": 32704505,
+                "immature": false,
+                "uncle": true,
+                "currentLuck": 1985,
+                "mevreward": 0,
+                "btcPrice": 1.043e-05
+            },
+            {
+                "timestamp": 1750663514,
+                "blockheight": 2463870,
+                "blockhash": "0x0",
+                "reward": 109022787,
+                "immature": false,
+                "uncle": false,
+                "currentLuck": 10125,
+                "mevreward": 0,
+                "btcPrice": 1.053e-05
+            },
+            {
+                "timestamp": 1750571868,
+                "blockheight": 2457718,
+                "blockhash": "0x0",
+                "reward": 109073992,
+                "immature": false,
+                "uncle": false,
+                "currentLuck": 4010,
+                "mevreward": 0,
+                "btcPrice": 1.072e-05
+            },
+            {
+                "timestamp": 1750538025,
+                "blockheight": 2455425,
+                "blockhash": "0x0",
+                "reward": 109093031,
+                "immature": false,
+                "uncle": false,
+                "currentLuck": 29131,
+                "mevreward": 0,
+                "btcPrice": 1.085e-05
+            },
+            {
+                "timestamp": 1750380359,
+                "blockheight": 2444805,
+                "blockhash": "0x0",
+                "reward": 109181185,
+                "immature": false,
+                "uncle": false,
+                "currentLuck": 375,
+                "mevreward": 0,
+                "btcPrice": 1.16e-05
+            },
+            {
+                "timestamp": 1750375580,
+                "blockheight": 2444479,
+                "blockhash": "0x0",
+                "reward": 109183909,
+                "immature": false,
+                "uncle": false,
+                "currentLuck": 7010,
+                "mevreward": 0,
+                "btcPrice": 1.161e-05
+            }
+        ],
+        "rewardsChart": {
+            "1749081600000": 109892623,
+            "1749168000000": 329484159,
+            "1749254400000": 658763438,
+            "1749427200000": 219357007,
+            "1749513600000": 109663323,
+            "1749600000000": 109584729,
+            "1749772800000": 109481513,
+            "1749945600000": 765688772,
+            "1750032000000": 437380861,
+            "1750118400000": 218592429,
+            "1750291200000": 218392745,
+            "1750377600000": 109181185,
+            "1750464000000": 109093031,
+            "1750550400000": 109073992,
+            "1750636800000": 141727292,
+            "1750723200000": 326890031,
+            "1750809600000": 468387530,
+            "1750896000000": 217761058,
+            "1750982400000": 217658447,
+            "1751155200000": 108701666,
+            "1751241600000": 543363696,
+            "1751328000000": 249804201,
+            "1751414400000": 217175432
+        },
+        "sumrewards": [
+            {
+                "reward": 0,
+                "mevreward": 0,
+                "offset": 0,
+                "name": "reward.last_60_minutes",
+                "invervalfrom": 1751574874,
+                "invervalto": 1751578474
+            },
+            {
+                "reward": 0,
+                "mevreward": 0,
+                "offset": 0,
+                "name": "reward.last_12_hours",
+                "invervalfrom": 1751535274,
+                "invervalto": 1751578474
+            },
+            {
+                "reward": 0,
+                "mevreward": 0,
+                "offset": 0,
+                "name": "reward.last_24_hours",
+                "invervalfrom": 1751492074,
+                "invervalto": 1751578474
+            },
+            {
+                "reward": 0,
+                "mevreward": 0,
+                "offset": 0,
+                "name": "reward.today",
+                "invervalfrom": 1751500800,
+                "invervalto": 1751578474
+            },
+            {
+                "reward": 217175432,
+                "mevreward": 0,
+                "offset": 0,
+                "name": "reward.yesterday",
+                "invervalfrom": 1751414400,
+                "invervalto": 1751500800
+            },
+            {
+                "reward": 1336703442,
+                "mevreward": 0,
+                "offset": 0,
+                "name": "reward.last_7_days",
+                "invervalfrom": 1750973674,
+                "invervalto": 1751578474
+            },
+            {
+                "reward": 6105099160,
+                "mevreward": 0,
+                "offset": 0,
+                "name": "reward.last_30_days",
+                "invervalfrom": 1748986474,
+                "invervalto": 1751578474
+            }
+        ],
+        "rewardIfFoundNow": 0.1888,
+        "blocks24hReward": 0,
+        "blocksRewards": [
+            {
+                "timestamp": 1751460749,
+                "blockheight": 2517378,
+                "blockamount": 1,
+                "variance": 1.248335036
+            },
+            {
+                "timestamp": 1751428720,
+                "blockheight": 2515236,
+                "blockamount": 1,
+                "variance": 0.420132467
+            },
+            {
+                "timestamp": 1751410110,
+                "blockheight": 2513980,
+                "blockamount": 1,
+                "variance": 0.010807311
+            },
+            {
+                "timestamp": 1751409285,
+                "blockheight": 2513911,
+                "blockamount": 1,
+                "variance": 0.52566042
+            },
+            {
+                "timestamp": 1751396212,
+                "blockheight": 2513023,
+                "blockamount": 1,
+                "variance": 1.799224424
+            },
+            {
+                "timestamp": 1751319085,
+                "blockheight": 2507861,
+                "blockamount": 1,
+                "variance": 0.375209436
+            },
+            {
+                "timestamp": 1751306039,
+                "blockheight": 2506987,
+                "blockamount": 1,
+                "variance": 0.428777429
+            },
+            {
+                "timestamp": 1751293577,
+                "blockheight": 2506156,
+                "blockamount": 1,
+                "variance": 0.267507797
+            },
+            {
+                "timestamp": 1751284327,
+                "blockheight": 2505545,
+                "blockamount": 1,
+                "variance": 0.4453132
+            },
+            {
+                "timestamp": 1751255914,
+                "blockheight": 2503607,
+                "blockamount": 1,
+                "variance": 0.466843567
+            },
+            {
+                "timestamp": 1751240015,
+                "blockheight": 2502528,
+                "blockamount": 1,
+                "variance": 5.828147873
+            },
+            {
+                "timestamp": 1751025097,
+                "blockheight": 2488062,
+                "blockamount": 1,
+                "variance": 0.917147465
+            },
+            {
+                "timestamp": 1750997314,
+                "blockheight": 2486216,
+                "blockamount": 1,
+                "variance": 1.280786499
+            },
+            {
+                "timestamp": 1750941134,
+                "blockheight": 2482435,
+                "blockamount": 1,
+                "variance": 0.94322854
+            },
+            {
+                "timestamp": 1750896727,
+                "blockheight": 2479480,
+                "blockamount": 1,
+                "variance": 0.198068569
+            },
+            {
+                "timestamp": 1750886607,
+                "blockheight": 2478793,
+                "blockamount": 1,
+                "variance": 0.291311774
+            },
+            {
+                "timestamp": 1750880040,
+                "blockheight": 2478356,
+                "blockamount": 1,
+                "variance": 1.490884311
+            },
+            {
+                "timestamp": 1750820387,
+                "blockheight": 2474371,
+                "blockamount": 1,
+                "variance": 0.112421582
+            },
+            {
+                "timestamp": 1750813788,
+                "blockheight": 2473929,
+                "blockamount": 1,
+                "variance": 0.13663472
+            },
+            {
+                "timestamp": 1750809616,
+                "blockheight": 2473638,
+                "blockamount": 1,
+                "variance": 0.524184031
+            },
+            {
+                "timestamp": 1750790130,
+                "blockheight": 2472339,
+                "blockamount": 1,
+                "variance": 0.092942118
+            },
+            {
+                "timestamp": 1750783408,
+                "blockheight": 2471884,
+                "blockamount": 1,
+                "variance": 0.92821315
+            },
+            {
+                "timestamp": 1750736989,
+                "blockheight": 2468800,
+                "blockamount": 1,
+                "variance": 1.127867069
+            },
+            {
+                "timestamp": 1750677452,
+                "blockheight": 2464803,
+                "blockamount": 1,
+                "variance": 0.310093618
+            },
+            {
+                "timestamp": 1750663514,
+                "blockheight": 2463870,
+                "blockamount": 1,
+                "variance": 1.582065299
+            },
+            {
+                "timestamp": 1750571868,
+                "blockheight": 2457718,
+                "blockamount": 1,
+                "variance": 0.626580224
+            },
+            {
+                "timestamp": 1750538025,
+                "blockheight": 2455425,
+                "blockamount": 1,
+                "variance": 4.551752923
+            },
+            {
+                "timestamp": 1750380359,
+                "blockheight": 2444805,
+                "blockamount": 1,
+                "variance": 0.058602434
+            },
+            {
+                "timestamp": 1750375580,
+                "blockheight": 2444479,
+                "blockamount": 1,
+                "variance": 1.095284355
+            },
+            {
+                "timestamp": 1750331099,
+                "blockheight": 2441481,
+                "blockamount": 1,
+                "variance": 2.651014446
+            },
+            {
+                "timestamp": 1750191190,
+                "blockheight": 2432085,
+                "blockamount": 1,
+                "variance": 1.00885821
+            },
+            {
+                "timestamp": 1750158718,
+                "blockheight": 2429913,
+                "blockamount": 1,
+                "variance": 0.688613519
+            },
+            {
+                "timestamp": 1750111258,
+                "blockheight": 2426735,
+                "blockamount": 1,
+                "variance": 0.186719337
+            },
+            {
+                "timestamp": 1750100603,
+                "blockheight": 2426006,
+                "blockamount": 1,
+                "variance": 0.118144087
+            },
+            {
+                "timestamp": 1750094530,
+                "blockheight": 2425594,
+                "blockamount": 1,
+                "variance": 0.720623927
+            },
+            {
+                "timestamp": 1750043954,
+                "blockheight": 2422194,
+                "blockamount": 1,
+                "variance": 0.176717069
+            },
+            {
+                "timestamp": 1750030836,
+                "blockheight": 2421289,
+                "blockamount": 1,
+                "variance": 0.087541176
+            },
+            {
+                "timestamp": 1750026198,
+                "blockheight": 2420985,
+                "blockamount": 1,
+                "variance": 0.024648146
+            },
+            {
+                "timestamp": 1750024560,
+                "blockheight": 2420870,
+                "blockamount": 1,
+                "variance": 0.093763107
+            },
+            {
+                "timestamp": 1750021874,
+                "blockheight": 2420692,
+                "blockamount": 1,
+                "variance": 0.055301842
+            },
+            {
+                "timestamp": 1750018955,
+                "blockheight": 2420492,
+                "blockamount": 1,
+                "variance": 0.006142148
+            },
+            {
+                "timestamp": 1750018836,
+                "blockheight": 2420485,
+                "blockamount": 1,
+                "variance": 0.541222771
+            },
+            {
+                "timestamp": 1749987331,
+                "blockheight": 2418364,
+                "blockamount": 1,
+                "variance": 3.017682616
+            },
+            {
+                "timestamp": 1749844726,
+                "blockheight": 2408806,
+                "blockamount": 1,
+                "variance": 3.243965999
+            },
+            {
+                "timestamp": 1749661113,
+                "blockheight": 2396430,
+                "blockamount": 1,
+                "variance": 3.059195499
+            },
+            {
+                "timestamp": 1749521390,
+                "blockheight": 2387020,
+                "blockamount": 1,
+                "variance": 0.312165037
+            },
+            {
+                "timestamp": 1749502719,
+                "blockheight": 2385772,
+                "blockamount": 1,
+                "variance": 0.351823869
+            },
+            {
+                "timestamp": 1749486037,
+                "blockheight": 2384651,
+                "blockamount": 1,
+                "variance": 6.119545916
+            },
+            {
+                "timestamp": 1749320217,
+                "blockheight": 2373503,
+                "blockamount": 1,
+                "variance": 0.170917896
+            },
+            {
+                "timestamp": 1749313732,
+                "blockheight": 2373065,
+                "blockamount": 1,
+                "variance": 0.319279796
+            },
+            {
+                "timestamp": 1749301060,
+                "blockheight": 2372226,
+                "blockamount": 1,
+                "variance": 0.491964386
+            },
+            {
+                "timestamp": 1749280143,
+                "blockheight": 2370820,
+                "blockamount": 1,
+                "variance": 0.567000833
+            },
+            {
+                "timestamp": 1749263960,
+                "blockheight": 2369746,
+                "blockamount": 1,
+                "variance": 0.182153779
+            },
+            {
+                "timestamp": 1749255059,
+                "blockheight": 2369147,
+                "blockamount": 1,
+                "variance": 0.342545424
+            },
+            {
+                "timestamp": 1749241364,
+                "blockheight": 2368214,
+                "blockamount": 1,
+                "variance": 0.363569589
+            },
+            {
+                "timestamp": 1749228033,
+                "blockheight": 2367342,
+                "blockamount": 1,
+                "variance": 0.405954917
+            },
+            {
+                "timestamp": 1749215646,
+                "blockheight": 2366504,
+                "blockamount": 1,
+                "variance": 2.251686245
+            },
+            {
+                "timestamp": 1749113534,
+                "blockheight": 2359654,
+                "blockamount": 1,
+                "variance": 4.843988396
+            }
+        ],
+        "blocksSumRewards": [
+            {
+                "reward": 0,
+                "variance": 0,
+                "offset": 0,
+                "name": "reward.last_60_minutes",
+                "invervalfrom": 1751574874,
+                "invervalto": 1751578474
+            },
+            {
+                "reward": 0,
+                "variance": 0,
+                "offset": 0,
+                "name": "reward.last_12_hours",
+                "invervalfrom": 1751535274,
+                "invervalto": 1751578474
+            },
+            {
+                "reward": 0,
+                "variance": 0,
+                "offset": 0,
+                "name": "reward.last_24_hours",
+                "invervalfrom": 1751492074,
+                "invervalto": 1751578474
+            },
+            {
+                "reward": 0,
+                "variance": 0,
+                "offset": 0,
+                "name": "reward.today",
+                "invervalfrom": 1751500800,
+                "invervalto": 1751578474
+            },
+            {
+                "reward": 2,
+                "variance": 1.668467503,
+                "offset": 0,
+                "name": "reward.yesterday",
+                "invervalfrom": 1751414400,
+                "invervalto": 1751500800
+            },
+            {
+                "reward": 13,
+                "variance": 14.013892923999999,
+                "offset": 0,
+                "name": "reward.last_7_days",
+                "invervalfrom": 1750973674,
+                "invervalto": 1751578474
+            },
+            {
+                "reward": 58,
+                "variance": 60.486777623,
+                "offset": 0,
+                "name": "reward.last_30_days",
+                "invervalfrom": 1748986474,
+                "invervalto": 1751578474
+            }
+        ],
+        "blockAvgReward": 1.0389,
+        "minerCharts": [
+            {
+                "x": 1751319600,
+                "timeFormat": "2025-06-30 23_40",
+                "minerHash": 438325,
+                "minerLargeHash": 457141,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751320200,
+                "timeFormat": "2025-06-30 23_50",
+                "minerHash": 427787,
+                "minerLargeHash": 450966,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751320800,
+                "timeFormat": "2025-07-01 00_00",
+                "minerHash": 435580,
+                "minerLargeHash": 446552,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751321400,
+                "timeFormat": "2025-07-01 00_10",
+                "minerHash": 442257,
+                "minerLargeHash": 443342,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751322000,
+                "timeFormat": "2025-07-01 00_20",
+                "minerHash": 446140,
+                "minerLargeHash": 442695,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751322600,
+                "timeFormat": "2025-07-01 00_30",
+                "minerHash": 450560,
+                "minerLargeHash": 441921,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751323200,
+                "timeFormat": "2025-07-01 00_40",
+                "minerHash": 433320,
+                "minerLargeHash": 440528,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751323800,
+                "timeFormat": "2025-07-01 00_50",
+                "minerHash": 451103,
+                "minerLargeHash": 441356,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751324400,
+                "timeFormat": "2025-07-01 01_00",
+                "minerHash": 477234,
+                "minerLargeHash": 444284,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751325000,
+                "timeFormat": "2025-07-01 01_10",
+                "minerHash": 488358,
+                "minerLargeHash": 450423,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751325600,
+                "timeFormat": "2025-07-01 01_20",
+                "minerHash": 514455,
+                "minerLargeHash": 457022,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751326200,
+                "timeFormat": "2025-07-01 01_30",
+                "minerHash": 518887,
+                "minerLargeHash": 461647,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751326800,
+                "timeFormat": "2025-07-01 01_40",
+                "minerHash": 507210,
+                "minerLargeHash": 462692,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751327400,
+                "timeFormat": "2025-07-01 01_50",
+                "minerHash": 433870,
+                "minerLargeHash": 459479,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751328000,
+                "timeFormat": "2025-07-01 02_00",
+                "minerHash": 410527,
+                "minerLargeHash": 457471,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751328600,
+                "timeFormat": "2025-07-01 02_10",
+                "minerHash": 428848,
+                "minerLargeHash": 456388,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751329200,
+                "timeFormat": "2025-07-01 02_20",
+                "minerHash": 500507,
+                "minerLargeHash": 458979,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751329800,
+                "timeFormat": "2025-07-01 02_30",
+                "minerHash": 496631,
+                "minerLargeHash": 461200,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751330400,
+                "timeFormat": "2025-07-01 02_40",
+                "minerHash": 499434,
+                "minerLargeHash": 464595,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751331000,
+                "timeFormat": "2025-07-01 02_50",
+                "minerHash": 442796,
+                "minerLargeHash": 465429,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751331600,
+                "timeFormat": "2025-07-01 03_00",
+                "minerHash": 457249,
+                "minerLargeHash": 466633,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751332200,
+                "timeFormat": "2025-07-01 03_10",
+                "minerHash": 491677,
+                "minerLargeHash": 469378,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751332800,
+                "timeFormat": "2025-07-01 03_20",
+                "minerHash": 499440,
+                "minerLargeHash": 472339,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751333400,
+                "timeFormat": "2025-07-01 03_30",
+                "minerHash": 442228,
+                "minerLargeHash": 471876,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751334000,
+                "timeFormat": "2025-07-01 03_40",
+                "minerHash": 412844,
+                "minerLargeHash": 470739,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751334600,
+                "timeFormat": "2025-07-01 03_50",
+                "minerHash": 405102,
+                "minerLargeHash": 468183,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751335200,
+                "timeFormat": "2025-07-01 04_00",
+                "minerHash": 460078,
+                "minerLargeHash": 467230,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751335800,
+                "timeFormat": "2025-07-01 04_10",
+                "minerHash": 473353,
+                "minerLargeHash": 466396,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751336400,
+                "timeFormat": "2025-07-01 04_20",
+                "minerHash": 512765,
+                "minerLargeHash": 466303,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751337000,
+                "timeFormat": "2025-07-01 04_30",
+                "minerHash": 503329,
+                "minerLargeHash": 465438,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751337600,
+                "timeFormat": "2025-07-01 04_40",
+                "minerHash": 506665,
+                "minerLargeHash": 465408,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751338200,
+                "timeFormat": "2025-07-01 04_50",
+                "minerHash": 487216,
+                "minerLargeHash": 468372,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751338800,
+                "timeFormat": "2025-07-01 05_00",
+                "minerHash": 491652,
+                "minerLargeHash": 472879,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751339400,
+                "timeFormat": "2025-07-01 05_10",
+                "minerHash": 455539,
+                "minerLargeHash": 474361,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751340000,
+                "timeFormat": "2025-07-01 05_20",
+                "minerHash": 423890,
+                "minerLargeHash": 470105,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751340600,
+                "timeFormat": "2025-07-01 05_30",
+                "minerHash": 384501,
+                "minerLargeHash": 463875,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751341200,
+                "timeFormat": "2025-07-01 05_40",
+                "minerHash": 352327,
+                "minerLargeHash": 455703,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751341800,
+                "timeFormat": "2025-07-01 05_50",
+                "minerHash": 355137,
+                "minerLargeHash": 450833,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751342400,
+                "timeFormat": "2025-07-01 06_00",
+                "minerHash": 340689,
+                "minerLargeHash": 444357,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751343000,
+                "timeFormat": "2025-07-01 06_10",
+                "minerHash": 339028,
+                "minerLargeHash": 435877,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751343600,
+                "timeFormat": "2025-07-01 06_20",
+                "minerHash": 366821,
+                "minerLargeHash": 428509,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751344200,
+                "timeFormat": "2025-07-01 06_30",
+                "minerHash": 385715,
+                "minerLargeHash": 425370,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751344800,
+                "timeFormat": "2025-07-01 06_40",
+                "minerHash": 416823,
+                "minerLargeHash": 425591,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751345400,
+                "timeFormat": "2025-07-01 06_50",
+                "minerHash": 401807,
+                "minerLargeHash": 425407,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751346000,
+                "timeFormat": "2025-07-01 07_00",
+                "minerHash": 396247,
+                "minerLargeHash": 421861,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751346600,
+                "timeFormat": "2025-07-01 07_10",
+                "minerHash": 391806,
+                "minerLargeHash": 417331,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751347200,
+                "timeFormat": "2025-07-01 07_20",
+                "minerHash": 402921,
+                "minerLargeHash": 411228,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751347800,
+                "timeFormat": "2025-07-01 07_30",
+                "minerHash": 410150,
+                "minerLargeHash": 406052,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751348400,
+                "timeFormat": "2025-07-01 07_40",
+                "minerHash": 389027,
+                "minerLargeHash": 399516,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751349000,
+                "timeFormat": "2025-07-01 07_50",
+                "minerHash": 377912,
+                "minerLargeHash": 393444,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751349600,
+                "timeFormat": "2025-07-01 08_00",
+                "minerHash": 369015,
+                "minerLargeHash": 386631,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751350200,
+                "timeFormat": "2025-07-01 08_10",
+                "minerHash": 425694,
+                "minerLargeHash": 384973,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751350800,
+                "timeFormat": "2025-07-01 08_20",
+                "minerHash": 437365,
+                "minerLargeHash": 385721,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751351400,
+                "timeFormat": "2025-07-01 08_30",
+                "minerHash": 459602,
+                "minerLargeHash": 389894,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751352000,
+                "timeFormat": "2025-07-01 08_40",
+                "minerHash": 397932,
+                "minerLargeHash": 392427,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751352600,
+                "timeFormat": "2025-07-01 08_50",
+                "minerHash": 391279,
+                "minerLargeHash": 394435,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751353200,
+                "timeFormat": "2025-07-01 09_00",
+                "minerHash": 389606,
+                "minerLargeHash": 397153,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751353800,
+                "timeFormat": "2025-07-01 09_10",
+                "minerHash": 427953,
+                "minerLargeHash": 402093,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751354400,
+                "timeFormat": "2025-07-01 09_20",
+                "minerHash": 422390,
+                "minerLargeHash": 405180,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751355000,
+                "timeFormat": "2025-07-01 09_30",
+                "minerHash": 418497,
+                "minerLargeHash": 407001,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751355600,
+                "timeFormat": "2025-07-01 09_40",
+                "minerHash": 415148,
+                "minerLargeHash": 406908,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751356200,
+                "timeFormat": "2025-07-01 09_50",
+                "minerHash": 408478,
+                "minerLargeHash": 407279,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751356800,
+                "timeFormat": "2025-07-01 10_00",
+                "minerHash": 440153,
+                "minerLargeHash": 409718,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751357400,
+                "timeFormat": "2025-07-01 10_10",
+                "minerHash": 434602,
+                "minerLargeHash": 412096,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751358000,
+                "timeFormat": "2025-07-01 10_20",
+                "minerHash": 431811,
+                "minerLargeHash": 413701,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751358600,
+                "timeFormat": "2025-07-01 10_30",
+                "minerHash": 399020,
+                "minerLargeHash": 413082,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751359200,
+                "timeFormat": "2025-07-01 10_40",
+                "minerHash": 406786,
+                "minerLargeHash": 414069,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751359800,
+                "timeFormat": "2025-07-01 10_50",
+                "minerHash": 381790,
+                "minerLargeHash": 414285,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751360400,
+                "timeFormat": "2025-07-01 11_00",
+                "minerHash": 367896,
+                "minerLargeHash": 414222,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751361000,
+                "timeFormat": "2025-07-01 11_10",
+                "minerHash": 362898,
+                "minerLargeHash": 410734,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751361600,
+                "timeFormat": "2025-07-01 11_20",
+                "minerHash": 386784,
+                "minerLargeHash": 407924,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751362200,
+                "timeFormat": "2025-07-01 11_30",
+                "minerHash": 375120,
+                "minerLargeHash": 403230,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751362800,
+                "timeFormat": "2025-07-01 11_40",
+                "minerHash": 342908,
+                "minerLargeHash": 400173,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751363400,
+                "timeFormat": "2025-07-01 11_50",
+                "minerHash": 337918,
+                "minerLargeHash": 397209,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751364000,
+                "timeFormat": "2025-07-01 12_00",
+                "minerHash": 392928,
+                "minerLargeHash": 397393,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751364600,
+                "timeFormat": "2025-07-01 12_10",
+                "minerHash": 434588,
+                "minerLargeHash": 397762,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751365200,
+                "timeFormat": "2025-07-01 12_20",
+                "minerHash": 412361,
+                "minerLargeHash": 397205,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751365800,
+                "timeFormat": "2025-07-01 12_30",
+                "minerHash": 382915,
+                "minerLargeHash": 395228,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751366400,
+                "timeFormat": "2025-07-01 12_40",
+                "minerHash": 366260,
+                "minerLargeHash": 392512,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751367000,
+                "timeFormat": "2025-07-01 12_50",
+                "minerHash": 381822,
+                "minerLargeHash": 391031,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751367600,
+                "timeFormat": "2025-07-01 13_00",
+                "minerHash": 391258,
+                "minerLargeHash": 388315,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751368200,
+                "timeFormat": "2025-07-01 13_10",
+                "minerHash": 419590,
+                "minerLargeHash": 387481,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751368800,
+                "timeFormat": "2025-07-01 13_20",
+                "minerHash": 461256,
+                "minerLargeHash": 389117,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751369400,
+                "timeFormat": "2025-07-01 13_30",
+                "minerHash": 459041,
+                "minerLargeHash": 392451,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751370000,
+                "timeFormat": "2025-07-01 13_40",
+                "minerHash": 412358,
+                "minerLargeHash": 392761,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751370600,
+                "timeFormat": "2025-07-01 13_50",
+                "minerHash": 375687,
+                "minerLargeHash": 392422,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751371200,
+                "timeFormat": "2025-07-01 14_00",
+                "minerHash": 347349,
+                "minerLargeHash": 391280,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751371800,
+                "timeFormat": "2025-07-01 14_10",
+                "minerHash": 372916,
+                "minerLargeHash": 391837,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751372400,
+                "timeFormat": "2025-07-01 14_20",
+                "minerHash": 351250,
+                "minerLargeHash": 389862,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751373000,
+                "timeFormat": "2025-07-01 14_30",
+                "minerHash": 384597,
+                "minerLargeHash": 390389,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751373600,
+                "timeFormat": "2025-07-01 14_40",
+                "minerHash": 375707,
+                "minerLargeHash": 392211,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751374200,
+                "timeFormat": "2025-07-01 14_50",
+                "minerHash": 381264,
+                "minerLargeHash": 394619,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751374800,
+                "timeFormat": "2025-07-01 15_00",
+                "minerHash": 383475,
+                "minerLargeHash": 394094,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751375400,
+                "timeFormat": "2025-07-01 15_10",
+                "minerHash": 362356,
+                "minerLargeHash": 390081,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751376000,
+                "timeFormat": "2025-07-01 15_20",
+                "minerHash": 420123,
+                "minerLargeHash": 390512,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751376600,
+                "timeFormat": "2025-07-01 15_30",
+                "minerHash": 409006,
+                "minerLargeHash": 391962,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751377200,
+                "timeFormat": "2025-07-01 15_40",
+                "minerHash": 422909,
+                "minerLargeHash": 395109,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751377800,
+                "timeFormat": "2025-07-01 15_50",
+                "minerHash": 400144,
+                "minerLargeHash": 396127,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751378400,
+                "timeFormat": "2025-07-01 16_00",
+                "minerHash": 389047,
+                "minerLargeHash": 396004,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751379000,
+                "timeFormat": "2025-07-01 16_10",
+                "minerHash": 389600,
+                "minerLargeHash": 394338,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751379600,
+                "timeFormat": "2025-07-01 16_20",
+                "minerHash": 381812,
+                "minerLargeHash": 389924,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751380200,
+                "timeFormat": "2025-07-01 16_30",
+                "minerHash": 408467,
+                "minerLargeHash": 387115,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751380800,
+                "timeFormat": "2025-07-01 16_40",
+                "minerHash": 419585,
+                "minerLargeHash": 387516,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751381400,
+                "timeFormat": "2025-07-01 16_50",
+                "minerHash": 407934,
+                "minerLargeHash": 389308,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751382000,
+                "timeFormat": "2025-07-01 17_00",
+                "minerHash": 375708,
+                "minerLargeHash": 390883,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751382600,
+                "timeFormat": "2025-07-01 17_10",
+                "minerHash": 347350,
+                "minerLargeHash": 389463,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751383200,
+                "timeFormat": "2025-07-01 17_20",
+                "minerHash": 350130,
+                "minerLargeHash": 389401,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751383800,
+                "timeFormat": "2025-07-01 17_30",
+                "minerHash": 365137,
+                "minerLargeHash": 388320,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751384400,
+                "timeFormat": "2025-07-01 17_40",
+                "minerHash": 380146,
+                "minerLargeHash": 388566,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751385000,
+                "timeFormat": "2025-07-01 17_50",
+                "minerHash": 414579,
+                "minerLargeHash": 390417,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751385600,
+                "timeFormat": "2025-07-01 18_00",
+                "minerHash": 430131,
+                "minerLargeHash": 393009,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751386200,
+                "timeFormat": "2025-07-01 18_10",
+                "minerHash": 419578,
+                "minerLargeHash": 396188,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751386800,
+                "timeFormat": "2025-07-01 18_20",
+                "minerHash": 366810,
+                "minerLargeHash": 393226,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751387400,
+                "timeFormat": "2025-07-01 18_30",
+                "minerHash": 320705,
+                "minerLargeHash": 388321,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751388000,
+                "timeFormat": "2025-07-01 18_40",
+                "minerHash": 314037,
+                "minerLargeHash": 382272,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751388600,
+                "timeFormat": "2025-07-01 18_50",
+                "minerHash": 339027,
+                "minerLargeHash": 378877,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751389200,
+                "timeFormat": "2025-07-01 19_00",
+                "minerHash": 350128,
+                "minerLargeHash": 376715,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751389800,
+                "timeFormat": "2025-07-01 19_10",
+                "minerHash": 400117,
+                "minerLargeHash": 377299,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751390400,
+                "timeFormat": "2025-07-01 19_20",
+                "minerHash": 412342,
+                "minerLargeHash": 378995,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751391000,
+                "timeFormat": "2025-07-01 19_30",
+                "minerHash": 431794,
+                "minerLargeHash": 380291,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751391600,
+                "timeFormat": "2025-07-01 19_40",
+                "minerHash": 406813,
+                "minerLargeHash": 379581,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751392200,
+                "timeFormat": "2025-07-01 19_50",
+                "minerHash": 405151,
+                "minerLargeHash": 379427,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751392800,
+                "timeFormat": "2025-07-01 20_00",
+                "minerHash": 379039,
+                "minerLargeHash": 379612,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751393400,
+                "timeFormat": "2025-07-01 20_10",
+                "minerHash": 404598,
+                "minerLargeHash": 382792,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751394000,
+                "timeFormat": "2025-07-01 20_20",
+                "minerHash": 374040,
+                "minerLargeHash": 384121,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751394600,
+                "timeFormat": "2025-07-01 20_30",
+                "minerHash": 406264,
+                "minerLargeHash": 386405,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751395200,
+                "timeFormat": "2025-07-01 20_40",
+                "minerHash": 378478,
+                "minerLargeHash": 386313,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751395800,
+                "timeFormat": "2025-07-01 20_50",
+                "minerHash": 392926,
+                "minerLargeHash": 385110,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751396400,
+                "timeFormat": "2025-07-01 21_00",
+                "minerHash": 374034,
+                "minerLargeHash": 381993,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751397000,
+                "timeFormat": "2025-07-01 21_10",
+                "minerHash": 353477,
+                "minerLargeHash": 378321,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751397600,
+                "timeFormat": "2025-07-01 21_20",
+                "minerHash": 347933,
+                "minerLargeHash": 377272,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751398200,
+                "timeFormat": "2025-07-01 21_30",
+                "minerHash": 349059,
+                "minerLargeHash": 378848,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751398800,
+                "timeFormat": "2025-07-01 21_40",
+                "minerHash": 355184,
+                "minerLargeHash": 381134,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751399400,
+                "timeFormat": "2025-07-01 21_50",
+                "minerHash": 362946,
+                "minerLargeHash": 382462,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751400000,
+                "timeFormat": "2025-07-01 22_00",
+                "minerHash": 364604,
+                "minerLargeHash": 383267,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751400600,
+                "timeFormat": "2025-07-01 22_10",
+                "minerHash": 382376,
+                "minerLargeHash": 382281,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751401200,
+                "timeFormat": "2025-07-01 22_20",
+                "minerHash": 365708,
+                "minerLargeHash": 379690,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751401800,
+                "timeFormat": "2025-07-01 22_30",
+                "minerHash": 350706,
+                "minerLargeHash": 375185,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751402400,
+                "timeFormat": "2025-07-01 22_40",
+                "minerHash": 356250,
+                "minerLargeHash": 372376,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751403000,
+                "timeFormat": "2025-07-01 22_50",
+                "minerHash": 356813,
+                "minerLargeHash": 369691,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751403600,
+                "timeFormat": "2025-07-01 23_00",
+                "minerHash": 372921,
+                "minerLargeHash": 369351,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751404200,
+                "timeFormat": "2025-07-01 23_10",
+                "minerHash": 382367,
+                "minerLargeHash": 368116,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751404800,
+                "timeFormat": "2025-07-01 23_20",
+                "minerHash": 381804,
+                "minerLargeHash": 368547,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751405400,
+                "timeFormat": "2025-07-01 23_30",
+                "minerHash": 371810,
+                "minerLargeHash": 366633,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751406000,
+                "timeFormat": "2025-07-01 23_40",
+                "minerHash": 362380,
+                "minerLargeHash": 365739,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751406600,
+                "timeFormat": "2025-07-01 23_50",
+                "minerHash": 381274,
+                "minerLargeHash": 365091,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751407200,
+                "timeFormat": "2025-07-02 00_00",
+                "minerHash": 397385,
+                "minerLargeHash": 366389,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751407800,
+                "timeFormat": "2025-07-02 00_10",
+                "minerHash": 397926,
+                "minerLargeHash": 368858,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751408400,
+                "timeFormat": "2025-07-02 00_20",
+                "minerHash": 419588,
+                "minerLargeHash": 372839,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751409000,
+                "timeFormat": "2025-07-02 00_30",
+                "minerHash": 401803,
+                "minerLargeHash": 375769,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751409600,
+                "timeFormat": "2025-07-02 00_40",
+                "minerHash": 391250,
+                "minerLargeHash": 377773,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751410200,
+                "timeFormat": "2025-07-02 00_50",
+                "minerHash": 361254,
+                "minerLargeHash": 377679,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751410800,
+                "timeFormat": "2025-07-02 01_00",
+                "minerHash": 359592,
+                "minerLargeHash": 377400,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751411400,
+                "timeFormat": "2025-07-02 01_10",
+                "minerHash": 369038,
+                "minerLargeHash": 376659,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751412000,
+                "timeFormat": "2025-07-02 01_20",
+                "minerHash": 365144,
+                "minerLargeHash": 376628,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751412600,
+                "timeFormat": "2025-07-02 01_30",
+                "minerHash": 340142,
+                "minerLargeHash": 376041,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751413200,
+                "timeFormat": "2025-07-02 01_40",
+                "minerHash": 342930,
+                "minerLargeHash": 375301,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751413800,
+                "timeFormat": "2025-07-02 01_50",
+                "minerHash": 339600,
+                "minerLargeHash": 374345,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751414400,
+                "timeFormat": "2025-07-02 02_00",
+                "minerHash": 379597,
+                "minerLargeHash": 374716,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751415000,
+                "timeFormat": "2025-07-02 02_10",
+                "minerHash": 364022,
+                "minerLargeHash": 373697,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751415600,
+                "timeFormat": "2025-07-02 02_20",
+                "minerHash": 367356,
+                "minerLargeHash": 372894,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751416200,
+                "timeFormat": "2025-07-02 02_30",
+                "minerHash": 334030,
+                "minerLargeHash": 370795,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751416800,
+                "timeFormat": "2025-07-02 02_40",
+                "minerHash": 365714,
+                "minerLargeHash": 370980,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751417400,
+                "timeFormat": "2025-07-02 02_50",
+                "minerHash": 376830,
+                "minerLargeHash": 370733,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751418000,
+                "timeFormat": "2025-07-02 03_00",
+                "minerHash": 403498,
+                "minerLargeHash": 371073,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751418600,
+                "timeFormat": "2025-07-02 03_10",
+                "minerHash": 393488,
+                "minerLargeHash": 370826,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751419200,
+                "timeFormat": "2025-07-02 03_20",
+                "minerHash": 392370,
+                "minerLargeHash": 369314,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751419800,
+                "timeFormat": "2025-07-02 03_30",
+                "minerHash": 384578,
+                "minerLargeHash": 368357,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751420400,
+                "timeFormat": "2025-07-02 03_40",
+                "minerHash": 362920,
+                "minerLargeHash": 366783,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751421000,
+                "timeFormat": "2025-07-02 03_50",
+                "minerHash": 353476,
+                "minerLargeHash": 366351,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751421600,
+                "timeFormat": "2025-07-02 04_00",
+                "minerHash": 356268,
+                "minerLargeHash": 366167,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751422200,
+                "timeFormat": "2025-07-02 04_10",
+                "minerHash": 367372,
+                "minerLargeHash": 366074,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751422800,
+                "timeFormat": "2025-07-02 04_20",
+                "minerHash": 379032,
+                "minerLargeHash": 366846,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751423400,
+                "timeFormat": "2025-07-02 04_30",
+                "minerHash": 393466,
+                "minerLargeHash": 369808,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751424000,
+                "timeFormat": "2025-07-02 04_40",
+                "minerHash": 384561,
+                "minerLargeHash": 372121,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751424600,
+                "timeFormat": "2025-07-02 04_50",
+                "minerHash": 365679,
+                "minerLargeHash": 373570,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751425200,
+                "timeFormat": "2025-07-02 05_00",
+                "minerHash": 347903,
+                "minerLargeHash": 371809,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751425800,
+                "timeFormat": "2025-07-02 05_10",
+                "minerHash": 365136,
+                "minerLargeHash": 371871,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751426400,
+                "timeFormat": "2025-07-02 05_20",
+                "minerHash": 382899,
+                "minerLargeHash": 372734,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751427000,
+                "timeFormat": "2025-07-02 05_30",
+                "minerHash": 395668,
+                "minerLargeHash": 376159,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751427600,
+                "timeFormat": "2025-07-02 05_40",
+                "minerHash": 390661,
+                "minerLargeHash": 377545,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751428200,
+                "timeFormat": "2025-07-02 05_50",
+                "minerHash": 387340,
+                "minerLargeHash": 378129,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751428800,
+                "timeFormat": "2025-07-02 06_00",
+                "minerHash": 379573,
+                "minerLargeHash": 376799,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751429400,
+                "timeFormat": "2025-07-02 06_10",
+                "minerHash": 357935,
+                "minerLargeHash": 374824,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751430000,
+                "timeFormat": "2025-07-02 06_20",
+                "minerHash": 344050,
+                "minerLargeHash": 372140,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751430600,
+                "timeFormat": "2025-07-02 06_30",
+                "minerHash": 335155,
+                "minerLargeHash": 369394,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751431200,
+                "timeFormat": "2025-07-02 06_40",
+                "minerHash": 345690,
+                "minerLargeHash": 368437,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751431800,
+                "timeFormat": "2025-07-02 06_50",
+                "minerHash": 360137,
+                "minerLargeHash": 368807,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751432400,
+                "timeFormat": "2025-07-02 07_00",
+                "minerHash": 357916,
+                "minerLargeHash": 368899,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751433000,
+                "timeFormat": "2025-07-02 07_10",
+                "minerHash": 344023,
+                "minerLargeHash": 367601,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751433600,
+                "timeFormat": "2025-07-02 07_20",
+                "minerHash": 320675,
+                "minerLargeHash": 364359,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751434200,
+                "timeFormat": "2025-07-02 07_30",
+                "minerHash": 346810,
+                "minerLargeHash": 361767,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751434800,
+                "timeFormat": "2025-07-02 07_40",
+                "minerHash": 398491,
+                "minerLargeHash": 362541,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751435400,
+                "timeFormat": "2025-07-02 07_50",
+                "minerHash": 429620,
+                "minerLargeHash": 366093,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751436000,
+                "timeFormat": "2025-07-02 08_00",
+                "minerHash": 421824,
+                "minerLargeHash": 370200,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751436600,
+                "timeFormat": "2025-07-02 08_10",
+                "minerHash": 380148,
+                "minerLargeHash": 371034,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751437200,
+                "timeFormat": "2025-07-02 08_20",
+                "minerHash": 406800,
+                "minerLargeHash": 372362,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751437800,
+                "timeFormat": "2025-07-02 08_30",
+                "minerHash": 404586,
+                "minerLargeHash": 372857,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751438400,
+                "timeFormat": "2025-07-02 08_40",
+                "minerHash": 406804,
+                "minerLargeHash": 373754,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751439000,
+                "timeFormat": "2025-07-02 08_50",
+                "minerHash": 384582,
+                "minerLargeHash": 373601,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751439600,
+                "timeFormat": "2025-07-02 09_00",
+                "minerHash": 400119,
+                "minerLargeHash": 374742,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751440200,
+                "timeFormat": "2025-07-02 09_10",
+                "minerHash": 391226,
+                "minerLargeHash": 376592,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751440800,
+                "timeFormat": "2025-07-02 09_20",
+                "minerHash": 367350,
+                "minerLargeHash": 377886,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751441400,
+                "timeFormat": "2025-07-02 09_30",
+                "minerHash": 347363,
+                "minerLargeHash": 378565,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751442000,
+                "timeFormat": "2025-07-02 09_40",
+                "minerHash": 349580,
+                "minerLargeHash": 378781,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751442600,
+                "timeFormat": "2025-07-02 09_50",
+                "minerHash": 348458,
+                "minerLargeHash": 378132,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751443200,
+                "timeFormat": "2025-07-02 10_00",
+                "minerHash": 363451,
+                "minerLargeHash": 378439,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751443800,
+                "timeFormat": "2025-07-02 10_10",
+                "minerHash": 361808,
+                "minerLargeHash": 379428,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751444400,
+                "timeFormat": "2025-07-02 10_20",
+                "minerHash": 366256,
+                "minerLargeHash": 381960,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751445000,
+                "timeFormat": "2025-07-02 10_30",
+                "minerHash": 349032,
+                "minerLargeHash": 382083,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751445600,
+                "timeFormat": "2025-07-02 10_40",
+                "minerHash": 386820,
+                "minerLargeHash": 381435,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751446200,
+                "timeFormat": "2025-07-02 10_50",
+                "minerHash": 383487,
+                "minerLargeHash": 378872,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751446800,
+                "timeFormat": "2025-07-02 11_00",
+                "minerHash": 364042,
+                "minerLargeHash": 375662,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751447400,
+                "timeFormat": "2025-07-02 11_10",
+                "minerHash": 362366,
+                "minerLargeHash": 374674,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751448000,
+                "timeFormat": "2025-07-02 11_20",
+                "minerHash": 368478,
+                "minerLargeHash": 372545,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751448600,
+                "timeFormat": "2025-07-02 11_30",
+                "minerHash": 379038,
+                "minerLargeHash": 371126,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751449200,
+                "timeFormat": "2025-07-02 11_40",
+                "minerHash": 360701,
+                "minerLargeHash": 368564,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751449800,
+                "timeFormat": "2025-07-02 11_50",
+                "minerHash": 372934,
+                "minerLargeHash": 367917,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751450400,
+                "timeFormat": "2025-07-02 12_00",
+                "minerHash": 429064,
+                "minerLargeHash": 369525,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751451000,
+                "timeFormat": "2025-07-02 12_10",
+                "minerHash": 425730,
+                "minerLargeHash": 371442,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751451600,
+                "timeFormat": "2025-07-02 12_20",
+                "minerHash": 420152,
+                "minerLargeHash": 374376,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751452200,
+                "timeFormat": "2025-07-02 12_30",
+                "minerHash": 391796,
+                "minerLargeHash": 376844,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751452800,
+                "timeFormat": "2025-07-02 12_40",
+                "minerHash": 385126,
+                "minerLargeHash": 378819,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751453400,
+                "timeFormat": "2025-07-02 12_50",
+                "minerHash": 378466,
+                "minerLargeHash": 380486,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751454000,
+                "timeFormat": "2025-07-02 13_00",
+                "minerHash": 350128,
+                "minerLargeHash": 379746,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751454600,
+                "timeFormat": "2025-07-02 13_10",
+                "minerHash": 350678,
+                "minerLargeHash": 379127,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751455200,
+                "timeFormat": "2025-07-02 13_20",
+                "minerHash": 357899,
+                "minerLargeHash": 378663,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751455800,
+                "timeFormat": "2025-07-02 13_30",
+                "minerHash": 362358,
+                "minerLargeHash": 379404,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751456400,
+                "timeFormat": "2025-07-02 13_40",
+                "minerHash": 392928,
+                "minerLargeHash": 379743,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751457000,
+                "timeFormat": "2025-07-02 13_50",
+                "minerHash": 400719,
+                "minerLargeHash": 380700,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751457600,
+                "timeFormat": "2025-07-02 14_00",
+                "minerHash": 425714,
+                "minerLargeHash": 384126,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751458200,
+                "timeFormat": "2025-07-02 14_10",
+                "minerHash": 425704,
+                "minerLargeHash": 387645,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751458800,
+                "timeFormat": "2025-07-02 14_20",
+                "minerHash": 383470,
+                "minerLargeHash": 388478,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751459400,
+                "timeFormat": "2025-07-02 14_30",
+                "minerHash": 382361,
+                "minerLargeHash": 388663,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751460000,
+                "timeFormat": "2025-07-02 14_40",
+                "minerHash": 356244,
+                "minerLargeHash": 388415,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751460600,
+                "timeFormat": "2025-07-02 14_50",
+                "minerHash": 392911,
+                "minerLargeHash": 389525,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751461200,
+                "timeFormat": "2025-07-02 15_00",
+                "minerHash": 360132,
+                "minerLargeHash": 385695,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751461800,
+                "timeFormat": "2025-07-02 15_10",
+                "minerHash": 383465,
+                "minerLargeHash": 383347,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751462400,
+                "timeFormat": "2025-07-02 15_20",
+                "minerHash": 392910,
+                "minerLargeHash": 381834,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751463000,
+                "timeFormat": "2025-07-02 15_30",
+                "minerHash": 419573,
+                "minerLargeHash": 383377,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751463600,
+                "timeFormat": "2025-07-02 15_40",
+                "minerHash": 356799,
+                "minerLargeHash": 381803,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751464200,
+                "timeFormat": "2025-07-02 15_50",
+                "minerHash": 274025,
+                "minerLargeHash": 376001,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751464800,
+                "timeFormat": "2025-07-02 16_00",
+                "minerHash": 201250,
+                "minerLargeHash": 367730,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751465400,
+                "timeFormat": "2025-07-02 16_10",
+                "minerHash": 177364,
+                "minerLargeHash": 358101,
+                "workerOnline": 1
+            },
+            {
+                "x": 1751466000,
+                "timeFormat": "2025-07-02 16_20",
+                "minerHash": 186260,
+                "minerLargeHash": 348566,
+                "workerOnline": 1
+            },
+            {
+                "x": 1751466600,
+                "timeFormat": "2025-07-02 16_30",
+                "minerHash": 190152,
+                "minerLargeHash": 338999,
+                "workerOnline": 1
+            },
+            {
+                "x": 1751467200,
+                "timeFormat": "2025-07-02 16_40",
+                "minerHash": 186260,
+                "minerLargeHash": 327517,
+                "workerOnline": 1
+            },
+            {
+                "x": 1751467800,
+                "timeFormat": "2025-07-02 16_50",
+                "minerHash": 166800,
+                "minerLargeHash": 322067,
+                "workerOnline": 1
+            },
+            {
+                "x": 1751468400,
+                "timeFormat": "2025-07-02 17_00",
+                "minerHash": 160684,
+                "minerLargeHash": 306477,
+                "workerOnline": 1
+            },
+            {
+                "x": 1751469000,
+                "timeFormat": "2025-07-02 17_10",
+                "minerHash": 201822,
+                "minerLargeHash": 293307,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751469600,
+                "timeFormat": "2025-07-02 17_20",
+                "minerHash": 298497,
+                "minerLargeHash": 288309,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751470200,
+                "timeFormat": "2025-07-02 17_30",
+                "minerHash": 356281,
+                "minerLargeHash": 286775,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751470800,
+                "timeFormat": "2025-07-02 17_40",
+                "minerHash": 407922,
+                "minerLargeHash": 289815,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751471400,
+                "timeFormat": "2025-07-02 17_50",
+                "minerHash": 403484,
+                "minerLargeHash": 290436,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751472000,
+                "timeFormat": "2025-07-02 18_00",
+                "minerHash": 424036,
+                "minerLargeHash": 294196,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751472600,
+                "timeFormat": "2025-07-02 18_10",
+                "minerHash": 403474,
+                "minerLargeHash": 295373,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751473200,
+                "timeFormat": "2025-07-02 18_20",
+                "minerHash": 384575,
+                "minerLargeHash": 294882,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751473800,
+                "timeFormat": "2025-07-02 18_30",
+                "minerHash": 409024,
+                "minerLargeHash": 294262,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751474400,
+                "timeFormat": "2025-07-02 18_40",
+                "minerHash": 406251,
+                "minerLargeHash": 297171,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751475000,
+                "timeFormat": "2025-07-02 18_50",
+                "minerHash": 439585,
+                "minerLargeHash": 306909,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751475600,
+                "timeFormat": "2025-07-02 19_00",
+                "minerHash": 402913,
+                "minerLargeHash": 318772,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751476200,
+                "timeFormat": "2025-07-02 19_10",
+                "minerHash": 386247,
+                "minerLargeHash": 331059,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751476800,
+                "timeFormat": "2025-07-02 19_20",
+                "minerHash": 359038,
+                "minerLargeHash": 332614,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751477400,
+                "timeFormat": "2025-07-02 19_30",
+                "minerHash": 334595,
+                "minerLargeHash": 340638,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751478000,
+                "timeFormat": "2025-07-02 19_40",
+                "minerHash": 337372,
+                "minerLargeHash": 349033,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751478600,
+                "timeFormat": "2025-07-02 19_50",
+                "minerHash": 321800,
+                "minerLargeHash": 357644,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751479200,
+                "timeFormat": "2025-07-02 20_00",
+                "minerHash": 364575,
+                "minerLargeHash": 368972,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751479800,
+                "timeFormat": "2025-07-02 20_10",
+                "minerHash": 365676,
+                "minerLargeHash": 378075,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751480400,
+                "timeFormat": "2025-07-02 20_20",
+                "minerHash": 391793,
+                "minerLargeHash": 383258,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751481000,
+                "timeFormat": "2025-07-02 20_30",
+                "minerHash": 379572,
+                "minerLargeHash": 384552,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751481600,
+                "timeFormat": "2025-07-02 20_40",
+                "minerHash": 390687,
+                "minerLargeHash": 383594,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751482200,
+                "timeFormat": "2025-07-02 20_50",
+                "minerHash": 376247,
+                "minerLargeHash": 382081,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751482800,
+                "timeFormat": "2025-07-02 21_00",
+                "minerHash": 369033,
+                "minerLargeHash": 379025,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751483400,
+                "timeFormat": "2025-07-02 21_10",
+                "minerHash": 371266,
+                "minerLargeHash": 377236,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751484000,
+                "timeFormat": "2025-07-02 21_20",
+                "minerHash": 384592,
+                "minerLargeHash": 377237,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751484600,
+                "timeFormat": "2025-07-02 21_30",
+                "minerHash": 384023,
+                "minerLargeHash": 375848,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751485200,
+                "timeFormat": "2025-07-02 21_40",
+                "minerHash": 381785,
+                "minerLargeHash": 374489,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751485800,
+                "timeFormat": "2025-07-02 21_50",
+                "minerHash": 388451,
+                "minerLargeHash": 371648,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751486400,
+                "timeFormat": "2025-07-02 22_00",
+                "minerHash": 399007,
+                "minerLargeHash": 371431,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751487000,
+                "timeFormat": "2025-07-02 22_10",
+                "minerHash": 399579,
+                "minerLargeHash": 372172,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751487600,
+                "timeFormat": "2025-07-02 22_20",
+                "minerHash": 385688,
+                "minerLargeHash": 373652,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751488200,
+                "timeFormat": "2025-07-02 22_30",
+                "minerHash": 382911,
+                "minerLargeHash": 376336,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751488800,
+                "timeFormat": "2025-07-02 22_40",
+                "minerHash": 391232,
+                "minerLargeHash": 379329,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751489400,
+                "timeFormat": "2025-07-02 22_50",
+                "minerHash": 396235,
+                "minerLargeHash": 383464,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751490000,
+                "timeFormat": "2025-07-02 23_00",
+                "minerHash": 372353,
+                "minerLargeHash": 383896,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751490600,
+                "timeFormat": "2025-07-02 23_10",
+                "minerHash": 383478,
+                "minerLargeHash": 384885,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751491200,
+                "timeFormat": "2025-07-02 23_20",
+                "minerHash": 358486,
+                "minerLargeHash": 383035,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751491800,
+                "timeFormat": "2025-07-02 23_30",
+                "minerHash": 354036,
+                "minerLargeHash": 381616,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751492400,
+                "timeFormat": "2025-07-02 23_40",
+                "minerHash": 351252,
+                "minerLargeHash": 379425,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751493000,
+                "timeFormat": "2025-07-02 23_50",
+                "minerHash": 354020,
+                "minerLargeHash": 378190,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751493600,
+                "timeFormat": "2025-07-03 00_00",
+                "minerHash": 371797,
+                "minerLargeHash": 378344,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751494200,
+                "timeFormat": "2025-07-03 00_10",
+                "minerHash": 362926,
+                "minerLargeHash": 377881,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751494800,
+                "timeFormat": "2025-07-03 00_20",
+                "minerHash": 434603,
+                "minerLargeHash": 380659,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751495400,
+                "timeFormat": "2025-07-03 00_30",
+                "minerHash": 440170,
+                "minerLargeHash": 383778,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751496000,
+                "timeFormat": "2025-07-03 00_40",
+                "minerHash": 444045,
+                "minerLargeHash": 387237,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751496600,
+                "timeFormat": "2025-07-03 00_50",
+                "minerHash": 421822,
+                "minerLargeHash": 389091,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751497200,
+                "timeFormat": "2025-07-03 01_00",
+                "minerHash": 414593,
+                "minerLargeHash": 389957,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751497800,
+                "timeFormat": "2025-07-03 01_10",
+                "minerHash": 387922,
+                "minerLargeHash": 389309,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751498400,
+                "timeFormat": "2025-07-03 01_20",
+                "minerHash": 370156,
+                "minerLargeHash": 388446,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751499000,
+                "timeFormat": "2025-07-03 01_30",
+                "minerHash": 382941,
+                "minerLargeHash": 388448,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751499600,
+                "timeFormat": "2025-07-03 01_40",
+                "minerHash": 393500,
+                "minerLargeHash": 388574,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751500200,
+                "timeFormat": "2025-07-03 01_50",
+                "minerHash": 401824,
+                "minerLargeHash": 388885,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751500800,
+                "timeFormat": "2025-07-03 02_00",
+                "minerHash": 427378,
+                "minerLargeHash": 391942,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751501400,
+                "timeFormat": "2025-07-03 02_10",
+                "minerHash": 425157,
+                "minerLargeHash": 394257,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751502000,
+                "timeFormat": "2025-07-03 02_20",
+                "minerHash": 416827,
+                "minerLargeHash": 397498,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751502600,
+                "timeFormat": "2025-07-03 02_30",
+                "minerHash": 387943,
+                "minerLargeHash": 399382,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751503200,
+                "timeFormat": "2025-07-03 02_40",
+                "minerHash": 412952,
+                "minerLargeHash": 402810,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751503800,
+                "timeFormat": "2025-07-03 02_50",
+                "minerHash": 384059,
+                "minerLargeHash": 404479,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751504400,
+                "timeFormat": "2025-07-03 03_00",
+                "minerHash": 411279,
+                "minerLargeHash": 406672,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751505000,
+                "timeFormat": "2025-07-03 03_10",
+                "minerHash": 411263,
+                "minerLargeHash": 409357,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751505600,
+                "timeFormat": "2025-07-03 03_20",
+                "minerHash": 409586,
+                "minerLargeHash": 407968,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751506200,
+                "timeFormat": "2025-07-03 03_30",
+                "minerHash": 404011,
+                "minerLargeHash": 405959,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751506800,
+                "timeFormat": "2025-07-03 03_40",
+                "minerHash": 403452,
+                "minerLargeHash": 403704,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751507400,
+                "timeFormat": "2025-07-03 03_50",
+                "minerHash": 409562,
+                "minerLargeHash": 403022,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751508000,
+                "timeFormat": "2025-07-03 04_00",
+                "minerHash": 371230,
+                "minerLargeHash": 400613,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751508600,
+                "timeFormat": "2025-07-03 04_10",
+                "minerHash": 377912,
+                "minerLargeHash": 400057,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751509200,
+                "timeFormat": "2025-07-03 04_20",
+                "minerHash": 394037,
+                "minerLargeHash": 401384,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751509800,
+                "timeFormat": "2025-07-03 04_30",
+                "minerHash": 412940,
+                "minerLargeHash": 403051,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751510400,
+                "timeFormat": "2025-07-03 04_40",
+                "minerHash": 369604,
+                "minerLargeHash": 401723,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751511000,
+                "timeFormat": "2025-07-03 04_50",
+                "minerHash": 370702,
+                "minerLargeHash": 399994,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751511600,
+                "timeFormat": "2025-07-03 05_00",
+                "minerHash": 370134,
+                "minerLargeHash": 396814,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751512200,
+                "timeFormat": "2025-07-03 05_10",
+                "minerHash": 399014,
+                "minerLargeHash": 395362,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751512800,
+                "timeFormat": "2025-07-03 05_20",
+                "minerHash": 370126,
+                "minerLargeHash": 392767,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751513400,
+                "timeFormat": "2025-07-03 05_30",
+                "minerHash": 359010,
+                "minerLargeHash": 391160,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751514000,
+                "timeFormat": "2025-07-03 05_40",
+                "minerHash": 327902,
+                "minerLargeHash": 386435,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751514600,
+                "timeFormat": "2025-07-03 05_50",
+                "minerHash": 360128,
+                "minerLargeHash": 385105,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751515200,
+                "timeFormat": "2025-07-03 06_00",
+                "minerHash": 371255,
+                "minerLargeHash": 382882,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751515800,
+                "timeFormat": "2025-07-03 06_10",
+                "minerHash": 436831,
+                "minerLargeHash": 384302,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751516400,
+                "timeFormat": "2025-07-03 06_20",
+                "minerHash": 437941,
+                "minerLargeHash": 385877,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751517000,
+                "timeFormat": "2025-07-03 06_30",
+                "minerHash": 464057,
+                "minerLargeHash": 389213,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751517600,
+                "timeFormat": "2025-07-03 06_40",
+                "minerHash": 462936,
+                "minerLargeHash": 392518,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751518200,
+                "timeFormat": "2025-07-03 06_50",
+                "minerHash": 465717,
+                "minerLargeHash": 395638,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751518800,
+                "timeFormat": "2025-07-03 07_00",
+                "minerHash": 432933,
+                "minerLargeHash": 399065,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751519400,
+                "timeFormat": "2025-07-03 07_10",
+                "minerHash": 375146,
+                "minerLargeHash": 398912,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751520000,
+                "timeFormat": "2025-07-03 07_20",
+                "minerHash": 334042,
+                "minerLargeHash": 395579,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751520600,
+                "timeFormat": "2025-07-03 07_30",
+                "minerHash": 346839,
+                "minerLargeHash": 391906,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751521200,
+                "timeFormat": "2025-07-03 07_40",
+                "minerHash": 331277,
+                "minerLargeHash": 389777,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751521800,
+                "timeFormat": "2025-07-03 07_50",
+                "minerHash": 381266,
+                "minerLargeHash": 390364,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751522400,
+                "timeFormat": "2025-07-03 08_00",
+                "minerHash": 387348,
+                "minerLargeHash": 391320,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751523000,
+                "timeFormat": "2025-07-03 08_10",
+                "minerHash": 422902,
+                "minerLargeHash": 392648,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751523600,
+                "timeFormat": "2025-07-03 08_20",
+                "minerHash": 386794,
+                "minerLargeHash": 393574,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751524200,
+                "timeFormat": "2025-07-03 08_30",
+                "minerHash": 372366,
+                "minerLargeHash": 394316,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751524800,
+                "timeFormat": "2025-07-03 08_40",
+                "minerHash": 366266,
+                "minerLargeHash": 396447,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751525400,
+                "timeFormat": "2025-07-03 08_50",
+                "minerHash": 382378,
+                "minerLargeHash": 397683,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751526000,
+                "timeFormat": "2025-07-03 09_00",
+                "minerHash": 372372,
+                "minerLargeHash": 397745,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751526600,
+                "timeFormat": "2025-07-03 09_10",
+                "minerHash": 367910,
+                "minerLargeHash": 393916,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751527200,
+                "timeFormat": "2025-07-03 09_20",
+                "minerHash": 368456,
+                "minerLargeHash": 390056,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751527800,
+                "timeFormat": "2025-07-03 09_30",
+                "minerHash": 374000,
+                "minerLargeHash": 385053,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751528400,
+                "timeFormat": "2025-07-03 09_40",
+                "minerHash": 379570,
+                "minerLargeHash": 380421,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751529000,
+                "timeFormat": "2025-07-03 09_50",
+                "minerHash": 378472,
+                "minerLargeHash": 375574,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751529600,
+                "timeFormat": "2025-07-03 10_00",
+                "minerHash": 429598,
+                "minerLargeHash": 375389,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751530200,
+                "timeFormat": "2025-07-03 10_10",
+                "minerHash": 412379,
+                "minerLargeHash": 377457,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751530800,
+                "timeFormat": "2025-07-03 10_20",
+                "minerHash": 399589,
+                "minerLargeHash": 381099,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751531400,
+                "timeFormat": "2025-07-03 10_30",
+                "minerHash": 370687,
+                "minerLargeHash": 382424,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751532000,
+                "timeFormat": "2025-07-03 10_40",
+                "minerHash": 397898,
+                "minerLargeHash": 386125,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751532600,
+                "timeFormat": "2025-07-03 10_50",
+                "minerHash": 409574,
+                "minerLargeHash": 387698,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751533200,
+                "timeFormat": "2025-07-03 11_00",
+                "minerHash": 442362,
+                "minerLargeHash": 390754,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751533800,
+                "timeFormat": "2025-07-03 11_10",
+                "minerHash": 426250,
+                "minerLargeHash": 390940,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751534400,
+                "timeFormat": "2025-07-03 11_20",
+                "minerHash": 444586,
+                "minerLargeHash": 394151,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751535000,
+                "timeFormat": "2025-07-03 11_30",
+                "minerHash": 377359,
+                "minerLargeHash": 394428,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751535600,
+                "timeFormat": "2025-07-03 11_40",
+                "minerHash": 374601,
+                "minerLargeHash": 394891,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751536200,
+                "timeFormat": "2025-07-03 11_50",
+                "minerHash": 346813,
+                "minerLargeHash": 392915,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751536800,
+                "timeFormat": "2025-07-03 12_00",
+                "minerHash": 370151,
+                "minerLargeHash": 392792,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751537400,
+                "timeFormat": "2025-07-03 12_10",
+                "minerHash": 367922,
+                "minerLargeHash": 392793,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751538000,
+                "timeFormat": "2025-07-03 12_20",
+                "minerHash": 385155,
+                "minerLargeHash": 393720,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751538600,
+                "timeFormat": "2025-07-03 12_30",
+                "minerHash": 393499,
+                "minerLargeHash": 394804,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751539200,
+                "timeFormat": "2025-07-03 12_40",
+                "minerHash": 391274,
+                "minerLargeHash": 395454,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751539800,
+                "timeFormat": "2025-07-03 12_50",
+                "minerHash": 377924,
+                "minerLargeHash": 395423,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751540400,
+                "timeFormat": "2025-07-03 13_00",
+                "minerHash": 382351,
+                "minerLargeHash": 392799,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751541000,
+                "timeFormat": "2025-07-03 13_10",
+                "minerHash": 422899,
+                "minerLargeHash": 393383,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751541600,
+                "timeFormat": "2025-07-03 13_20",
+                "minerHash": 427902,
+                "minerLargeHash": 394956,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751542200,
+                "timeFormat": "2025-07-03 13_30",
+                "minerHash": 392903,
+                "minerLargeHash": 396190,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751542800,
+                "timeFormat": "2025-07-03 13_40",
+                "minerHash": 362908,
+                "minerLargeHash": 394246,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751543400,
+                "timeFormat": "2025-07-03 13_50",
+                "minerHash": 358468,
+                "minerLargeHash": 391407,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751544000,
+                "timeFormat": "2025-07-03 14_00",
+                "minerHash": 397914,
+                "minerLargeHash": 388938,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751544600,
+                "timeFormat": "2025-07-03 14_10",
+                "minerHash": 404023,
+                "minerLargeHash": 387703,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751545200,
+                "timeFormat": "2025-07-03 14_20",
+                "minerHash": 390705,
+                "minerLargeHash": 384710,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751545800,
+                "timeFormat": "2025-07-03 14_30",
+                "minerHash": 363505,
+                "minerLargeHash": 383940,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751546400,
+                "timeFormat": "2025-07-03 14_40",
+                "minerHash": 359074,
+                "minerLargeHash": 383077,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751547000,
+                "timeFormat": "2025-07-03 14_50",
+                "minerHash": 392949,
+                "minerLargeHash": 385640,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751547600,
+                "timeFormat": "2025-07-03 15_00",
+                "minerHash": 389045,
+                "minerLargeHash": 386690,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751548200,
+                "timeFormat": "2025-07-03 15_10",
+                "minerHash": 394027,
+                "minerLargeHash": 388140,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751548800,
+                "timeFormat": "2025-07-03 15_20",
+                "minerHash": 379027,
+                "minerLargeHash": 387800,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751549400,
+                "timeFormat": "2025-07-03 15_30",
+                "minerHash": 389028,
+                "minerLargeHash": 387551,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751550000,
+                "timeFormat": "2025-07-03 15_40",
+                "minerHash": 370147,
+                "minerLargeHash": 386378,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751550600,
+                "timeFormat": "2025-07-03 15_50",
+                "minerHash": 372378,
+                "minerLargeHash": 386070,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751551200,
+                "timeFormat": "2025-07-03 16_00",
+                "minerHash": 385719,
+                "minerLargeHash": 386257,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751551800,
+                "timeFormat": "2025-07-03 16_10",
+                "minerHash": 394054,
+                "minerLargeHash": 384654,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751552400,
+                "timeFormat": "2025-07-03 16_20",
+                "minerHash": 412384,
+                "minerLargeHash": 383792,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751553000,
+                "timeFormat": "2025-07-03 16_30",
+                "minerHash": 429034,
+                "minerLargeHash": 385799,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751553600,
+                "timeFormat": "2025-07-03 16_40",
+                "minerHash": 447912,
+                "minerLargeHash": 390522,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751554200,
+                "timeFormat": "2025-07-03 16_50",
+                "minerHash": 411228,
+                "minerLargeHash": 393453,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751554800,
+                "timeFormat": "2025-07-03 17_00",
+                "minerHash": 369005,
+                "minerLargeHash": 391847,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751555400,
+                "timeFormat": "2025-07-03 17_10",
+                "minerHash": 331227,
+                "minerLargeHash": 387803,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751556000,
+                "timeFormat": "2025-07-03 17_20",
+                "minerHash": 352345,
+                "minerLargeHash": 385672,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751556600,
+                "timeFormat": "2025-07-03 17_30",
+                "minerHash": 362912,
+                "minerLargeHash": 385639,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751557200,
+                "timeFormat": "2025-07-03 17_40",
+                "minerHash": 370699,
+                "minerLargeHash": 386284,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751557800,
+                "timeFormat": "2025-07-03 17_50",
+                "minerHash": 366825,
+                "minerLargeHash": 384833,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751558400,
+                "timeFormat": "2025-07-03 18_00",
+                "minerHash": 366269,
+                "minerLargeHash": 383568,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751559000,
+                "timeFormat": "2025-07-03 18_10",
+                "minerHash": 403490,
+                "minerLargeHash": 384093,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751559600,
+                "timeFormat": "2025-07-03 18_20",
+                "minerHash": 390147,
+                "minerLargeHash": 384711,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751560200,
+                "timeFormat": "2025-07-03 18_30",
+                "minerHash": 390148,
+                "minerLargeHash": 384774,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751560800,
+                "timeFormat": "2025-07-03 18_40",
+                "minerHash": 393492,
+                "minerLargeHash": 386070,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751561400,
+                "timeFormat": "2025-07-03 18_50",
+                "minerHash": 429615,
+                "minerLargeHash": 389250,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751562000,
+                "timeFormat": "2025-07-03 19_00",
+                "minerHash": 422388,
+                "minerLargeHash": 391287,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751562600,
+                "timeFormat": "2025-07-03 19_10",
+                "minerHash": 397928,
+                "minerLargeHash": 391503,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751563200,
+                "timeFormat": "2025-07-03 19_20",
+                "minerHash": 377361,
+                "minerLargeHash": 389557,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751563800,
+                "timeFormat": "2025-07-03 19_30",
+                "minerHash": 380698,
+                "minerLargeHash": 386872,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751564400,
+                "timeFormat": "2025-07-03 19_40",
+                "minerHash": 371265,
+                "minerLargeHash": 382613,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751565000,
+                "timeFormat": "2025-07-03 19_50",
+                "minerHash": 359046,
+                "minerLargeHash": 379714,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751565600,
+                "timeFormat": "2025-07-03 20_00",
+                "minerHash": 367937,
+                "minerLargeHash": 379655,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751566200,
+                "timeFormat": "2025-07-03 20_10",
+                "minerHash": 372384,
+                "minerLargeHash": 381942,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751566800,
+                "timeFormat": "2025-07-03 20_20",
+                "minerHash": 380153,
+                "minerLargeHash": 383486,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751567400,
+                "timeFormat": "2025-07-03 20_30",
+                "minerHash": 368482,
+                "minerLargeHash": 383796,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751568000,
+                "timeFormat": "2025-07-03 20_40",
+                "minerHash": 370706,
+                "minerLargeHash": 383796,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751568600,
+                "timeFormat": "2025-07-03 20_50",
+                "minerHash": 352937,
+                "minerLargeHash": 383025,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751569200,
+                "timeFormat": "2025-07-03 21_00",
+                "minerHash": 364048,
+                "minerLargeHash": 382901,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751569800,
+                "timeFormat": "2025-07-03 21_10",
+                "minerHash": 367921,
+                "minerLargeHash": 380925,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751570400,
+                "timeFormat": "2025-07-03 21_20",
+                "minerHash": 382914,
+                "minerLargeHash": 380524,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751571000,
+                "timeFormat": "2025-07-03 21_30",
+                "minerHash": 369017,
+                "minerLargeHash": 379350,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751571600,
+                "timeFormat": "2025-07-03 21_40",
+                "minerHash": 371793,
+                "minerLargeHash": 378144,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751572200,
+                "timeFormat": "2025-07-03 21_50",
+                "minerHash": 369580,
+                "minerLargeHash": 374809,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751572800,
+                "timeFormat": "2025-07-03 22_00",
+                "minerHash": 396253,
+                "minerLargeHash": 373357,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751573400,
+                "timeFormat": "2025-07-03 22_10",
+                "minerHash": 413488,
+                "minerLargeHash": 374221,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751574000,
+                "timeFormat": "2025-07-03 22_20",
+                "minerHash": 413479,
+                "minerLargeHash": 376228,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751574600,
+                "timeFormat": "2025-07-03 22_30",
+                "minerHash": 371250,
+                "minerLargeHash": 375703,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751575200,
+                "timeFormat": "2025-07-03 22_40",
+                "minerHash": 345701,
+                "minerLargeHash": 374283,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751575800,
+                "timeFormat": "2025-07-03 22_50",
+                "minerHash": 356817,
+                "minerLargeHash": 374159,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751576400,
+                "timeFormat": "2025-07-03 23_00",
+                "minerHash": 364053,
+                "minerLargeHash": 373943,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751577000,
+                "timeFormat": "2025-07-03 23_10",
+                "minerHash": 360162,
+                "minerLargeHash": 373264,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751577600,
+                "timeFormat": "2025-07-03 23_20",
+                "minerHash": 348497,
+                "minerLargeHash": 371505,
+                "workerOnline": 2
+            },
+            {
+                "x": 1751578200,
+                "timeFormat": "2025-07-03 23_30",
+                "minerHash": 352936,
+                "minerLargeHash": 370642,
+                "workerOnline": 2
+            }
+        ],
+        "hidden": false
+    },
+    "pool": {
+        "now": 1751578474979,
+        "nShares": 670,
+        "minersTotal": 16,
+        "maturedTotal": 33672,
+        "poolHashrate": 3576418,
+        "poolHashrateStr": "3.576 MH/s",
+        "poolLuck": 193.2,
+        "networkDiff": 21674705850,
+        "blocksCandidatesTotal": 0,
+        "blocksImmatureTotal": 0,
+        "blocksMaturedTotal": 33672,
+        "networkBlock": 2525299,
+        "networkEpoch": 84,
+        "networkDagSize": 1778382464,
+        "networkSpeed": 1455831185,
+        "networkSpeedStr": "1.456 GH/s",
+        "roundShares": 41876000000,
+        "avgBlockReward": "1.085138145",
+        "avgBlockRewardReal": "1.085138145",
+        "coinSymbol": "XEL",
+        "coinAlgorithm": "Xelishashv2",
+        "coinReward": 1.0851,
+        "coinPoolFee": 1,
+        "coinBlocktime": 14.89,
+        "coinConfirmations": 200,
+        "coinPayoutInterval": 30,
+        "coinUnit": "H",
+        "coinExplorer": "https://explorer.xelis.io",
+        "coinExplorerAddr": "https://explorer.xelis.io/accounts/%wallet%",
+        "coinExplorerBlock": "https://explorer.xelis.io/blocks/%block%",
+        "coinExplorerTx": "https://explorer.xelis.io/txs/%tx%",
+        "coinMul": 100000000,
+        "coinMulR": 100000000,
+        "coinPriceBtc": "0.00001053",
+        "coinPriceUsd": "1.15635644",
+        "coinPercentChange": "1.21",
+        "reward_type": "SOLO",
+        "dualMining": "ZIL"
+    }
+}
