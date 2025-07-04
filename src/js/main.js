@@ -35,6 +35,9 @@ class MiningDashboard {
             // Настройка навигации
             this.setupNavigation();
             
+            // Настройка мобильного меню
+            this.setupMobileMenu();
+            
             // Настройка переключения темы
             this.setupThemeToggle();
             
@@ -62,6 +65,34 @@ class MiningDashboard {
         } catch (error) {
             console.error('Ошибка инициализации:', error);
             this.notificationManager.show('Ошибка загрузки дашборда', 'error');
+        }
+    }
+
+    setupMobileMenu() {
+        const mobileToggle = document.getElementById('mobile-menu-toggle');
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.getElementById('sidebar-overlay');
+
+        if (mobileToggle && sidebar && overlay) {
+            mobileToggle.addEventListener('click', () => {
+                sidebar.classList.toggle('open');
+                overlay.classList.toggle('active');
+            });
+
+            overlay.addEventListener('click', () => {
+                sidebar.classList.remove('open');
+                overlay.classList.remove('active');
+            });
+
+            // Закрытие меню при клике на пункт навигации на мобильных
+            document.querySelectorAll('.nav-item').forEach(item => {
+                item.addEventListener('click', () => {
+                    if (window.innerWidth <= 1024) {
+                        sidebar.classList.remove('open');
+                        overlay.classList.remove('active');
+                    }
+                });
+            });
         }
     }
 

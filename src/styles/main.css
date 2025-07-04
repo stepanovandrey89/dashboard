@@ -163,6 +163,40 @@ body {
   height: 1.25rem;
 }
 
+/* Мобильное меню */
+.mobile-menu-toggle {
+  display: none;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 2000;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  color: var(--text-primary);
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+}
+
+.mobile-menu-toggle:hover {
+  background: var(--bg-hover);
+}
+
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
 /* Основной контент */
 .main-content {
   margin-left: var(--sidebar-width);
@@ -342,29 +376,29 @@ body {
 }
 
 .stat-card-compact .stat-value {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 700;
   color: var(--text-primary);
   line-height: 1.2;
   margin-bottom: 0.5rem;
-  display: block;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;
+  display: block;
 }
 
 /* Единицы измерения через CSS псевдоэлемент */
 .stat-card-compact .stat-value[data-unit]:after {
   content: " " attr(data-unit);
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 500;
   color: var(--text-secondary);
 }
 
 .stat-card-compact .stat-value .unit {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 500;
   color: var(--text-secondary);
   white-space: nowrap;
@@ -1162,11 +1196,11 @@ body {
   }
 
   .stat-card-compact .stat-value {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
-  .stat-card-compact .stat-value .unit {
-    font-size: 0.75rem;
+  .stat-card-compact .stat-value[data-unit]:after {
+    font-size: 0.7rem;
   }
 }
 
@@ -1189,11 +1223,11 @@ body {
   }
 
   .stat-card-compact .stat-value {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 
-  .stat-card-compact .stat-value .unit {
-    font-size: 0.7rem;
+  .stat-card-compact .stat-value[data-unit]:after {
+    font-size: 0.65rem;
   }
 
   .stat-card-compact .stat-label {
@@ -1202,6 +1236,10 @@ body {
 }
 
 @media (max-width: 1024px) {
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
   .sidebar {
     transform: translateX(-100%);
     transition: var(--transition);
@@ -1209,6 +1247,10 @@ body {
 
   .sidebar.open {
     transform: translateX(0);
+  }
+
+  .sidebar-overlay.active {
+    display: block;
   }
 
   .main-content {
@@ -1232,11 +1274,11 @@ body {
   }
 
   .stat-card-compact .stat-value {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
-  .stat-card-compact .stat-value .unit {
-    font-size: 0.75rem;
+  .stat-card-compact .stat-value[data-unit]:after {
+    font-size: 0.7rem;
   }
 
   .stat-card-compact .stat-label {
@@ -1258,6 +1300,7 @@ body {
 
   .header {
     padding: 0 1rem;
+    padding-left: 4rem;
   }
 
   .content-section {
@@ -1291,13 +1334,13 @@ body {
   }
 
   .stat-card-compact .stat-value {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     margin-bottom: 0.125rem;
     text-align: left;
   }
 
-  .stat-card-compact .stat-value .unit {
-    font-size: 0.7rem;
+  .stat-card-compact .stat-value[data-unit]:after {
+    font-size: 0.65rem;
   }
 
   .stat-card-compact .stat-label {
@@ -1374,25 +1417,6 @@ body {
     height: 2rem;
   }
 
-  /* Мобильное меню */
-  .mobile-menu-toggle {
-    display: block;
-    position: fixed;
-    top: 1rem;
-    left: 1rem;
-    z-index: 2000;
-    width: 2.5rem;
-    height: 2.5rem;
-    background: var(--bg-card);
-    border: 1px solid var(--border-color);
-    border-radius: var(--border-radius);
-    color: var(--text-primary);
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   .table-container {
     font-size: 0.75rem;
   }
@@ -1419,11 +1443,11 @@ body {
   }
 
   .stat-card-compact .stat-value {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
 
-  .stat-card-compact .stat-value .unit {
-    font-size: 0.65rem;
+  .stat-card-compact .stat-value[data-unit]:after {
+    font-size: 0.6rem;
   }
 
   .stat-card-compact .stat-label {
@@ -1432,6 +1456,7 @@ body {
 
   .header {
     padding: 0 0.5rem;
+    padding-left: 3.5rem;
   }
 
   .content-section {
