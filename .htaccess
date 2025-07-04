@@ -1,0 +1,125 @@
+# Включаем модуль перезаписи URL
+RewriteEngine On
+
+# Принудительное использование HTTPS (опционально)
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Сжатие файлов для улучшения производительности
+<IfModule mod_deflate.c>
+    # Сжимаем текстовые файлы
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE application/json
+</IfModule>
+
+# Кэширование статических файлов
+<IfModule mod_expires.c>
+    ExpiresActive On
+    
+    # Изображения
+    ExpiresByType image/jpg "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/svg+xml "access plus 1 month"
+    ExpiresByType image/webp "access plus 1 month"
+    ExpiresByType image/ico "access plus 1 month"
+    ExpiresByType image/x-icon "access plus 1 month"
+    
+    # CSS и JavaScript
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType application/x-javascript "access plus 1 month"
+    
+    # Шрифты
+    ExpiresByType font/woff "access plus 1 month"
+    ExpiresByType font/woff2 "access plus 1 month"
+    ExpiresByType application/font-woff "access plus 1 month"
+    ExpiresByType application/font-woff2 "access plus 1 month"
+    
+    # HTML файлы
+    ExpiresByType text/html "access plus 1 hour"
+    
+    # JSON файлы (данные майнинга)
+    ExpiresByType application/json "access plus 5 minutes"
+</IfModule>
+
+# Настройка заголовков кэширования
+<IfModule mod_headers.c>
+    # Кэширование статических ресурсов
+    <FilesMatch "\.(css|js|png|jpg|jpeg|gif|ico|svg|woff|woff2)$">
+        Header set Cache-Control "max-age=2592000, public"
+    </FilesMatch>
+    
+    # Кэширование JSON файлов с данными
+    <FilesMatch "\.json$">
+        Header set Cache-Control "max-age=300, public"
+    </FilesMatch>
+    
+    # HTML файлы
+    <FilesMatch "\.html$">
+        Header set Cache-Control "max-age=3600, public"
+    </FilesMatch>
+    
+    # Безопасность
+    Header always set X-Content-Type-Options nosniff
+    Header always set X-Frame-Options DENY
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    
+    # CORS для API запросов (если нужно)
+    Header always set Access-Control-Allow-Origin "*"
+    Header always set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+    Header always set Access-Control-Allow-Headers "Content-Type, Authorization"
+</IfModule>
+
+# Перенаправление всех запросов на index.html для SPA
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/data/
+RewriteCond %{REQUEST_URI} !^/assets/
+RewriteRule ^.*$ /index.html [L]
+
+# Защита от прямого доступа к служебным файлам
+<Files ".htaccess">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files "*.log">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Настройка MIME типов
+<IfModule mod_mime.c>
+    AddType application/javascript .js
+    AddType text/css .css
+    AddType application/json .json
+    AddType image/svg+xml .svg
+    AddType font/woff .woff
+    AddType font/woff2 .woff2
+</IfModule>
+
+# Отключение листинга директорий
+Options -Indexes
+
+# Настройка страниц ошибок (опционально)
+# ErrorDocument 404 /index.html
+# ErrorDocument 500 /index.html
+
+# Оптимизация для мобильных устройств
+<IfModule mod_setenvif.c>
+    SetEnvIfNoCase User-Agent ".*Mobile.*" mobile
+    SetEnvIfNoCase User-Agent ".*Android.*" mobile
+    SetEnvIfNoCase User-Agent ".*iPhone.*" mobile
+    SetEnvIfNoCase User-Agent ".*iPad.*" mobile
+</IfModule>
