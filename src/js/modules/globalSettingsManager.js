@@ -1,7 +1,6 @@
 export class GlobalSettingsManager {
     constructor() {
         this.apiUrl = 'data/global_settings.json';
-        this.updateUrl = 'api/update_settings.php';
         this.defaultSettings = {
             coreTemperatureThreshold: 85,
             memoryTemperatureThreshold: 95
@@ -27,51 +26,55 @@ export class GlobalSettingsManager {
     }
 
     async saveGlobalSettings(settings) {
+        // На статическом хостинге мы не можем сохранять файлы на сервере
+        // Поэтому используем localStorage как временное решение
         try {
-            console.log('Сохранение глобальных настроек через API:', settings);
+            console.log('Сохранение настроек в localStorage (статический хостинг):', settings);
             
-            // Добавляем полный путь для API
-            const apiUrl = window.location.origin + '/' + this.updateUrl;
-            console.log('API URL:', apiUrl);
+            // Сохраняем в localStorage
+            localStorage.setItem('global-core-temp-threshold', settings.coreTemperatureThreshold.toString());
+            localStorage.setItem('global-memory-temp-threshold', settings.memoryTemperatureThreshold.toString());
+            localStorage.setItem('global-settings-timestamp', Date.now().toString());
             
-            const response = await fetch(apiUrl, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    coreTemperatureThreshold: settings.coreTemperatureThreshold,
-                    memoryTemperatureThreshold: settings.memoryTemperatureThreshold
-                })
-            });
-
-            if (response.ok) {
-                const result = await response.text();
-                console.log('Сырой ответ сервера:', result);
-                
-                try {
-                    const jsonResult = JSON.parse(result);
-                    console.log('Настройки успешно сохранены:', jsonResult);
-                    return true;
-                } catch (parseError) {
-                    console.error('Ошибка парсинга JSON ответа:', parseError);
-                    console.error('Ответ сервера:', result);
-                    return false;
-                }
-            } else {
-                const errorData = await response.text();
-                console.error('Ошибка сервера при сохранении:', errorData);
-                return false;
-            }
+            console.log('Настройки успешно сохранены в localStorage');
+            return true;
+            
         } catch (error) {
-            console.error('Ошибка сохранения глобальных настроек:', error);
+            console.error('Ошибка сохранения настроек:', error);
             return false;
         }
     }
 
-    // Метод для загрузки настроек (используется вместо демо-версии)
-    async loadDemoGlobalSettings() {
-        // Теперь используем реальный API вместо localStorage
-        return await this.loadGlobalSettings();
+    async loadGlobalSettings() {
+        try {
+            // Сначала пытаемся загрузить из localStorage (если есть сохраненные настройки)
+            const savedCoreTemp = localStorage.getItem('global-core-temp-threshold');
+            const savedMemoryTemp = localStorage.getItem('global-memory-temp-threshold');
+            
+            if (savedCoreTemp && savedMemoryTemp) {
+                console.log('Загружены настройки из localStorage');
+                return {
+                    coreTemperatureThreshold: parseInt(savedCoreTemp),
+                    memoryTemperatureThreshold: parseInt(savedMemoryTemp)
+                };
+            }
+            
+            // Если нет сохраненных настроек, пытаемся загрузить из файла
+            const response = await fetch(this.apiUrl + '?t=' + Date.now());
+            if (response.ok) {
+                const settings = await response.json();
+                console.log('Загружены настройки из файла');
+                return {
+                    coreTemperatureThreshold: settings.coreTemperatureThreshold || this.defaultSettings.coreTemperatureThreshold,
+                    memoryTemperatureThreshold: settings.memoryTemperatureThreshold || this.defaultSettings.memoryTemperatureThreshold
+                };
+            }
+        } catch (error) {
+            console.warn('Не удалось загрузить глобальные настройки:', error);
+        }
+        
+        // Возвращаем дефолтные настройки если не удалось загрузить
+        console.log('Используются дефолтные настройки');
+        return this.defaultSettings;
     }
 }

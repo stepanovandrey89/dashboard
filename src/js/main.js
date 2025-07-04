@@ -328,12 +328,12 @@ class MiningDashboard {
                 
                 if (saved) {
                     this.notificationManager.show(
-                        `Критическая температура ядра установлена глобально: ${value}°C`, 
+                        `Критическая температура ядра установлена: ${value}°C (сохранено локально)`, 
                         'success'
                     );
                 } else {
                     this.notificationManager.show(
-                        'Ошибка сохранения глобальных настроек', 
+                        'Ошибка сохранения настроек', 
                         'error'
                     );
                 }
@@ -355,12 +355,12 @@ class MiningDashboard {
                 
                 if (saved) {
                     this.notificationManager.show(
-                        `Критическая температура памяти установлена глобально: ${value}°C`, 
+                        `Критическая температура памяти установлена: ${value}°C (сохранено локально)`, 
                         'success'
                     );
                 } else {
                     this.notificationManager.show(
-                        'Ошибка сохранения глобальных настроек', 
+                        'Ошибка сохранения настроек', 
                         'error'
                     );
                 }
