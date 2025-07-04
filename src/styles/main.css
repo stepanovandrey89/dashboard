@@ -357,6 +357,15 @@ body {
   width: 100%;
 }
 
+/* Единицы измерения через CSS псевдоэлемент */
+.stat-card-compact .stat-value[data-unit]:after {
+  content: attr(data-unit);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-left: 0.25rem;
+}
+
 .stat-card-compact .stat-value .unit {
   font-size: 0.875rem;
   font-weight: 500;

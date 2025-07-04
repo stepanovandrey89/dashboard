@@ -285,7 +285,7 @@ class MiningDashboard {
 
     async loadPoolData() {
         try {
-            const response = await fetch('data/pool copy copy.json');
+            const response = await fetch('data/pool.json');
             this.poolData = await response.json();
             
             // Обновляем информацию о монете в обзоре
@@ -396,15 +396,21 @@ class MiningDashboard {
         document.getElementById('offline-farms-count').textContent = `${offlineFarms.length} неактивных`;
         document.getElementById('gpu-count').textContent = totalGPUs;
         
-        // Форматируем хэшрейт с единицами измерения на одной строке
+        // Форматируем хэшрейт с единицами измерения
         const hashrateElement = document.getElementById('hashrate');
         if (totalHashrate > 1000) {
-            hashrateElement.innerHTML = `${(totalHashrate / 1000).toFixed(2)} <span class="unit">MH/s</span>`;
+            hashrateElement.textContent = (totalHashrate / 1000).toFixed(2);
+            // Добавляем единицы измерения через CSS
+            hashrateElement.setAttribute('data-unit', 'MH/s');
         } else {
-            hashrateElement.innerHTML = `${totalHashrate.toFixed(2)} <span class="unit">H/s</span>`;
+            hashrateElement.textContent = totalHashrate.toFixed(2);
+            hashrateElement.setAttribute('data-unit', 'H/s');
         }
         
-        document.getElementById('power-consumption').textContent = `${(totalPower / 1000).toFixed(2)} kW`;
+        // Форматируем потребление энергии
+        const powerElement = document.getElementById('power-consumption');
+        powerElement.textContent = (totalPower / 1000).toFixed(2);
+        powerElement.setAttribute('data-unit', 'kW');
         
         // Показываем уведомления об оффлайн фермах
         if (offlineFarms.length > 0) {
