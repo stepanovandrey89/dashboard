@@ -154,6 +154,30 @@ npm run preview
 
 ## 🔧 Configuration
 
+### External API Setup (Optional)
+
+For global settings synchronization across users, you can configure an external API:
+
+1. **JSONBin.io Setup:**
+   - Create account at [jsonbin.io](https://jsonbin.io)
+   - Create a new bin with initial settings:
+   ```json
+   {
+     "coreTemperatureThreshold": 85,
+     "memoryTemperatureThreshold": 95
+   }
+   ```
+   - Get your API key and bin ID
+   - Configure in `globalSettingsManager.js`:
+   ```javascript
+   dashboard.globalSettingsManager.configureExternalAPI('YOUR_API_KEY', 'YOUR_BIN_ID');
+   ```
+
+2. **Alternative APIs:**
+   - Firebase Realtime Database
+   - Supabase
+   - Custom REST API
+
 ### Environment Variables
 Create `.env` file for local development:
 ```env
@@ -175,6 +199,15 @@ RewriteRule ^.*$ /index.html [L]
 ```
 
 ## 🤝 Contributing
+
+### Setting Up External API
+
+If you want to contribute to the global settings feature:
+
+1. Set up JSONBin.io account
+2. Create test bin with default settings
+3. Add API credentials to your local environment
+4. Test settings synchronization
 
 1. Fork the repository
 2. Create feature branch (`git checkout -b feature/amazing-feature`)
