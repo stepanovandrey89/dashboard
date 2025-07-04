@@ -347,10 +347,8 @@ body {
   color: var(--text-primary);
   line-height: 1.2;
   margin-bottom: 0.5rem;
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  gap: 0.25rem;
+  display: block;
+  text-align: center;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -359,11 +357,10 @@ body {
 
 /* Единицы измерения через CSS псевдоэлемент */
 .stat-card-compact .stat-value[data-unit]:after {
-  content: attr(data-unit);
+  content: " " attr(data-unit);
   font-size: 0.875rem;
   font-weight: 500;
   color: var(--text-secondary);
-  margin-left: 0.25rem;
 }
 
 .stat-card-compact .stat-value .unit {
@@ -1296,7 +1293,7 @@ body {
   .stat-card-compact .stat-value {
     font-size: 1rem;
     margin-bottom: 0.125rem;
-    justify-content: flex-start;
+    text-align: left;
   }
 
   .stat-card-compact .stat-value .unit {
