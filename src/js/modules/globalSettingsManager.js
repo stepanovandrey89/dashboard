@@ -30,7 +30,11 @@ export class GlobalSettingsManager {
         try {
             console.log('Сохранение глобальных настроек через API:', settings);
             
-            const response = await fetch(this.updateUrl, {
+            // Добавляем полный путь для API
+            const apiUrl = window.location.origin + '/' + this.updateUrl;
+            console.log('API URL:', apiUrl);
+            
+            const response = await fetch(apiUrl, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -42,11 +46,20 @@ export class GlobalSettingsManager {
             });
 
             if (response.ok) {
-                const result = await response.json();
-                console.log('Настройки успешно сохранены:', result);
-                return true;
+                const result = await response.text();
+                console.log('Сырой ответ сервера:', result);
+                
+                try {
+                    const jsonResult = JSON.parse(result);
+                    console.log('Настройки успешно сохранены:', jsonResult);
+                    return true;
+                } catch (parseError) {
+                    console.error('Ошибка парсинга JSON ответа:', parseError);
+                    console.error('Ответ сервера:', result);
+                    return false;
+                }
             } else {
-                const errorData = await response.json();
+                const errorData = await response.text();
                 console.error('Ошибка сервера при сохранении:', errorData);
                 return false;
             }
