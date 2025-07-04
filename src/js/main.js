@@ -286,7 +286,7 @@ class MiningDashboard {
     async loadGlobalTemperatureSettings() {
         try {
             // Загружаем глобальные настройки температур
-            const globalSettings = await this.globalSettingsManager.loadDemoGlobalSettings();
+            const globalSettings = await this.globalSettingsManager.loadGlobalSettings();
             
             // Применяем настройки к FarmManager
             this.farmManager.setCoreTemperatureThreshold(globalSettings.coreTemperatureThreshold);
@@ -321,7 +321,7 @@ class MiningDashboard {
                 this.farmManager.setCoreTemperatureThreshold(value);
                 
                 // Сохраняем глобально
-                const currentSettings = await this.globalSettingsManager.loadDemoGlobalSettings();
+                const currentSettings = await this.globalSettingsManager.loadGlobalSettings();
                 currentSettings.coreTemperatureThreshold = value;
                 
                 const saved = await this.globalSettingsManager.saveGlobalSettings(currentSettings);
@@ -348,7 +348,7 @@ class MiningDashboard {
                 this.farmManager.setMemoryTemperatureThreshold(value);
                 
                 // Сохраняем глобально
-                const currentSettings = await this.globalSettingsManager.loadDemoGlobalSettings();
+                const currentSettings = await this.globalSettingsManager.loadGlobalSettings();
                 currentSettings.memoryTemperatureThreshold = value;
                 
                 const saved = await this.globalSettingsManager.saveGlobalSettings(currentSettings);
