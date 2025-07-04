@@ -1,0 +1,6 @@
+{
+  "coreTemperatureThreshold": 85,
+  "memoryTemperatureThreshold": 95,
+  "lastUpdated": "2025-01-24T12:00:00Z",
+  "updatedBy": "system"
+}

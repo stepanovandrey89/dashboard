@@ -1073,6 +1073,32 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.setting-description {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background: var(--bg-tertiary);
+  border-radius: var(--border-radius);
+  border-left: 3px solid var(--primary-500);
+}
+
+.setting-description p {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.setting-note {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background: var(--bg-hover);
+  border-radius: var(--border-radius);
+}
+
+.setting-note small {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
+
 .setting-item {
   display: flex;
   align-items: center;

@@ -3,6 +3,7 @@ import { FarmManager } from './modules/farmManager.js';
 import { NotificationManager } from './modules/notificationManager.js';
 import { ThemeManager } from './modules/themeManager.js';
 import { RatesManager } from './modules/ratesManager.js';
+import { GlobalSettingsManager } from './modules/globalSettingsManager.js';
 
 class MiningDashboard {
     constructor() {
@@ -10,6 +11,7 @@ class MiningDashboard {
         this.notificationManager = new NotificationManager();
         this.themeManager = new ThemeManager();
         this.ratesManager = new RatesManager();
+        this.globalSettingsManager = new GlobalSettingsManager();
         
         this.currentSection = 'overview';
         this.updateInterval = 10000; // 10 секунд
@@ -52,6 +54,9 @@ class MiningDashboard {
             
             // Настройка настроек алертов
             this.setupAlertSettings();
+            
+            // Загружаем глобальные настройки температур
+            await this.loadGlobalTemperatureSettings();
             
             // Первоначальная загрузка данных
             await this.loadInitialData();
@@ -202,10 +207,8 @@ class MiningDashboard {
     }
 
     loadGlobalSettings() {
-        // Загружаем настройки из localStorage (глобальные для всех пользователей)
-        const savedTimeout = localStorage.getItem('global-offline-timeout');
-        const savedCoreThreshold = localStorage.getItem('global-core-temp-threshold');
-        const savedMemoryThreshold = localStorage.getItem('global-memory-temp-threshold');
+        // Загружаем настройки из localStorage для таймаута (локальные)
+        const savedTimeout = localStorage.getItem('local-offline-timeout');
         
         if (savedTimeout) {
             const savedIndex = this.timeoutOptions.indexOf(parseInt(savedTimeout));
@@ -213,24 +216,14 @@ class MiningDashboard {
                 this.currentTimeoutIndex = savedIndex;
             }
         }
-        
-        if (savedCoreThreshold) {
-            this.farmManager.setCoreTemperatureThreshold(parseInt(savedCoreThreshold));
-        }
-        
-        if (savedMemoryThreshold) {
-            this.farmManager.setMemoryTemperatureThreshold(parseInt(savedMemoryThreshold));
-        }
+
+        // Глобальные настройки температур загружаются отдельно
     }
 
     saveGlobalSettings() {
         // Сохраняем настройки глобально
         const minutes = this.timeoutOptions[this.currentTimeoutIndex];
-        localStorage.setItem('global-offline-timeout', minutes.toString());
-        
-        // Также сохраняем пороги температур
-        localStorage.setItem('global-core-temp-threshold', this.farmManager.coreTemperatureThreshold.toString());
-        localStorage.setItem('global-memory-temp-threshold', this.farmManager.memoryTemperatureThreshold.toString());
+        localStorage.setItem('local-offline-timeout', minutes.toString());
     }
 
     updateTimeoutDisplay() {
@@ -286,36 +279,93 @@ class MiningDashboard {
     }
 
     setupAlertSettings() {
+        this.loadGlobalTemperatureSettings();
+        this.setupTemperatureInputs();
+    }
+
+    async loadGlobalTemperatureSettings() {
+        try {
+            // Загружаем глобальные настройки температур
+            const globalSettings = await this.globalSettingsManager.loadDemoGlobalSettings();
+            
+            // Применяем настройки к FarmManager
+            this.farmManager.setCoreTemperatureThreshold(globalSettings.coreTemperatureThreshold);
+            this.farmManager.setMemoryTemperatureThreshold(globalSettings.memoryTemperatureThreshold);
+            
+            // Обновляем значения в интерфейсе
+            const coreThresholdInput = document.getElementById('core-temp-threshold');
+            const memoryThresholdInput = document.getElementById('memory-temp-threshold');
+            
+            if (coreThresholdInput) {
+                coreThresholdInput.value = globalSettings.coreTemperatureThreshold;
+            }
+            
+            if (memoryThresholdInput) {
+                memoryThresholdInput.value = globalSettings.memoryTemperatureThreshold;
+            }
+            
+        } catch (error) {
+            console.error('Ошибка загрузки глобальных настроек температур:', error);
+        }
+    }
+
+    setupTemperatureInputs() {
         const coreThresholdInput = document.getElementById('core-temp-threshold');
         const memoryThresholdInput = document.getElementById('memory-temp-threshold');
         
-        // Загружаем глобальные настройки
-        const savedCoreThreshold = localStorage.getItem('global-core-temp-threshold');
-        const savedMemoryThreshold = localStorage.getItem('global-memory-temp-threshold');
-        
-        if (savedCoreThreshold) {
-            coreThresholdInput.value = savedCoreThreshold;
-            this.farmManager.setCoreTemperatureThreshold(parseInt(savedCoreThreshold));
+        if (coreThresholdInput) {
+            coreThresholdInput.addEventListener('change', async (e) => {
+                const value = parseInt(e.target.value);
+                
+                // Применяем локально
+                this.farmManager.setCoreTemperatureThreshold(value);
+                
+                // Сохраняем глобально
+                const currentSettings = await this.globalSettingsManager.loadDemoGlobalSettings();
+                currentSettings.coreTemperatureThreshold = value;
+                
+                const saved = await this.globalSettingsManager.saveGlobalSettings(currentSettings);
+                
+                if (saved) {
+                    this.notificationManager.show(
+                        `Критическая температура ядра установлена глобально: ${value}°C`, 
+                        'success'
+                    );
+                } else {
+                    this.notificationManager.show(
+                        'Ошибка сохранения глобальных настроек', 
+                        'error'
+                    );
+                }
+            });
         }
         
-        if (savedMemoryThreshold) {
-            memoryThresholdInput.value = savedMemoryThreshold;
-            this.farmManager.setMemoryTemperatureThreshold(parseInt(savedMemoryThreshold));
+        if (memoryThresholdInput) {
+            memoryThresholdInput.addEventListener('change', async (e) => {
+                const value = parseInt(e.target.value);
+                
+                // Применяем локально
+                this.farmManager.setMemoryTemperatureThreshold(value);
+                
+                // Сохраняем глобально
+                const currentSettings = await this.globalSettingsManager.loadDemoGlobalSettings();
+                currentSettings.memoryTemperatureThreshold = value;
+                
+                const saved = await this.globalSettingsManager.saveGlobalSettings(currentSettings);
+                
+                if (saved) {
+                    this.notificationManager.show(
+                        `Критическая температура памяти установлена глобально: ${value}°C`, 
+                        'success'
+                    );
+                } else {
+                    this.notificationManager.show(
+                        'Ошибка сохранения глобальных настроек', 
+                        'error'
+                    );
+                }
+            });
         }
-        
-        coreThresholdInput.addEventListener('change', (e) => {
-            const value = parseInt(e.target.value);
-            this.farmManager.setCoreTemperatureThreshold(value);
-            localStorage.setItem('global-core-temp-threshold', value.toString());
-            this.notificationManager.show(`Критическая температура ядра установлена: ${value}°C`, 'info');
-        });
-        
-        memoryThresholdInput.addEventListener('change', (e) => {
-            const value = parseInt(e.target.value);
-            this.farmManager.setMemoryTemperatureThreshold(value);
-            localStorage.setItem('global-memory-temp-threshold', value.toString());
-            this.notificationManager.show(`Критическая температура памяти установлена: ${value}°C`, 'info');
-        });
     }
 
     async loadInitialData() {
