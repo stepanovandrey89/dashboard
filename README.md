@@ -6,7 +6,7 @@ Modern web dashboard for real-time mining farm monitoring with dark/light theme 
 
 **Live Site:** [https://cryptodash.ru](https://cryptodash.ru)
 
-![CryptoDash Dashboard](public/Снимок%20экрана%202025-07-04%20в%2012.56.25.png)
+![CryptoDash Dashboard](public/dashboard-screenshot.png)
 
 ## ✨ Key Features
 
