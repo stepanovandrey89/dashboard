@@ -176,14 +176,8 @@ class MiningDashboard {
         const increaseBtn = document.getElementById('timeout-increase');
         const valueDisplay = document.getElementById('timeout-value');
         
-        // Загружаем сохраненное значение
-        const savedTimeout = localStorage.getItem('offline-timeout');
-        if (savedTimeout) {
-            const savedIndex = this.timeoutOptions.indexOf(parseInt(savedTimeout));
-            if (savedIndex !== -1) {
-                this.currentTimeoutIndex = savedIndex;
-            }
-        }
+        // Загружаем глобальные настройки
+        this.loadGlobalSettings();
         
         this.updateTimeoutDisplay();
         this.updateOfflineThreshold();
@@ -193,7 +187,7 @@ class MiningDashboard {
                 this.currentTimeoutIndex--;
                 this.updateTimeoutDisplay();
                 this.updateOfflineThreshold();
-                this.saveTimeoutSetting();
+                this.saveGlobalSettings();
             }
         });
         
@@ -202,9 +196,41 @@ class MiningDashboard {
                 this.currentTimeoutIndex++;
                 this.updateTimeoutDisplay();
                 this.updateOfflineThreshold();
-                this.saveTimeoutSetting();
+                this.saveGlobalSettings();
             }
         });
+    }
+
+    loadGlobalSettings() {
+        // Загружаем настройки из localStorage (глобальные для всех пользователей)
+        const savedTimeout = localStorage.getItem('global-offline-timeout');
+        const savedCoreThreshold = localStorage.getItem('global-core-temp-threshold');
+        const savedMemoryThreshold = localStorage.getItem('global-memory-temp-threshold');
+        
+        if (savedTimeout) {
+            const savedIndex = this.timeoutOptions.indexOf(parseInt(savedTimeout));
+            if (savedIndex !== -1) {
+                this.currentTimeoutIndex = savedIndex;
+            }
+        }
+        
+        if (savedCoreThreshold) {
+            this.farmManager.setCoreTemperatureThreshold(parseInt(savedCoreThreshold));
+        }
+        
+        if (savedMemoryThreshold) {
+            this.farmManager.setMemoryTemperatureThreshold(parseInt(savedMemoryThreshold));
+        }
+    }
+
+    saveGlobalSettings() {
+        // Сохраняем настройки глобально
+        const minutes = this.timeoutOptions[this.currentTimeoutIndex];
+        localStorage.setItem('global-offline-timeout', minutes.toString());
+        
+        // Также сохраняем пороги температур
+        localStorage.setItem('global-core-temp-threshold', this.farmManager.coreTemperatureThreshold.toString());
+        localStorage.setItem('global-memory-temp-threshold', this.farmManager.memoryTemperatureThreshold.toString());
     }
 
     updateTimeoutDisplay() {
@@ -240,11 +266,6 @@ class MiningDashboard {
         this.farmManager.updateFarms();
     }
 
-    saveTimeoutSetting() {
-        const minutes = this.timeoutOptions[this.currentTimeoutIndex];
-        localStorage.setItem('offline-timeout', minutes.toString());
-    }
-
     setupFarmDetails() {
         const closeBtn = document.getElementById('details-close');
         if (closeBtn) {
@@ -268,9 +289,9 @@ class MiningDashboard {
         const coreThresholdInput = document.getElementById('core-temp-threshold');
         const memoryThresholdInput = document.getElementById('memory-temp-threshold');
         
-        // Загружаем сохраненные значения
-        const savedCoreThreshold = localStorage.getItem('core-temp-threshold');
-        const savedMemoryThreshold = localStorage.getItem('memory-temp-threshold');
+        // Загружаем глобальные настройки
+        const savedCoreThreshold = localStorage.getItem('global-core-temp-threshold');
+        const savedMemoryThreshold = localStorage.getItem('global-memory-temp-threshold');
         
         if (savedCoreThreshold) {
             coreThresholdInput.value = savedCoreThreshold;
@@ -285,14 +306,14 @@ class MiningDashboard {
         coreThresholdInput.addEventListener('change', (e) => {
             const value = parseInt(e.target.value);
             this.farmManager.setCoreTemperatureThreshold(value);
-            localStorage.setItem('core-temp-threshold', value.toString());
+            localStorage.setItem('global-core-temp-threshold', value.toString());
             this.notificationManager.show(`Критическая температура ядра установлена: ${value}°C`, 'info');
         });
         
         memoryThresholdInput.addEventListener('change', (e) => {
             const value = parseInt(e.target.value);
             this.farmManager.setMemoryTemperatureThreshold(value);
-            localStorage.setItem('memory-temp-threshold', value.toString());
+            localStorage.setItem('global-memory-temp-threshold', value.toString());
             this.notificationManager.show(`Критическая температура памяти установлена: ${value}°C`, 'info');
         });
     }
@@ -424,7 +445,16 @@ class MiningDashboard {
         
         // Обновляем статистические карточки
         document.getElementById('farms-count').textContent = activeFarms.length;
-        document.getElementById('offline-farms-count').textContent = `${offlineFarms.length} неактивных`;
+        
+        // Убираем отображение неактивных ферм, если их нет
+        const offlineElement = document.getElementById('offline-farms-count');
+        if (offlineFarms.length > 0) {
+            offlineElement.textContent = `${offlineFarms.length} неактивных`;
+            offlineElement.style.display = 'block';
+        } else {
+            offlineElement.style.display = 'none';
+        }
+        
         document.getElementById('gpu-count').textContent = totalGPUs;
         
         // Форматируем хэшрейт с единицами измерения
