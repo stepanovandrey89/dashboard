@@ -576,18 +576,44 @@ body {
   gap: 0.5rem;
 }
 
+/* Анимации для индикаторов статуса */
+@keyframes pulse-online {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  }
+  50% {
+    opacity: 0.7;
+    box-shadow: 0 0 0 4px rgba(16, 185, 129, 0);
+  }
+}
+
+@keyframes pulse-offline {
+  0%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+  }
+  50% {
+    opacity: 0.7;
+    box-shadow: 0 0 0 4px rgba(239, 68, 68, 0);
+  }
+}
+
 .status-dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
+  position: relative;
 }
 
 .status-dot.online {
   background: var(--success-500);
+  animation: pulse-online 2s infinite;
 }
 
 .status-dot.offline {
   background: var(--error-500);
+  animation: pulse-offline 2s infinite;
 }
 
 /* GPU индикаторы */
