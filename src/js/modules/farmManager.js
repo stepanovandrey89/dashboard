@@ -377,7 +377,7 @@ export class FarmManager {
         systemInfoGrid.innerHTML = `
             <div class="info-item">
                 <div class="info-icon">
-                    <i data-lucide="cpu"></i>
+                    <i data-lucide="motherboard"></i>
                 </div>
                 <div class="info-content">
                     <span class="label">Материнская плата:</span>
