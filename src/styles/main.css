@@ -342,7 +342,7 @@ body {
 }
 
 .stat-card-compact .stat-value {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 700;
   color: var(--text-primary);
   line-height: 1.2;
@@ -358,13 +358,13 @@ body {
 /* Единицы измерения через CSS псевдоэлемент */
 .stat-card-compact .stat-value[data-unit]:after {
   content: " " attr(data-unit);
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   font-weight: 500;
   color: var(--text-secondary);
 }
 
 .stat-card-compact .stat-value .unit {
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   font-weight: 500;
   color: var(--text-secondary);
   white-space: nowrap;
@@ -1162,11 +1162,11 @@ body {
   }
 
   .stat-card-compact .stat-value {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
 
   .stat-card-compact .stat-value .unit {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 }
 
@@ -1189,11 +1189,11 @@ body {
   }
 
   .stat-card-compact .stat-value {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   .stat-card-compact .stat-value .unit {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
   }
 
   .stat-card-compact .stat-label {
@@ -1232,11 +1232,11 @@ body {
   }
 
   .stat-card-compact .stat-value {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
 
   .stat-card-compact .stat-value .unit {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 
   .stat-card-compact .stat-label {
@@ -1291,13 +1291,13 @@ body {
   }
 
   .stat-card-compact .stat-value {
-    font-size: 1rem;
+    font-size: 0.95rem;
     margin-bottom: 0.125rem;
     text-align: left;
   }
 
   .stat-card-compact .stat-value .unit {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
   }
 
   .stat-card-compact .stat-label {
@@ -1419,7 +1419,7 @@ body {
   }
 
   .stat-card-compact .stat-value {
-    font-size: 0.875rem;
+    font-size: 0.85rem;
   }
 
   .stat-card-compact .stat-value .unit {
