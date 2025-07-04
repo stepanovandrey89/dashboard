@@ -342,7 +342,7 @@ body {
 }
 
 .stat-card-compact .stat-value {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--text-primary);
   line-height: 1.2;
@@ -358,7 +358,7 @@ body {
 }
 
 .stat-card-compact .stat-value .unit {
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 500;
   color: var(--text-secondary);
   white-space: nowrap;
@@ -366,7 +366,7 @@ body {
 
 .stat-card-compact .stat-label {
   color: var(--text-muted);
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   margin-bottom: 0.25rem;
   line-height: 1.3;
   text-align: center;
@@ -375,7 +375,7 @@ body {
 }
 
 .stat-card-compact .stat-change {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: var(--text-muted);
   line-height: 1;
 }
@@ -1156,11 +1156,11 @@ body {
   }
 
   .stat-card-compact .stat-value {
-    font-size: 1.125rem;
+    font-size: 1.375rem;
   }
 
   .stat-card-compact .stat-value .unit {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -1183,15 +1183,15 @@ body {
   }
 
   .stat-card-compact .stat-value {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
   .stat-card-compact .stat-value .unit {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
   }
 
   .stat-card-compact .stat-label {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -1226,15 +1226,15 @@ body {
   }
 
   .stat-card-compact .stat-value {
-    font-size: 1.125rem;
+    font-size: 1.375rem;
   }
 
   .stat-card-compact .stat-value .unit {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .stat-card-compact .stat-label {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
   .rates-grid {
@@ -1285,23 +1285,23 @@ body {
   }
 
   .stat-card-compact .stat-value {
-    font-size: 1rem;
+    font-size: 1.125rem;
     margin-bottom: 0.125rem;
     justify-content: flex-start;
   }
 
   .stat-card-compact .stat-value .unit {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
   }
 
   .stat-card-compact .stat-label {
-    font-size: 0.625rem;
+    font-size: 0.7rem;
     margin-bottom: 0;
     text-align: left;
   }
 
   .stat-card-compact .stat-change {
-    font-size: 0.625rem;
+    font-size: 0.7rem;
   }
 
   .section-controls {
@@ -1413,15 +1413,15 @@ body {
   }
 
   .stat-card-compact .stat-value {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 
   .stat-card-compact .stat-value .unit {
-    font-size: 0.65rem;
+    font-size: 0.7rem;
   }
 
   .stat-card-compact .stat-label {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
   }
 
   .header {
