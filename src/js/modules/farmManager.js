@@ -140,7 +140,10 @@ export class FarmManager {
     }
 
     calculateUptime(bootTime) {
-        return Math.floor((Date.now() - bootTime * 1000) / 1000);
+        // bootTime приходит в секундах Unix timestamp
+        const currentTime = Math.floor(Date.now() / 1000); // текущее время в секундах
+        const uptime = currentTime - bootTime; // разница в секундах
+        return Math.max(0, uptime); // возвращаем положительное значение
     }
 
     getAverageTemperature(statsData) {
