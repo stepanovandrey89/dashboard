@@ -91,25 +91,21 @@ body {
 .sidebar {
   position: fixed;
   left: 0;
-  top: 1rem;
+  top: 0;
   width: var(--sidebar-width);
-  height: calc(100vh - 8rem);
+  height: calc(100vh - 4rem);
   background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  border-radius: var(--border-radius-lg);
+  border-right: 1px solid var(--border-color);
   display: flex;
   flex-direction: column;
   z-index: 1000;
   transform: translateX(0);
   transition: var(--transition);
-  margin-left: 1rem;
-  box-shadow: var(--shadow-lg);
 }
 
 .sidebar-header {
   padding: 2rem 1.5rem;
   border-bottom: 1px solid var(--border-color);
-  border-radius: var(--border-radius-lg) var(--border-radius-lg) 0 0;
 }
 
 .logo {
@@ -203,9 +199,10 @@ body {
 
 /* Основной контент */
 .main-content {
-  margin-left: calc(var(--sidebar-width) + 2rem);
+  margin-left: var(--sidebar-width);
   min-height: 100vh;
   background: var(--bg-primary);
+  padding-bottom: 4rem;
 }
 
 .header {
@@ -219,11 +216,6 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
-  margin-top: 1rem;
-  border-radius: var(--border-radius-lg);
-  margin-left: 1rem;
-  margin-right: 1rem;
-  box-shadow: var(--shadow);
 }
 
 .page-title {
@@ -1247,9 +1239,8 @@ body {
   left: 0;
   right: 0;
   width: 100%;
-  border-radius: var(--border-radius-lg);
-  box-shadow: var(--shadow);
   z-index: 50;
+  height: 4rem;
 }
 
 .simple-footer-content {
@@ -1282,21 +1273,10 @@ body {
   height: 6px;
 }
 
-/* Основной контент с отступом снизу для футера */
-.main-content {
-  margin-left: calc(var(--sidebar-width) + 2rem);
-  min-height: 100vh;
-  background: var(--bg-primary);
-  padding-bottom: 5rem; /* Отступ для футера */
-}
-
 /* Секции контента */
 .content-section {
   display: none;
   padding: 2rem;
-  margin: 0 1rem;
-  background: var(--bg-primary);
-  border-radius: var(--border-radius-lg);
 }
 
 /* Адаптивность */
@@ -1374,8 +1354,6 @@ body {
   .sidebar {
     top: 0;
     height: 100vh;
-    margin-left: 0;
-    border-radius: 0;
     transform: translateX(-100%);
     transition: var(--transition);
   }
@@ -1390,26 +1368,6 @@ body {
 
   .main-content {
     margin-left: 0;
-  }
-
-  .header {
-    margin: 0;
-    border-radius: 0;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .simple-footer {
-    border-radius: 0;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-
-  .content-section {
-    margin: 0;
-    border-radius: 0;
   }
 
   .stats-grid-compact {
