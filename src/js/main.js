@@ -55,9 +55,6 @@ class MiningDashboard {
             // Настройка настроек алертов
             this.setupAlertSettings();
             
-            // Настройка футера
-            this.setupFooter();
-            
             // Загружаем глобальные настройки температур
             await this.loadGlobalTemperatureSettings();
             
@@ -371,21 +368,6 @@ class MiningDashboard {
         }
     }
 
-    setupFooter() {
-        // Добавляем обработчики для ссылок навигации в футере
-        const footerNavLinks = document.querySelectorAll('.footer-links a[data-section]');
-        footerNavLinks.forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-                const section = link.dataset.section;
-                this.switchSection(section);
-                
-                // Прокручиваем к началу страницы
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
-        });
-    }
-
     async loadInitialData() {
         try {
             // Загружаем данные ферм
@@ -553,31 +535,6 @@ class MiningDashboard {
         
         // Обновляем таблицу ферм на главной странице
         this.farmManager.renderFarmsTable('farms-tbody-overview', true);
-        
-        // Обновляем статистику в футере
-        this.updateFooterStats();
-    }
-
-    updateFooterStats() {
-        const farms = this.farmManager.getFarms();
-        const activeFarms = farms.filter(farm => farm.isOnline);
-        const totalGPUs = activeFarms.reduce((sum, farm) => sum + farm.gpuCount, 0);
-        
-        // Рассчитываем средний аптайм
-        let averageUptime = 0;
-        if (activeFarms.length > 0) {
-            const totalUptime = activeFarms.reduce((sum, farm) => sum + farm.uptime, 0);
-            averageUptime = Math.floor(totalUptime / activeFarms.length);
-        }
-        
-        // Обновляем элементы футера
-        const farmsCountElement = document.getElementById('footer-farms-count');
-        const gpuCountElement = document.getElementById('footer-gpu-count');
-        const uptimeElement = document.getElementById('footer-uptime');
-        
-        if (farmsCountElement) farmsCountElement.textContent = activeFarms.length;
-        if (gpuCountElement) gpuCountElement.textContent = totalGPUs;
-        if (uptimeElement) uptimeElement.textContent = this.farmManager.formatUptime(averageUptime);
     }
 
     async loadSectionData(section) {
