@@ -1256,13 +1256,15 @@ body {
   padding: 1rem 2rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  position: relative;
 }
 
 .simple-footer p {
   color: var(--text-secondary);
   font-size: 0.875rem;
   margin: 0;
+  text-align: center;
 }
 
 .footer-status {
@@ -1271,6 +1273,8 @@ body {
   gap: 0.5rem;
   color: var(--text-secondary);
   font-size: 0.75rem;
+  position: absolute;
+  right: 2rem;
 }
 
 .footer-status .status-dot {
