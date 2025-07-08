@@ -1242,10 +1242,14 @@ body {
 .simple-footer {
   background: var(--bg-secondary);
   border-top: 1px solid var(--border-color);
-  margin: 2rem 1rem 1rem 1rem;
-  margin-left: calc(var(--sidebar-width) + 3rem);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   border-radius: var(--border-radius-lg);
   box-shadow: var(--shadow);
+  z-index: 50;
 }
 
 .simple-footer-content {
@@ -1272,6 +1276,14 @@ body {
 .footer-status .status-dot {
   width: 6px;
   height: 6px;
+}
+
+/* Основной контент с отступом снизу для футера */
+.main-content {
+  margin-left: calc(var(--sidebar-width) + 2rem);
+  min-height: 100vh;
+  background: var(--bg-primary);
+  padding-bottom: 5rem; /* Отступ для футера */
 }
 
 /* Секции контента */
@@ -1384,8 +1396,11 @@ body {
   }
 
   .simple-footer {
-    margin: 2rem 0 0 0;
     border-radius: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 
   .content-section {
