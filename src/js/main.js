@@ -387,7 +387,7 @@ class MiningDashboard {
 
     async loadPoolData() {
         try {
-            const response = await fetch('data/pool.json');
+            const response = await fetch(`data/pool.json?t=${Date.now()}`);
             this.poolData = await response.json();
             
             // Обновляем информацию о монете в обзоре

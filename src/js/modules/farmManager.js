@@ -23,7 +23,7 @@ export class FarmManager {
     async loadFarms() {
         try {
             // Загружаем список ID ферм
-            const rigResponse = await fetch('data/rig_ids.json');
+            const rigResponse = await fetch(`data/rig_ids.json?t=${Date.now()}`);
             this.rigIds = await rigResponse.json();
 
             // Загружаем данные для каждой фермы
@@ -42,7 +42,7 @@ export class FarmManager {
     async loadFarmData(rig) {
         try {
             // Загружаем hello данные
-            const helloResponse = await fetch(`data/hello_${rig.id}.json`);
+            const helloResponse = await fetch(`data/hello_${rig.id}.json?t=${Date.now()}`);
             if (!helloResponse.ok) {
                 throw new Error(`HTTP ${helloResponse.status}`);
             }
@@ -54,7 +54,7 @@ export class FarmManager {
             let lastModified = new Date();
 
             try {
-                const statsResponse = await fetch(`data/stats_${rig.id}.json`);
+                const statsResponse = await fetch(`data/stats_${rig.id}.json?t=${Date.now()}`);
                 if (statsResponse.ok) {
                     statsData = await statsResponse.json();
                     
