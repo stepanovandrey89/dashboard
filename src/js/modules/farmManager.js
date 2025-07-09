@@ -509,6 +509,10 @@ export class FarmManager {
 
     async updateFarms() {
         try {
+            // Сохраняем текущее состояние выбранной фермы и позицию прокрутки
+            const selectedFarmId = this.selectedFarm ? this.selectedFarm.id : null;
+            const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+            
             const farmPromises = this.rigIds.map(rig => this.loadFarmData(rig));
             const farmResults = await Promise.all(farmPromises);
             
@@ -517,18 +521,42 @@ export class FarmManager {
             if (document.getElementById('overview-section').classList.contains('active')) {
                 this.renderFarmsTable('farms-tbody-overview', true);
                 
-                // Если была выбрана ферма, обновляем её детали
-                if (this.selectedFarm) {
-                    const updatedFarm = this.farms.find(farm => farm.id === this.selectedFarm.id);
+                // Восстанавливаем выбранную ферму без прокрутки
+                if (selectedFarmId) {
+                    const updatedFarm = this.farms.find(farm => farm.id === selectedFarmId);
                     if (updatedFarm) {
+                        // Восстанавливаем выделение строки
+                        const farmRow = document.querySelector(`tr[data-farm-id="${selectedFarmId}"]`);
+                        if (farmRow) {
+                            farmRow.classList.add('active');
+                        }
+                        
                         this.selectedFarm = updatedFarm;
-                        this.showFarmDetails(updatedFarm);
+                        this.updateFarmDetails(updatedFarm);
+                        
+                        // Восстанавливаем позицию прокрутки
+                        window.scrollTo(0, scrollPosition);
                     }
                 }
             }
             
         } catch (error) {
             console.error('Ошибка обновления ферм:', error);
+        }
+    }
+
+    updateFarmDetails(farm) {
+        // Обновляем детали фермы без прокрутки и анимации
+        const detailsContainer = document.getElementById('farm-details');
+        if (detailsContainer.style.display === 'none') return;
+        
+        const detailsTitle = document.getElementById('details-title');
+        detailsTitle.textContent = `Детали фермы ${farm.name}`;
+        
+        if (farm.isOnline) {
+            this.renderOnlineFarmDetails(farm);
+        } else {
+            this.renderOfflineFarmDetails(farm);
         }
     }
 

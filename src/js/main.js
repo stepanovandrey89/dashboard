@@ -390,31 +390,37 @@ class MiningDashboard {
             const response = await fetch(`data/pool.json?t=${Date.now()}`);
             this.poolData = await response.json();
             
-            // Обновляем информацию о монете в обзоре
-            document.getElementById('coin-symbol').textContent = this.poolData.pool.coinSymbol;
-            document.getElementById('coin-price').textContent = `$${parseFloat(this.poolData.pool.coinPriceUsd).toFixed(2)}`;
-            document.getElementById('blocks-found').textContent = this.poolData.miner.totalBlocksFound;
-            
-            // Обновляем информацию о монете в секции доходов
-            document.getElementById('coin-symbol-earnings').textContent = this.poolData.pool.coinSymbol;
-            document.getElementById('coin-price-earnings').textContent = `$${parseFloat(this.poolData.pool.coinPriceUsd).toFixed(2)}`;
-            
-            // Обновляем информацию о монете в секции выплат
-            document.getElementById('coin-symbol-payments').textContent = this.poolData.pool.coinSymbol;
-            document.getElementById('coin-price-payments').textContent = `$${parseFloat(this.poolData.pool.coinPriceUsd).toFixed(2)}`;
-            
-            // Обновляем таблицу вознаграждений
-            this.updateRewardsTable(this.poolData);
-            
-            // Сохраняем данные выплат
-            this.allPayments = this.poolData.miner.payments;
-            
-            // Обновляем таблицу всех выплат
-            this.updateAllPaymentsTable();
+            this.updatePoolDataInUI();
             
         } catch (error) {
             console.error('Ошибка загрузки данных пула:', error);
         }
+    }
+
+    updatePoolDataInUI() {
+        if (!this.poolData) return;
+        
+        // Обновляем информацию о монете в обзоре
+        document.getElementById('coin-symbol').textContent = this.poolData.pool.coinSymbol;
+        document.getElementById('coin-price').textContent = `$${parseFloat(this.poolData.pool.coinPriceUsd).toFixed(2)}`;
+        document.getElementById('blocks-found').textContent = this.poolData.miner.totalBlocksFound;
+        
+        // Обновляем информацию о монете в секции доходов
+        document.getElementById('coin-symbol-earnings').textContent = this.poolData.pool.coinSymbol;
+        document.getElementById('coin-price-earnings').textContent = `$${parseFloat(this.poolData.pool.coinPriceUsd).toFixed(2)}`;
+        
+        // Обновляем информацию о монете в секции выплат
+        document.getElementById('coin-symbol-payments').textContent = this.poolData.pool.coinSymbol;
+        document.getElementById('coin-price-payments').textContent = `$${parseFloat(this.poolData.pool.coinPriceUsd).toFixed(2)}`;
+        
+        // Обновляем таблицу вознаграждений
+        this.updateRewardsTable(this.poolData);
+        
+        // Сохраняем данные выплат
+        this.allPayments = this.poolData.miner.payments;
+        
+        // Обновляем таблицу всех выплат
+        this.updateAllPaymentsTable();
     }
 
     updateRewardsTable(poolData) {
@@ -559,7 +565,13 @@ class MiningDashboard {
     startAutoUpdate() {
         this.updateTimer = setInterval(async () => {
             try {
+                // Обновляем данные ферм
                 await this.farmManager.updateFarms();
+                
+                // Обновляем данные пула
+                await this.loadPoolData();
+                
+                // Обновляем статистику обзора
                 this.updateOverviewStats();
                 
             } catch (error) {
