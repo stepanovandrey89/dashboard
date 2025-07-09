@@ -162,12 +162,23 @@ export class FarmManager {
         const tbody = document.getElementById(tbodyId);
         if (!tbody) return;
 
+        // Сохраняем ID выбранной фермы перед перерисовкой
+        const selectedFarmId = this.selectedFarm ? this.selectedFarm.id : null;
+
         tbody.innerHTML = '';
 
         this.farms.forEach(farm => {
             const row = this.createFarmRow(farm, showClickable);
             tbody.appendChild(row);
         });
+
+        // Восстанавливаем выделение после перерисовки
+        if (selectedFarmId) {
+            const selectedRow = tbody.querySelector(`tr[data-farm-id="${selectedFarmId}"]`);
+            if (selectedRow) {
+                selectedRow.classList.add('active');
+            }
+        }
     }
 
     createFarmRow(farm, showClickable = true) {
@@ -509,8 +520,7 @@ export class FarmManager {
 
     async updateFarms() {
         try {
-            // Сохраняем текущее состояние выбранной фермы и позицию прокрутки
-            const selectedFarmId = this.selectedFarm ? this.selectedFarm.id : null;
+            // Сохраняем позицию прокрутки
             const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
             
             const farmPromises = this.rigIds.map(rig => this.loadFarmData(rig));
@@ -523,23 +533,17 @@ export class FarmManager {
                 this.renderFarmsTable('farms-tbody-overview', true);
             }
             
-            // Восстанавливаем выбранную ферму независимо от активной секции
-            if (selectedFarmId) {
-                const updatedFarm = this.farms.find(farm => farm.id === selectedFarmId);
+            // Обновляем детали выбранной фермы если она была выбрана
+            if (this.selectedFarm) {
+                const updatedFarm = this.farms.find(farm => farm.id === this.selectedFarm.id);
                 if (updatedFarm) {
-                    // Восстанавливаем выделение строки
-                    const farmRow = document.querySelector(`tr[data-farm-id="${selectedFarmId}"]`);
-                    if (farmRow) {
-                        farmRow.classList.add('active');
-                    }
-                    
                     this.selectedFarm = updatedFarm;
                     this.updateFarmDetails(updatedFarm);
-                    
-                    // Восстанавливаем позицию прокрутки
-                    window.scrollTo(0, scrollPosition);
                 }
             }
+            
+            // Восстанавливаем позицию прокрутки
+            window.scrollTo(0, scrollPosition);
             
         } catch (error) {
             console.error('Ошибка обновления ферм:', error);
