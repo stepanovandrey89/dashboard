@@ -518,25 +518,26 @@ export class FarmManager {
             
             this.farms = farmResults.filter(farm => farm !== null);
             
+            // Обновляем таблицу ферм если секция overview активна
             if (document.getElementById('overview-section').classList.contains('active')) {
                 this.renderFarmsTable('farms-tbody-overview', true);
-                
-                // Восстанавливаем выбранную ферму без прокрутки
-                if (selectedFarmId) {
-                    const updatedFarm = this.farms.find(farm => farm.id === selectedFarmId);
-                    if (updatedFarm) {
-                        // Восстанавливаем выделение строки
-                        const farmRow = document.querySelector(`tr[data-farm-id="${selectedFarmId}"]`);
-                        if (farmRow) {
-                            farmRow.classList.add('active');
-                        }
-                        
-                        this.selectedFarm = updatedFarm;
-                        this.updateFarmDetails(updatedFarm);
-                        
-                        // Восстанавливаем позицию прокрутки
-                        window.scrollTo(0, scrollPosition);
+            }
+            
+            // Восстанавливаем выбранную ферму независимо от активной секции
+            if (selectedFarmId) {
+                const updatedFarm = this.farms.find(farm => farm.id === selectedFarmId);
+                if (updatedFarm) {
+                    // Восстанавливаем выделение строки
+                    const farmRow = document.querySelector(`tr[data-farm-id="${selectedFarmId}"]`);
+                    if (farmRow) {
+                        farmRow.classList.add('active');
                     }
+                    
+                    this.selectedFarm = updatedFarm;
+                    this.updateFarmDetails(updatedFarm);
+                    
+                    // Восстанавливаем позицию прокрутки
+                    window.scrollTo(0, scrollPosition);
                 }
             }
             
