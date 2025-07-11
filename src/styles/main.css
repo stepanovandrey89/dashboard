@@ -421,7 +421,7 @@ body {
 }
 
 .theme-btn:hover {
-  background: linear-gradient(135deg, var(--primary-500), var(--primary-600));
+  background: linear-gradient(135deg, var(--neon-cyan), var(--neon-blue));
   color: white;
   transform: scale(1.1) rotate(180deg);
   box-shadow: var(--shadow-neon);
@@ -488,7 +488,7 @@ body {
 .stat-card-compact .stat-icon {
   width: 2.5rem;
   height: 2.5rem;
-  background: linear-gradient(135deg, var(--primary-500), var(--primary-600));
+  background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
   border-radius: var(--border-radius);
   display: flex;
   align-items: center;
@@ -496,7 +496,7 @@ body {
   color: white;
   margin-bottom: 0.75rem;
   flex-shrink: 0;
-  box-shadow: 0 0 20px rgba(233, 69, 96, 0.3);
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
   position: relative;
   z-index: 1;
 }
@@ -587,7 +587,7 @@ body {
   align-items: center;
   gap: 0.5rem;
   padding: 0.75rem 1.5rem;
-  background: linear-gradient(135deg, var(--primary-500), var(--primary-600));
+  background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
   color: white;
   border: none;
   border-radius: var(--border-radius);
@@ -599,7 +599,7 @@ body {
 }
 
 .refresh-btn:hover {
-  background: linear-gradient(135deg, var(--primary-600), var(--primary-700));
+  background: linear-gradient(135deg, var(--neon-purple), var(--neon-pink));
   transform: translateY(-2px);
   box-shadow: var(--shadow-neon);
 }
@@ -826,7 +826,7 @@ body {
   background: linear-gradient(135deg, var(--neon-pink), var(--neon-purple)) !important;
   color: white !important;
   padding: 0.5rem 1rem;
-  border-radius: var(--border-radius);
+  background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
   display: inline-block;
   box-shadow: 0 0 20px rgba(255, 105, 180, 0.4);
   animation: pulse 1s infinite;
@@ -878,14 +878,14 @@ body {
 .info-icon {
   width: 2rem;
   height: 2rem;
-  background: linear-gradient(135deg, var(--primary-500), var(--primary-600));
+  background: linear-gradient(135deg, var(--neon-cyan), var(--neon-purple));
   border-radius: var(--border-radius);
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   flex-shrink: 0;
-  box-shadow: 0 0 15px rgba(233, 69, 96, 0.3);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
 }
 
 .info-content {
@@ -1287,8 +1287,8 @@ body {
 }
 
 .toggle-switch input:checked + label {
-  background: linear-gradient(135deg, var(--primary-500), var(--primary-600));
-  box-shadow: 0 0 20px rgba(233, 69, 96, 0.3);
+  background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
 }
 
 .toggle-switch input:checked + label:before {
@@ -1716,7 +1716,7 @@ body {
   align-items: center;
   gap: 0.75rem;
   padding: 1rem 2rem;
-  background: linear-gradient(135deg, var(--primary-500), var(--primary-600));
+  background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
   color: white;
   border: none;
   border-radius: var(--border-radius);
@@ -1726,8 +1726,8 @@ body {
   box-shadow: var(--shadow);
 }
 
-.retry-btn:hover {
-  background: linear-gradient(135deg, var(--primary-600), var(--primary-700));
+  background: linear-gradient(135deg, var(--neon-purple), var(--neon-pink));
+  background: linear-gradient(135deg, var(--neon-purple), var(--neon-pink));
   transform: translateY(-2px);
   box-shadow: var(--shadow-neon);
 }
