@@ -721,11 +721,13 @@ body {
 }
 
 .gpu-indicator.nvidia {
-  background: var(--nvidia-color);
+  background: #a8e6a3;
+  box-shadow: 0 0 4px #a8e6a3;
 }
 
 .gpu-indicator.amd {
-  background: var(--amd-color);
+  background: #ff9eb5;
+  box-shadow: 0 0 4px #ff9eb5;
 }
 
 /* Активная строка фермы */
@@ -808,13 +810,13 @@ body {
 
 /* Цветовая кодировка GPU */
 .gpu-table .nvidia {
-  color: var(--nvidia-color);
-  text-shadow: 0 0 8px var(--nvidia-color);
+  color: #a8e6a3;
+  font-weight: 600;
 }
 
 .gpu-table .amd {
-  color: var(--amd-color);
-  text-shadow: 0 0 8px var(--amd-color);
+  color: #ff9eb5;
+  font-weight: 600;
 }
 
 .gpu-table .gpu-name {
