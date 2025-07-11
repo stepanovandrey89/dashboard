@@ -57,8 +57,8 @@ export class NotificationManager {
     getIcon(type) {
         const icons = {
             success: 'check-circle',
-            error: 'alert-circle',
-            warning: 'alert-triangle',
+            error: 'zap',
+            warning: 'alert-octagon',
             info: 'info'
         };
         return icons[type] || icons.info;

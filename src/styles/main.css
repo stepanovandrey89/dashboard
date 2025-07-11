@@ -914,14 +914,14 @@ body {
 }
 
 .offline-status h4 {
-  color: var(--neon-cyan);
+  color: var(--neon-gold);
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
   font-size: 1.25rem;
-  text-shadow: 0 0 10px var(--neon-cyan);
+  text-shadow: 0 0 10px var(--neon-gold);
 }
 
 .offline-status p {
@@ -1326,8 +1326,8 @@ body {
 }
 
 .notification.error {
-  border-left: 4px solid var(--neon-pink);
-  box-shadow: 0 0 20px rgba(255, 105, 180, 0.2);
+  border-left: 4px solid var(--neon-purple);
+  box-shadow: 0 0 20px rgba(183, 148, 246, 0.2);
 }
 
 .notification.warning {
@@ -1342,7 +1342,23 @@ body {
 }
 
 .notification-icon {
-  color: var(--text-secondary);
+  color: var(--neon-blue);
+}
+
+.notification.success .notification-icon {
+  color: var(--success-500);
+}
+
+.notification.error .notification-icon {
+  color: var(--neon-purple);
+}
+
+.notification.warning .notification-icon {
+  color: var(--neon-gold);
+}
+
+.notification.info .notification-icon {
+  color: var(--neon-blue);
 }
 
 .notification-message {
