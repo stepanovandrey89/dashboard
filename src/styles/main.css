@@ -717,17 +717,16 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 3px;
-  box-shadow: 0 0 8px currentColor;
 }
 
 .gpu-indicator.nvidia {
-  background: #a8e6a3;
-  box-shadow: 0 0 4px #a8e6a3;
+  background: var(--nvidia-color);
+  box-shadow: 0 0 8px var(--nvidia-color);
 }
 
 .gpu-indicator.amd {
-  background: #ff9eb5;
-  box-shadow: 0 0 4px #ff9eb5;
+  background: var(--amd-color);
+  box-shadow: 0 0 8px var(--amd-color);
 }
 
 /* Активная строка фермы */
