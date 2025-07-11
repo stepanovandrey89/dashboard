@@ -1058,12 +1058,12 @@ body {
 
 .gpu-indicator.nvidia {
   background: var(--nvidia-color);
-  box-shadow: 0 0 3px var(--nvidia-color);
+  box-shadow: 0 0 1px rgba(118, 255, 3, 0.3);
 }
 
 .gpu-indicator.amd {
   background: var(--amd-color);
-  box-shadow: 0 0 3px var(--amd-color);
+  box-shadow: 0 0 1px rgba(233, 30, 99, 0.3);
 }
 
 /* Активная строка фермы */
