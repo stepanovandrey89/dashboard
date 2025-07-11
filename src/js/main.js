@@ -167,7 +167,7 @@ class MiningDashboard {
             // Обновляем иконку
             const icon = themeToggle.querySelector('i');
             const currentTheme = this.themeManager.getCurrentTheme();
-            icon.setAttribute('data-lucide', currentTheme === 'dark' ? 'sun' : 'moon');
+            icon.setAttribute('data-lucide', currentTheme === 'dark' ? 'palette' : 'moon');
             
             // Пересоздаем иконки
             if (typeof lucide !== 'undefined') {

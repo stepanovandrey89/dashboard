@@ -19,7 +19,7 @@ export class ThemeManager {
     }
 
     toggle() {
-        const newTheme = this.currentTheme === 'dark' ? 'light' : 'dark';
+        const newTheme = this.currentTheme === 'dark' ? 'classic' : 'dark';
         this.applyTheme(newTheme);
         return newTheme;
     }
@@ -29,10 +29,10 @@ export class ThemeManager {
     }
 
     isDark() {
-        return this.currentTheme === 'dark';
+        return this.currentTheme === 'dark' || this.currentTheme === 'classic';
     }
 
-    isLight() {
-        return this.currentTheme === 'light';
+    isClassic() {
+        return this.currentTheme === 'classic';
     }
 }
