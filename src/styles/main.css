@@ -1062,7 +1062,7 @@ body {
 }
 
 .gpu-indicator.amd {
-  background: var(--amd-color);
+  background: #e91e63;
   box-shadow: 0 0 1px rgba(233, 30, 99, 0.3);
 }
 
