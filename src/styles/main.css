@@ -767,7 +767,7 @@ body {
 /* Секции контента */
 .content-section {
   display: none;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .content-section.active {
@@ -778,7 +778,7 @@ body {
 .stats-grid-compact {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 1rem;
+  gap: 0.75rem;
   margin-bottom: 2rem;
 }
 
@@ -786,13 +786,13 @@ body {
   background: linear-gradient(135deg, var(--bg-card), var(--bg-tertiary));
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius-lg);
-  padding: 1rem;
+  padding: 0.75rem;
   transition: var(--transition);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  min-height: 120px;
+  min-height: 100px;
   justify-content: space-between;
   min-width: 0;
   position: relative;
@@ -823,15 +823,15 @@ body {
 }
 
 .stat-card-compact .stat-icon {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2rem;
+  height: 2rem;
   background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
   border-radius: var(--border-radius);
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
   flex-shrink: 0;
   box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
   position: relative;
@@ -851,11 +851,11 @@ body {
 }
 
 .stat-card-compact .stat-value {
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 800;
   color: var(--text-primary);
   line-height: 1.2;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
@@ -867,13 +867,13 @@ body {
 
 .stat-card-compact .stat-value[data-unit]:after {
   content: " " attr(data-unit);
-  font-size: 0.75rem;
+  font-size: 0.625rem;
   font-weight: 600;
   color: var(--primary-500);
 }
 
 .stat-card-compact .stat-value .unit {
-  font-size: 0.75rem;
+  font-size: 0.625rem;
   font-weight: 600;
   color: var(--primary-500);
   white-space: nowrap;
@@ -881,8 +881,8 @@ body {
 
 .stat-card-compact .stat-label {
   color: var(--text-muted);
-  font-size: 0.75rem;
-  margin-bottom: 0.25rem;
+  font-size: 0.625rem;
+  margin-bottom: 0.125rem;
   line-height: 1.3;
   text-align: center;
   word-wrap: break-word;
@@ -891,7 +891,7 @@ body {
 }
 
 .stat-card-compact .stat-change {
-  font-size: 0.75rem;
+  font-size: 0.625rem;
   color: var(--text-muted);
   line-height: 1;
 }
@@ -901,11 +901,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .section-header h2 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: var(--text-primary);
   background: linear-gradient(135deg, var(--primary-500), var(--neon-blue));
@@ -947,7 +947,7 @@ body {
   border-radius: var(--border-radius-lg);
   border: 1px solid var(--border-color);
   background: linear-gradient(135deg, var(--bg-card), var(--bg-tertiary));
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   box-shadow: var(--shadow-lg);
   backdrop-filter: blur(20px);
 }
@@ -965,7 +965,7 @@ body {
 .gpu-table td,
 .earnings-table th,
 .earnings-table td {
-  padding: 1rem 1.5rem;
+  padding: 0.75rem 1rem;
   text-align: left;
   border-bottom: 1px solid var(--border-color);
 }
@@ -976,7 +976,7 @@ body {
   background: linear-gradient(135deg, var(--bg-tertiary), var(--bg-hover));
   color: var(--text-secondary);
   font-weight: 600;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -985,7 +985,7 @@ body {
 .gpu-table td,
 .earnings-table td {
   color: var(--text-primary);
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   font-weight: 500;
 }
 
@@ -1078,7 +1078,7 @@ body {
   background: linear-gradient(135deg, var(--bg-card), var(--bg-tertiary));
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius-lg);
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   overflow: hidden;
   box-shadow: var(--shadow-lg);
   backdrop-filter: blur(20px);
@@ -1088,13 +1088,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem;
+  padding: 1rem;
   background: linear-gradient(135deg, var(--bg-tertiary), var(--bg-hover));
   border-bottom: 1px solid var(--border-color);
 }
 
 .details-header h3 {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 700;
   color: var(--text-primary);
   background: linear-gradient(135deg, var(--primary-500), var(--neon-blue));
@@ -1126,18 +1126,18 @@ body {
 }
 
 .details-content {
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .gpu-table-container {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .gpu-table-container h4 {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   background: linear-gradient(135deg, var(--primary-500), var(--neon-purple));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1156,7 +1156,7 @@ body {
 }
 
 .gpu-table .gpu-name {
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   font-weight: 600;
 }
 
@@ -1177,10 +1177,10 @@ body {
 
 /* Системная информация */
 .system-info h4 {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -1193,14 +1193,14 @@ body {
 .info-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 1rem;
+  gap: 0.75rem;
 }
 
 .info-item {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  padding: 1rem;
+  gap: 0.75rem;
+  padding: 0.75rem;
   background: linear-gradient(135deg, var(--bg-tertiary), var(--bg-hover));
   border-radius: var(--border-radius);
   border: 1px solid var(--border-color);
@@ -1214,8 +1214,8 @@ body {
 }
 
 .info-icon {
-  width: 2rem;
-  height: 2rem;
+  width: 1.75rem;
+  height: 1.75rem;
   background: linear-gradient(135deg, var(--neon-cyan), var(--neon-purple));
   border-radius: var(--border-radius);
   display: flex;
@@ -1236,12 +1236,12 @@ body {
 .info-item .label {
   color: var(--text-muted);
   font-weight: 600;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
 }
 
 .info-item .value {
   color: var(--text-secondary);
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: 500;
 }
 
@@ -1726,7 +1726,7 @@ body {
 @media (max-width: 1400px) {
   .stats-grid-compact {
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    gap: 0.75rem;
   }
   
   .stat-card-compact:nth-child(5),
@@ -1736,23 +1736,23 @@ body {
   }
 
   .stat-card-compact {
-    min-height: 130px;
-    padding: 1rem;
+    min-height: 110px;
+    padding: 0.75rem;
   }
 
   .stat-card-compact .stat-value {
-    font-size: 1rem;
+    font-size: 0.875rem;
   }
 
   .stat-card-compact .stat-value[data-unit]:after {
-    font-size: 0.75rem;
+    font-size: 0.625rem;
   }
 }
 
 @media (max-width: 1200px) {
   .stats-grid-compact {
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 0.75rem;
   }
   
   .stat-card-compact:nth-child(4),
@@ -1763,20 +1763,20 @@ body {
   }
 
   .stat-card-compact {
-    min-height: 120px;
-    padding: 1rem;
+    min-height: 100px;
+    padding: 0.75rem;
   }
 
   .stat-card-compact .stat-value {
-    font-size: 0.95rem;
+    font-size: 0.8rem;
   }
 
   .stat-card-compact .stat-value[data-unit]:after {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
 
   .stat-card-compact .stat-label {
-    font-size: 0.75rem;
+    font-size: 0.625rem;
   }
 }
 
