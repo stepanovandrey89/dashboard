@@ -164,10 +164,19 @@ class MiningDashboard {
         themeToggle.addEventListener('click', () => {
             this.themeManager.toggle();
             
-            // Обновляем иконку
-            const icon = themeToggle.querySelector('i');
+            // Обновляем иконку - удаляем старую и создаем новую
             const currentTheme = this.themeManager.getCurrentTheme();
-            icon.setAttribute('data-lucide', currentTheme === 'classic' ? 'palette' : 'settings');
+            const newIconName = currentTheme === 'classic' ? 'palette' : 'settings';
+            
+            // Удаляем все дочерние элементы (SVG иконку)
+            themeToggle.innerHTML = '';
+            
+            // Создаем новый i элемент
+            const newIcon = document.createElement('i');
+            newIcon.setAttribute('data-lucide', newIconName);
+            
+            // Добавляем новую иконку в кнопку
+            themeToggle.appendChild(newIcon);
             
             // Пересоздаем иконки
             if (typeof lucide !== 'undefined') {
