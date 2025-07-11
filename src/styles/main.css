@@ -896,6 +896,22 @@ body {
   line-height: 1;
 }
 
+/* Анимация моргания для неактивных ферм */
+@keyframes blink-offline {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0.3;
+  }
+}
+
+#offline-farms-count {
+  animation: blink-offline 1.5s infinite;
+  color: var(--error-500);
+  font-weight: 700;
+}
+
 /* Секции */
 .section-header {
   display: flex;
