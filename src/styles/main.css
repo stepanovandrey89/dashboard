@@ -263,7 +263,7 @@
 }
 
 [data-theme="classic"] .offline-status h4 {
-  color: var(--warning-500);
+  color: var(--error-500);
   text-shadow: none;
 }
 
@@ -1017,11 +1017,11 @@ body {
 @keyframes pulse-offline {
   0%, 100% {
     opacity: 1;
-    box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7);
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
   }
   50% {
     opacity: 0.7;
-    box-shadow: 0 0 0 8px rgba(255, 215, 0, 0);
+    box-shadow: 0 0 0 8px rgba(239, 68, 68, 0);
   }
 }
 
@@ -1039,9 +1039,9 @@ body {
 }
 
 .status-dot.offline {
-  background: var(--neon-gold);
+  background: var(--error-500);
   animation: pulse-offline 2s infinite;
-  box-shadow: 0 0 10px var(--neon-gold);
+  box-shadow: 0 0 10px var(--error-500);
 }
 
 /* GPU индикаторы */
@@ -1067,6 +1067,12 @@ body {
 }
 
 /* Активная строка фермы */
+/* Неактивные GPU кубики для оффлайн ферм */
+.gpu-indicator.offline {
+  background: var(--gray-500);
+  box-shadow: 0 0 1px rgba(100, 116, 139, 0.3);
+}
+
 .farms-table tr.active {
   background: linear-gradient(90deg, rgba(233, 69, 96, 0.2), transparent);
   border-left: 4px solid var(--primary-500);

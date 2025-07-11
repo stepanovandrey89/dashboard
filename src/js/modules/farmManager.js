@@ -189,9 +189,10 @@ export class FarmManager {
         const statusText = farm.isOnline ? 'Online' : 'Offline';
         
         // GPU индикаторы
-        const gpuIndicators = farm.gpus.map(gpu => 
-            `<span class="gpu-indicator ${gpu.brand}" title="${gpu.name}"></span>`
-        ).join('');
+        const gpuIndicators = farm.gpus.map(gpu => {
+            const brandClass = farm.isOnline ? gpu.brand : 'offline';
+            return `<span class="gpu-indicator ${brandClass}" title="${gpu.name}"></span>`;
+        }).join('');
 
         // Форматирование хэшрейта в зависимости от значения
         let hashrateDisplay = '';
