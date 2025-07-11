@@ -1910,15 +1910,61 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .theme-controls {
-    flex-direction: row;
+  .header {
+    padding: 0.5rem 1rem 0.5rem 4rem;
+    height: auto;
+    min-height: var(--header-height);
+    flex-direction: column;
+    align-items: flex-start;
     gap: 0.75rem;
   }
 
-  .offline-timeout-control {
-    flex-direction: column;
-    align-items: flex-start;
+  .header-left {
+    width: 100%;
+  }
+
+  .header-right {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .theme-controls {
+    flex-direction: row;
     gap: 0.5rem;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .offline-timeout-control {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .offline-timeout-control label {
+    font-size: 0.75rem;
+    white-space: nowrap;
+  }
+
+  .timeout-selector {
+    min-width: auto;
+  }
+
+  .timeout-btn {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .timeout-value {
+    min-width: 2.5rem;
+    padding: 0 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  .theme-btn {
+    width: 2rem;
+    height: 2rem;
   }
 
   .earnings-header,
@@ -1928,28 +1974,15 @@ body {
     gap: 1rem;
   }
 
-  .header-right {
-    flex-direction: column;
-    gap: 0.75rem;
-  }
 
   .page-title {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 
   .page-subtitle {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
   }
 
-  .timeout-value {
-    min-width: 3rem;
-    font-size: 0.875rem;
-  }
-
-  .theme-btn {
-    width: 2.5rem;
-    height: 2.5rem;
-  }
 
   .table-container {
     font-size: 0.875rem;
