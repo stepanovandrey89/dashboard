@@ -1270,19 +1270,20 @@ body {
 /* Курсы криптовалют */
 .rates-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
 }
 
 .rate-card {
   background: linear-gradient(135deg, var(--bg-card), var(--bg-tertiary));
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius-lg);
-  padding: 1.5rem;
+  padding: 1rem;
   transition: var(--transition);
   position: relative;
   overflow: hidden;
   backdrop-filter: blur(20px);
+  min-height: 140px;
 }
 
 .rate-card::before {
@@ -1310,15 +1311,15 @@ body {
 .rate-header {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin-bottom: 1rem;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
   position: relative;
   z-index: 1;
 }
 
 .coin-logo {
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   border-radius: 50%;
   box-shadow: 0 0 20px rgba(233, 69, 96, 0.2);
 }
@@ -1326,21 +1327,21 @@ body {
 .coin-name {
   font-weight: 700;
   color: var(--text-primary);
-  font-size: 1rem;
+  font-size: 0.875rem;
 }
 
 .coin-symbol {
   color: var(--text-muted);
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
   font-weight: 600;
 }
 
 .rate-price {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 800;
   color: var(--text-primary);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
   position: relative;
   z-index: 1;
@@ -1349,10 +1350,10 @@ body {
 .rate-change {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 0.875rem;
+  gap: 0.375rem;
+  font-size: 0.75rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   position: relative;
   z-index: 1;
 }
@@ -1371,14 +1372,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   position: relative;
   z-index: 1;
 }
 
 .rate-market-cap .label {
   color: var(--text-muted);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .rate-market-cap .value {
@@ -1831,7 +1832,7 @@ body {
   }
 
   .rates-grid {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .theme-controls {
