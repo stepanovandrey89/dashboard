@@ -1625,12 +1625,12 @@ body {
   outline: none;
   border-color: var(--primary-500);
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
-  background: var(--bg-secondary);
+  background: var(--bg-primary);
 }
 
 [data-theme="classic"] .setting-item input[type="number"]:hover {
   border-color: var(--border-hover);
-  background: var(--bg-secondary);
+  background: var(--bg-primary);
 }
 
 .toggle-switch {
