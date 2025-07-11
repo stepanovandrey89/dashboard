@@ -1062,8 +1062,8 @@ body {
 }
 
 .gpu-indicator.amd {
-  background: #ef4444;
-  box-shadow: 0 0 1px rgba(239, 68, 68, 0.3);
+  background: var(--amd-color);
+  box-shadow: 0 0 1px rgba(233, 30, 99, 0.3);
 }
 
 /* Активная строка фермы */
@@ -2065,7 +2065,7 @@ body {
   box-shadow: var(--shadow);
 }
 
-  background: linear-gradient(135deg, var(--neon-purple), var(--neon-pink));
+.retry-btn:hover {
   background: linear-gradient(135deg, var(--neon-purple), var(--neon-pink));
   transform: translateY(-2px);
   box-shadow: var(--shadow-neon);
