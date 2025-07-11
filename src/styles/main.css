@@ -1609,6 +1609,30 @@ body {
   box-shadow: 0 0 0 3px rgba(233, 69, 96, 0.1);
 }
 
+[data-theme="classic"] .setting-item input[type="number"] {
+  background: var(--bg-primary);
+  border: 2px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 0.75rem 1rem;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  font-weight: 600;
+  min-width: 80px;
+  text-align: center;
+}
+
+[data-theme="classic"] .setting-item input[type="number"]:focus {
+  outline: none;
+  border-color: var(--primary-500);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  background: var(--bg-secondary);
+}
+
+[data-theme="classic"] .setting-item input[type="number"]:hover {
+  border-color: var(--border-hover);
+  background: var(--bg-secondary);
+}
+
 .toggle-switch {
   position: relative;
   width: 4rem;
