@@ -24,8 +24,8 @@
   --gray-900: #0f172a;
 
   --success-500: #00ff88;
-  --warning-500: #ffb347;
-  --error-500: #ff4757;
+  --warning-500: #ff9500;
+  --error-500: #ff6b35;
   --nvidia-color: #76ff03;
   --amd-color: #e91e63;
 
@@ -37,8 +37,8 @@
   --bg-hover: #16213e;
 
   --text-primary: #ffffff;
-  --text-secondary: #b8c5d6;
-  --text-muted: #6c7b8a;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
 
   --border-color: #2d3748;
   --border-hover: #4a5568;
@@ -48,6 +48,7 @@
   --neon-purple: #b794f6;
   --neon-pink: #ff6b9d;
   --neon-green: #68d391;
+  --neon-orange: #ff9500;
 
   /* Размеры и отступы */
   --sidebar-width: 240px;
@@ -119,7 +120,7 @@ body {
 .sidebar-header {
   padding: 1.5rem 1rem;
   border-bottom: 1px solid var(--border-color);
-  background: linear-gradient(135deg, var(--primary-500), var(--primary-600));
+  background: linear-gradient(135deg, #0a0a0f, #1a1a2e, #16213e);
   position: relative;
   overflow: hidden;
 }
@@ -131,7 +132,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
+  background: linear-gradient(45deg, transparent 30%, rgba(0, 212, 255, 0.1) 50%, transparent 70%);
   animation: shimmer 3s infinite;
 }
 
@@ -151,19 +152,23 @@ body {
 .logo-icon {
   width: 2.5rem;
   height: 2.5rem;
-  background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
+  background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple), var(--primary-500));
   border-radius: var(--border-radius);
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+  box-shadow: 0 0 25px rgba(0, 212, 255, 0.6), 0 0 50px rgba(183, 148, 246, 0.3);
   animation: glow 2s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
-  from { box-shadow: 0 0 20px rgba(0, 212, 255, 0.4); }
-  to { box-shadow: 0 0 30px rgba(0, 212, 255, 0.8); }
+  from { 
+    box-shadow: 0 0 25px rgba(0, 212, 255, 0.6), 0 0 50px rgba(183, 148, 246, 0.3);
+  }
+  to { 
+    box-shadow: 0 0 35px rgba(0, 212, 255, 0.9), 0 0 70px rgba(183, 148, 246, 0.5);
+  }
 }
 
 .logo-text {
@@ -674,11 +679,11 @@ body {
 @keyframes pulse-offline {
   0%, 100% {
     opacity: 1;
-    box-shadow: 0 0 0 0 rgba(255, 71, 87, 0.7);
+    box-shadow: 0 0 0 0 rgba(255, 149, 0, 0.7);
   }
   50% {
     opacity: 0.7;
-    box-shadow: 0 0 0 8px rgba(255, 71, 87, 0);
+    box-shadow: 0 0 0 8px rgba(255, 149, 0, 0);
   }
 }
 
@@ -696,9 +701,9 @@ body {
 }
 
 .status-dot.offline {
-  background: var(--error-500);
+  background: var(--neon-orange);
   animation: pulse-offline 2s infinite;
-  box-shadow: 0 0 10px var(--error-500);
+  box-shadow: 0 0 10px var(--neon-orange);
 }
 
 /* GPU индикаторы */
@@ -775,10 +780,10 @@ body {
 }
 
 .details-close:hover {
-  background: var(--error-500);
+  background: var(--neon-orange);
   color: white;
   transform: scale(1.1) rotate(90deg);
-  box-shadow: 0 0 20px rgba(255, 71, 87, 0.4);
+  box-shadow: 0 0 20px rgba(255, 149, 0, 0.4);
 }
 
 .details-content {
@@ -817,12 +822,12 @@ body {
 }
 
 .gpu-table .critical-temp {
-  background: linear-gradient(135deg, var(--error-500), #ff6b6b) !important;
+  background: linear-gradient(135deg, var(--neon-orange), #ff8c42) !important;
   color: white !important;
   padding: 0.5rem 1rem;
   border-radius: var(--border-radius);
   display: inline-block;
-  box-shadow: 0 0 20px rgba(255, 71, 87, 0.4);
+  box-shadow: 0 0 20px rgba(255, 149, 0, 0.4);
   animation: pulse 1s infinite;
 }
 
@@ -890,13 +895,13 @@ body {
 }
 
 .info-item .label {
-  color: var(--text-secondary);
+  color: var(--text-muted);
   font-weight: 600;
   font-size: 0.875rem;
 }
 
 .info-item .value {
-  color: var(--text-primary);
+  color: var(--text-secondary);
   font-size: 0.875rem;
   font-weight: 500;
 }
@@ -908,14 +913,14 @@ body {
 }
 
 .offline-status h4 {
-  color: var(--error-500);
+  color: var(--neon-orange);
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
   font-size: 1.25rem;
-  text-shadow: 0 0 10px var(--error-500);
+  text-shadow: 0 0 10px var(--neon-orange);
 }
 
 .offline-status p {
@@ -1019,8 +1024,8 @@ body {
 }
 
 .rate-change.negative {
-  color: var(--error-500);
-  text-shadow: 0 0 8px var(--error-500);
+  color: var(--neon-orange);
+  text-shadow: 0 0 8px var(--neon-orange);
 }
 
 .rate-market-cap {
@@ -1320,13 +1325,13 @@ body {
 }
 
 .notification.error {
-  border-left: 4px solid var(--error-500);
-  box-shadow: 0 0 20px rgba(255, 71, 87, 0.2);
+  border-left: 4px solid var(--neon-orange);
+  box-shadow: 0 0 20px rgba(255, 149, 0, 0.2);
 }
 
 .notification.warning {
   border-left: 4px solid var(--warning-500);
-  box-shadow: 0 0 20px rgba(255, 179, 71, 0.2);
+  box-shadow: 0 0 20px rgba(255, 149, 0, 0.2);
 }
 
 .notification-content {
@@ -1358,7 +1363,7 @@ body {
 
 .notification-close:hover {
   background: var(--bg-hover);
-  color: var(--error-500);
+  color: var(--neon-orange);
   transform: scale(1.1);
 }
 
