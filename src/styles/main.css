@@ -1882,43 +1882,43 @@ body {
 
 @media (max-width: 768px) {
   .stats-grid-compact {
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 0.75rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 
   .stat-card-compact {
-    min-height: 130px !important;
+    min-height: 120px;
     padding: 1rem;
-    flex-direction: column !important;
-    text-align: center !important;
-    align-items: center !important;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
   }
 
   .stat-card-compact .stat-icon {
-    width: 2rem;
-    height: 2rem;
-    margin-bottom: 0.75rem !important;
-    margin-right: 0 !important;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: 0.75rem;
+    margin-right: 0;
   }
 
   .stat-card-compact .stat-content {
-    align-items: center !important;
+    align-items: center;
   }
 
   .stat-card-compact .stat-value {
-    font-size: 1rem;
+    font-size: 1.125rem;
     margin-bottom: 0.25rem;
-    text-align: center !important;
+    text-align: center;
   }
 
   .stat-card-compact .stat-value[data-unit]:after {
-    font-size: 0.75rem;
+    font-size: 0.875rem;
   }
 
   .stat-card-compact .stat-label {
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     margin-bottom: 0;
-    text-align: center !important;
+    text-align: center;
   }
 
   .stat-card-compact .stat-change {
