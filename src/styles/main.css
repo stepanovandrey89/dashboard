@@ -1883,47 +1883,26 @@ body {
 @media (max-width: 768px) {
   .stats-grid-compact {
     grid-template-columns: repeat(2, 1fr) !important;
-    gap: 0.75rem !important;
+    gap: 0.5rem !important;
   }
 
   .stat-card-compact {
-    min-height: 100px !important;
+    min-height: 120px !important;
     padding: 0.75rem !important;
-    flex-direction: column !important;
-    text-align: center !important;
-    align-items: center !important;
   }
 
   .stat-card-compact .stat-icon {
     width: 2rem !important;
     height: 2rem !important;
     margin-bottom: 0.5rem !important;
-    margin-right: 0 !important;
-  }
-
-  .stat-card-compact .stat-content {
-    align-items: center !important;
   }
 
   .stat-card-compact .stat-value {
-    font-size: 1rem !important;
-    margin-bottom: 0.25rem !important;
-    text-align: center !important;
-  }
-
-  .stat-card-compact .stat-value[data-unit]:after {
-    font-size: 0.75rem !important;
+    font-size: 0.9rem !important;
   }
 
   .stat-card-compact .stat-label {
-    font-size: 0.75rem !important;
-    margin-bottom: 0 !important;
-    text-align: center !important;
-  }
-
-  .stat-card-compact .stat-change {
-    font-size: 0.625rem !important;
-    text-align: center !important;
+    font-size: 0.7rem !important;
   }
 
   .section-controls {
