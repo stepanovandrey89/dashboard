@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CryptoDash - Майнинг Дашборд</title>
+    <title>CryptoDashboard - Майнинг Дашборд - Курсы криптовалют</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/styles/main.css">
     <link rel="icon" href="favicon.png" type="image/png">
+  <script type="module" crossorigin src="/assets/index-BGyMRchd.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DaIEVG2R.css">
 </head>
 <body>
     <!-- Мобильное меню -->
@@ -26,7 +27,7 @@
                 <div class="logo-icon">
                     <i data-lucide="pickaxe"></i>
                 </div>
-                <span class="logo-text">CryptoDash</span>
+                <span class="logo-text">Портал статистики</span>
             </div>
         </div>
         
@@ -57,7 +58,7 @@
         <div class="sidebar-footer">
             <div class="sidebar-footer-content">
                 <p>&copy; 2025 CryptoDash</p>
-                <p>Создано с ❤️</p>
+                <p>Создано с ❤️ для себя.</p>
             </div>
         </div>
     </aside>
@@ -67,7 +68,7 @@
         <!-- Заголовок -->
         <header class="header">
             <div class="header-left">
-                <h1 class="page-title">Обзор майнинга</h1>
+                <h1 class="page-title">Аналитическая панель</h1>
                 <p class="page-subtitle">Мониторинг ваших майнинг ферм в реальном времени</p>
             </div>
             <div class="header-right">
@@ -173,7 +174,7 @@
 
             <!-- Таблица ферм на главной -->
             <div class="section-header">
-                <h2>Майнинг фермы</h2>
+                <h2>Мои майнинг фермы</h2>
             </div>
 
             <div class="table-container">
@@ -244,7 +245,7 @@
                             <i data-lucide="wifi-off"></i>
                             Ферма не в сети
                         </h4>
-                        <p id="offline-message">Последнее обновление: неизвестно</p>
+                        <p id="offline-message">Ориентировочно: неизвестно</p>
                     </div>
                 </div>
             </div>
@@ -253,7 +254,7 @@
         <!-- Секция курсов -->
         <section id="rates-section" class="content-section">
             <div class="section-header">
-                <h2>Курсы криптовалют</h2>
+                <h2></h2>
                 <div class="section-controls">
                     <button class="refresh-btn" id="refresh-rates">
                         <i data-lucide="refresh-cw"></i>
@@ -270,7 +271,7 @@
         <!-- Секция доходов -->
         <section id="earnings-section" class="content-section">
             <div class="earnings-header">
-                <h2>Доходы</h2>
+                <h2>Сводная информация</h2>
                 <div class="coin-info">
                     <div class="coin-price">
                         <span class="coin-symbol" id="coin-symbol-earnings">XEL</span>
@@ -301,7 +302,7 @@
         <!-- Секция истории выплат -->
         <section id="payments-section" class="content-section">
             <div class="earnings-header">
-                <h2>История выплат</h2>
+                <h2>Сводная информация</h2>
                 <div class="coin-info">
                     <div class="coin-price">
                         <span class="coin-symbol" id="coin-symbol-payments">XEL</span>
@@ -381,6 +382,5 @@
     <!-- Скрипты -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script type="module" src="src/js/main.js"></script>
 </body>
 </html>
